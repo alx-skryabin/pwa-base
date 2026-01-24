@@ -1,7 +1,7 @@
 {
-  "name": "Vite PWA App1",
-  "short_name": "VitePWA1",
-  "description": "Progressive Web Application built with Vite1",
+  "name": "My Travel",
+  "short_name": "Travel",
+  "description": "All about travel",
   "theme_color": "#1976d2",
   "background_color": "#ffffff",
   "display": "standalone",
