@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "author": "alx.sryabin",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build-ts": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
     "preview": "vite preview"
@@ -13,7 +15,8 @@
   "dependencies": {
     "antd": "^6.2.2",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router": "^7.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

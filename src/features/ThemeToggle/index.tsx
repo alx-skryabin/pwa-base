@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Space } from 'antd'
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
-import { useTheme } from '../../providers/ThemeProvider'
+import { useTheme } from '../../app/providers/ThemeProvider.tsx'
 
 const ThemeToggle: React.FC = () => {
   const { isDarkMode, toggleTheme } = useTheme()

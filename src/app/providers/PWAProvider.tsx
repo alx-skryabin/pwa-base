@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from 'react'
-import { AppInfo } from '../../debug/AppInfo.tsx'
-import { usePWAInstall } from './usePWAInstall.ts'
+import { AppInfo } from '../../features/debug/AppInfo.tsx'
+import { usePWAInstall } from '../pwa/usePWAInstall.ts'
 import { Button } from 'antd'
 
 export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => {
@@ -71,7 +71,7 @@ export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => 
           </div>
         </div>
       )}
-      <AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />
+      {/*<AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />*/}
       {children}
     </div>
   )
