@@ -2,13 +2,14 @@ import React from 'react'
 import { ROUTES } from '@app/routes'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'
+import './sidebar.css'
 
 interface SidebarProps {
-  isOpen: boolean
-  onToggle: () => void
+  isSidebarOpen: boolean
+  closeSidebar: () => void
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar }) => {
   const menuItems = [
     { path: ROUTES.HOME, icon: '📋', label: 'Главная' },
     { path: ROUTES.MAP, icon: '🗺️', label: 'Карта' },
@@ -17,27 +18,29 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
   ]
 
   return (
-    <aside>
-      <div>
-        <button onClick={onToggle}>{isOpen ? '◀' : '▶'}</button>
-      </div>
-
-      <br />
-      <nav>
-        {menuItems.map(item => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            // className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}
-          >
-            <span>{item.icon}</span>
-            {isOpen && <span>{item.label}</span>}
-          </NavLink>
-        ))}
+    <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`} aria-label="Боковое меню">
+      <nav className="sidebar-nav">
+        <h2>Меню</h2>
+        <ul>
+          {menuItems.map(item => (
+            <li key={item.path}>
+              <NavLink
+                to={item.path}
+                onClick={closeSidebar}
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                <span>{item.icon}</span>
+                <span>{item.label}</span>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
       </nav>
 
-      <div>
-        <ThemeToggle />
+      <ThemeToggle />
+
+      <div className="sidebar-footer">
+        <span>Версия 1.0.0</span>
       </div>
     </aside>
   )

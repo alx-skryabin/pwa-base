@@ -1,13 +1,17 @@
 import React, { ReactNode, useEffect, useState } from 'react'
+import { usePWAInstall } from '@app/pwa/usePWAInstall.ts'
 import { AppInfo } from '../../features/debug/AppInfo.tsx'
-import { usePWAInstall } from '../pwa/usePWAInstall.ts'
 import { Button } from 'antd'
+import { ROUTES } from '@app/routes'
 
 export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => {
   const [isOnline, setIsOnline] = useState<boolean>(navigator.onLine)
   const { isInstallable, isInstalled, promptInstall } = usePWAInstall()
   const [showInstallGuide, setShowInstallGuide] = useState<boolean>(false)
+  const isDevPage = window.location.pathname === ROUTES.DEV
+  console.log(isDevPage)
 
+  // todo сделать контекст и хук для использования состояния на любом уровне
   // Мониторинг онлайн статуса
   useEffect(() => {
     const handleOnline = () => setIsOnline(true)
@@ -39,9 +43,13 @@ export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => 
     setShowInstallGuide(false)
   }
 
+  if (!isDevPage) {
+    return children
+  }
+
   return (
-    <div>
-      <div>
+    <>
+      <div className="pwa-container">
         <div>
           <div>
             {isInstalled && <span>📱 Installed</span>}
@@ -58,21 +66,23 @@ export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => 
             </Button>
           )}
         </div>
+
+        {/* Баннер с гайдом установки */}
+        {showInstallGuide && isInstallable && !isInstalled && (
+          <div style={{ border: '1px solid #555' }}>
+            <h3>📲 Install Our App!</h3>
+            <div>
+              <Button onClick={handleInstall}>Install Now</Button>
+              <Button onClick={() => setShowInstallGuide(false)}>Maybe Later</Button>
+              <Button onClick={() => setShowInstallGuide(false)}>×</Button>
+            </div>
+          </div>
+        )}
+
+        {/*<AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />*/}
       </div>
 
-      {/* Баннер с гайдом установки */}
-      {showInstallGuide && isInstallable && !isInstalled && (
-        <div style={{ border: '1px solid #555' }}>
-          <h3>📲 Install Our App!</h3>
-          <div>
-            <Button onClick={handleInstall}>Install Now</Button>
-            <Button onClick={() => setShowInstallGuide(false)}>Maybe Later</Button>
-            <Button onClick={() => setShowInstallGuide(false)}>×</Button>
-          </div>
-        </div>
-      )}
-      {/*<AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />*/}
       {children}
-    </div>
+    </>
   )
 }

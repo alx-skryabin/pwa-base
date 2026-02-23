@@ -3,17 +3,17 @@ import { ThemeProvider } from '@app/providers/ThemeProvider.tsx'
 import { PWAProvider } from '@app/providers/PWAProvider.tsx'
 import { RouterProvider } from 'react-router'
 import { router } from '@app/routes'
-import '../main.css'
+import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <ThemeProvider>
+    <ThemeProvider>
+      <div className="app">
         <PWAProvider>
           <RouterProvider router={router} />
         </PWAProvider>
-      </ThemeProvider>
-    </div>
+      </div>
+    </ThemeProvider>
   )
 }
 
