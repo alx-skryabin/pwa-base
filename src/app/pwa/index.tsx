@@ -9,7 +9,6 @@ export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => 
   const { isInstallable, isInstalled, promptInstall } = usePWAInstall()
   const [showInstallGuide, setShowInstallGuide] = useState<boolean>(false)
   const isDevPage = window.location.pathname === ROUTES.DEV
-  console.log(isDevPage)
 
   // todo сделать контекст и хук для использования состояния на любом уровне
   // Мониторинг онлайн статуса
@@ -79,7 +78,7 @@ export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => 
           </div>
         )}
 
-        {/*<AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />*/}
+        <AppInfo isInstalled={isInstalled} isOnline={isOnline} isInstallable={isInstallable} />
       </div>
 
       {children}

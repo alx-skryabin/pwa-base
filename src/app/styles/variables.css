@@ -1,12 +1,12 @@
 :root {
-    /* Брейкпоинты */
-    --breakpoint-mobile: 768px;
+  /* Брейкпоинты */
+  --breakpoint-mobile: 768px;
 
-    /* Контейнеры */
-    --header-height: 70px;
-    --sidebar-width: 220px;
+  /* Контейнеры */
+  --header-height: 70px;
+  --sidebar-width: 220px;
 
-    /* z-index */
-    --z-header: 1000;
-    --z-sidebar: 900;
+  /* z-index */
+  --z-header: 1000;
+  --z-sidebar: 900;
 }

@@ -2,34 +2,33 @@
 @import 'app/styles/variables.css';
 
 .root {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 
-    * {
-        color: var(--color-text);
-        transition: 0.3s ease;
-        /*transition: background-color 0.3s ease, color 0.3s ease;*/
-    }
+  * {
+    color: var(--color-text);
+    transition: 0.3s ease;
+    /*transition: background-color 0.3s ease, color 0.3s ease;*/
+  }
 }
 
 /* ===== СКРОЛЛБАР ===== */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-secondary);
+  background: var(--color-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border-radius: 4px;
+  background: var(--color-primary);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-hover);
+  background: var(--color-hover);
 }
-
