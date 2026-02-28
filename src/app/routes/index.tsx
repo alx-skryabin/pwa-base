@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react'
 import { createBrowserRouter } from 'react-router'
+import { SuspenseWrapper } from '@app/routes/SuspenseWrapper.tsx'
 import { Layout } from '@widgets/layout'
 import Home from '@pages/home'
 import Dev from '@pages/dev'
@@ -13,10 +13,6 @@ import { ROUTES } from '@app/routes/path.ts'
 // const Dev = lazy(() => import('@/pages/dev'))
 // const NotFound = lazy(() => import('@/pages/not-found'))
 
-const Wrapper = ({ children }: { children: React.ReactNode }) => {
-  return <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-}
-
 export const router = createBrowserRouter([
   {
     path: ROUTES.HOME,
@@ -24,19 +20,19 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Wrapper children={<Home />} />,
+        element: <SuspenseWrapper children={<Home />} />,
       },
       {
         path: ROUTES.MAP,
-        element: <Wrapper children={<Map />} />,
+        element: <SuspenseWrapper children={<Map />} />,
       },
       {
         path: ROUTES.DEV,
-        element: <Wrapper children={<Dev />} />,
+        element: <SuspenseWrapper children={<Dev />} />,
       },
       {
         path: '*',
-        element: <Wrapper children={<NotFound />} />,
+        element: <SuspenseWrapper children={<NotFound />} />,
       },
     ],
   },

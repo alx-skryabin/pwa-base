@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactNode } from 'react'
+import React, { useState, useEffect, PropsWithChildren } from 'react'
 import { ConfigProvider, App as AntdApp } from 'antd'
 import { ThemeContext } from '@app/theme/ThemeContext.ts'
 import { darkTheme, lightTheme } from '@app/theme/config.ts'
@@ -8,11 +8,9 @@ const THEME = {
   LIGHT: 'light',
   DARK: 'dark',
 } as const
-const THEME_DEFAULT = THEME.DARK
 const LOCALSTORAGE_NAME = 'theme'
 
-export const ThemeProvider: React.FC = ({ children }: { children: ReactNode }) => {
-  const [themeClass, setThemeClass] = useState(`theme__${THEME_DEFAULT}`)
+export const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem(LOCALSTORAGE_NAME)
     if (saved !== null) {
@@ -23,7 +21,6 @@ export const ThemeProvider: React.FC = ({ children }: { children: ReactNode }) =
 
   useEffect(() => {
     localStorage.setItem(LOCALSTORAGE_NAME, isDarkMode ? THEME.DARK : THEME.LIGHT)
-    setThemeClass(isDarkMode ? 'theme__dark' : 'theme__light')
   }, [isDarkMode])
 
   const toggleTheme = () => {
@@ -31,6 +28,7 @@ export const ThemeProvider: React.FC = ({ children }: { children: ReactNode }) =
   }
 
   const currentTheme = isDarkMode ? darkTheme : lightTheme
+  const themeClass = isDarkMode ? 'theme__dark' : 'theme__light'
 
   return (
     <ThemeContext.Provider

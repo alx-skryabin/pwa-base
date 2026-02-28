@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { PropsWithChildren } from 'react'
 import { usePWAInit } from '@app/pwa/usePWAInit.ts'
 import { PWAContext } from '@app/pwa/PWAContext.ts'
 import PromptPWAInstall from '@features/PromptPWAInstall'
 
-export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => {
+export const PWAProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const { isOnline, isInstallable, isInstalled, installEvent, promptInstall } = usePWAInit()
 
   return (

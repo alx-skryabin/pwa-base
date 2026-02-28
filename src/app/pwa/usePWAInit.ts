@@ -35,7 +35,7 @@ export const usePWAInit = (): PWAContextType => {
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches
 
     // Способ 2: Проверка навигатора
-    const isNavStandalone = (window.navigator as any).standalone
+    const isNavStandalone = window.navigator.standalone
 
     // Способ 3: Проверка по URL
     const isUrlStandalone = window.location.href.includes('standalone')
