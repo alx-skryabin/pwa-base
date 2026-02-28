@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { PWAContextType } from '@app/pwa/PWAContext.ts'
 
 export type BeforeInstallPromptEvent = Event & {
   readonly platforms: string[]
@@ -9,16 +10,24 @@ export type BeforeInstallPromptEvent = Event & {
   prompt(): Promise<void>
 }
 
-type UsePWAInstallReturn = {
-  isInstallable: boolean
-  isInstalled: boolean
-  promptInstall: () => Promise<void>
-  installEvent: BeforeInstallPromptEvent | null
-}
-
-export const usePWAInstall = (): UsePWAInstallReturn => {
+export const usePWAInit = (): PWAContextType => {
+  const [isOnline, setIsOnline] = useState<boolean>(navigator.onLine)
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstalled, setIsInstalled] = useState<boolean>(false)
+
+  // Мониторинг онлайн статуса
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true)
+    const handleOffline = () => setIsOnline(false)
+
+    window.addEventListener('online', handleOnline)
+    window.addEventListener('offline', handleOffline)
+
+    return () => {
+      window.removeEventListener('online', handleOnline)
+      window.removeEventListener('offline', handleOffline)
+    }
+  }, [])
 
   // Проверка, установлено ли приложение
   const checkIfInstalled = useCallback(() => {
@@ -86,11 +95,6 @@ export const usePWAInstall = (): UsePWAInstallReturn => {
       console.log('PWA was installed')
       setIsInstalled(true)
       setInstallEvent(null)
-
-      // Можно отправить аналитику
-      if ((window as any).gtag) {
-        ;(window as any).gtag('event', 'install')
-      }
     }
 
     window.addEventListener('appinstalled', handleAppInstalled)
@@ -122,6 +126,7 @@ export const usePWAInstall = (): UsePWAInstallReturn => {
   }, [installEvent])
 
   return {
+    isOnline,
     isInstallable: !!installEvent && !isInstalled,
     isInstalled,
     promptInstall,

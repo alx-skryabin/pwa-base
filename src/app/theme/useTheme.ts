@@ -4,7 +4,7 @@ import { ThemeContext } from '@app/theme/ThemeContext.ts'
 export const useTheme = () => {
   const context = useContext(ThemeContext)
   if (!context) {
-    throw new Error('useTheme must be used within a Index')
+    throw new Error('useTheme must be used within a ThemeProvider')
   }
   return context
 }

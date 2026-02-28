@@ -1,4 +1,5 @@
 import React from 'react'
+import { usePWA } from '@app/pwa/usePWA.ts'
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router'
 import { ROUTES } from '@app/routes/path.ts'
@@ -11,6 +12,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) => {
+  const { isOnline } = usePWA()
+
   return (
     <header className="header" aria-label="Шапка сайта">
       <div className="header-container">
@@ -22,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) 
         >
           <div className="logo">
             <img src={logo} alt="Логотип" width="40" height="40" />
-            <span>My App</span>
+            <span>My App {isOnline ? '🟢' : '🔴'}</span>
           </div>
         </NavLink>
 
