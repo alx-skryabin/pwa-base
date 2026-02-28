@@ -1,6 +1,18 @@
 @import 'antd/dist/reset.css';
-@import 'app/styles/theme.css';
 @import 'app/styles/variables.css';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+
+    * {
+        color: var(--color-text);
+        transition: 0.3s ease;
+        /*transition: background-color 0.3s ease, color 0.3s ease;*/
+    }
+}
 
 /* ===== СКРОЛЛБАР ===== */
 ::-webkit-scrollbar {
@@ -9,15 +21,15 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--color-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--color-primary);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--color-hover);
 }
 

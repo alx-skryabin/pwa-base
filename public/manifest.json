@@ -1,7 +1,7 @@
 {
-  "name": "My Travel",
-  "short_name": "Travel",
-  "description": "All about travel",
+  "name": "My App.",
+  "short_name": "My App",
+  "description": "My Application",
   "theme_color": "#1976d2",
   "background_color": "#ffffff",
   "display": "standalone",

@@ -1,8 +1,8 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import { usePWAInstall } from '@app/pwa/usePWAInstall.ts'
-import { AppInfo } from '../../features/debug/AppInfo.tsx'
+import { ROUTES } from '@app/routes/path.ts'
+import { AppInfo } from '@features/debug/AppInfo.tsx'
 import { Button } from 'antd'
-import { ROUTES } from '@app/routes'
 
 export const PWAProvider: React.FC = ({ children }: { children: ReactNode }) => {
   const [isOnline, setIsOnline] = useState<boolean>(navigator.onLine)

@@ -1,4 +1,8 @@
 import React from 'react'
+import logo from '../../assets/logo.png'
+import { NavLink } from 'react-router'
+import { ROUTES } from '@app/routes/path.ts'
+import HamburgerToggle from '@features/HamburgerToggle'
 import './header.css'
 
 interface HeaderProps {
@@ -10,22 +14,19 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) 
   return (
     <header className="header" aria-label="Шапка сайта">
       <div className="header-container">
-        <div className="logo">
-          <img src="/logo.svg" alt="Логотип" width="40" height="40" />
-          <span>PWA App</span>
-        </div>
-
-        {/* Гамбургер для мобильной версии */}
-        <button
-          className={`hamburger ${isSidebarOpen ? 'active' : ''}`}
-          onClick={toggleSidebar}
-          aria-label="Открыть меню"
-          aria-expanded={isSidebarOpen}
+        <NavLink
+          to={ROUTES.HOME}
+          onClick={() => {
+            if (isSidebarOpen) toggleSidebar()
+          }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <div className="logo">
+            <img src={logo} alt="Логотип" width="40" height="40" />
+            <span>My App</span>
+          </div>
+        </NavLink>
+
+        <HamburgerToggle toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       </div>
     </header>
   )

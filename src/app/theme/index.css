@@ -1,0 +1,20 @@
+/*dark (default)*/
+.theme.theme__dark {
+    --color-primary: #1b2734;
+    --color-secondary: #0e1621;
+    --color-hover: #25303e;
+    --color-active: #2b5278;
+    --color-text: #ffffff;
+}
+
+.theme.theme__light {
+    --color-primary: #eeeeee;
+    --color-secondary: #dddddd;
+    --color-hover: #b1dff1;
+    --color-active: #8bdaf8;
+    --color-text: #333333;
+}
+
+.theme {
+    background: var(--color-secondary);
+}

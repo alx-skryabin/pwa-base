@@ -1,22 +1,17 @@
-import React, { lazy, Suspense } from 'react'
+import React, { Suspense } from 'react'
 import { createBrowserRouter } from 'react-router'
 import { Layout } from '@widgets/layout'
 import Home from '@pages/home'
 import Dev from '@pages/dev'
 import Map from '@pages/map'
 import NotFound from '@pages/not-found'
+import { ROUTES } from '@app/routes/path.ts'
 
 /*Настроить кеширование чанков в оффлайн режиме*/
 // const Home = lazy(() => import('@pages/home'))
 // const Map = lazy(() => import('@/pages/map'))
 // const Dev = lazy(() => import('@/pages/dev'))
 // const NotFound = lazy(() => import('@/pages/not-found'))
-
-export const ROUTES = {
-  HOME: '/',
-  MAP: '/map',
-  DEV: '/dev',
-} as const
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
