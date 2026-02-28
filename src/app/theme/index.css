@@ -4,7 +4,8 @@
   --color-secondary: #0e1621;
   --color-hover: #25303e;
   --color-active: #2b5278;
-  --color-text: #ffffff;
+  --color-text: #e6f7ff;
+  --color-text-muted: #999999;
 }
 
 .theme.theme__light {
@@ -13,6 +14,7 @@
   --color-hover: #b1dff1;
   --color-active: #8bdaf8;
   --color-text: #333333;
+  --color-text-muted: #777777;
 }
 
 .theme {

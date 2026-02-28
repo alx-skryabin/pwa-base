@@ -1,9 +1,10 @@
 {
-  "name": "my-travel",
+  "name": "my-app",
   "private": true,
   "version": "0.0.1",
+  "buildTime": "01.01.2026",
   "type": "module",
-  "author": "alx.sryabin",
+  "author": "@alx.sryabin",
   "scripts": {
     "dev": "vite",
     "build-ts": "tsc -b && vite build",

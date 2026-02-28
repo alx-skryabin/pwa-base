@@ -7,13 +7,12 @@ export const darkTheme: ThemeConfig = {
   token: {
     // Основные цвета
     colorPrimary: '#1890ff',
-    colorPrimaryBg: '#111a2c',
     colorSuccess: '#52c41a',
     colorWarning: '#faad14',
     colorError: '#ff4d4f',
     colorInfo: '#1890ff',
     colorTextBase: '#e6f7ff',
-    colorBgBase: '#141414',
+    colorBgBase: '#1b2734',
   },
   components: {
     // Настройки конкретных компонентов
@@ -28,6 +27,8 @@ export const lightTheme: ThemeConfig = {
     colorWarning: '#faad14',
     colorError: '#ff4d4f',
     colorInfo: '#1890ff',
+    colorTextBase: '#333333',
+    colorBgBase: '#eeeeee',
   },
   components: {},
 }

@@ -7,7 +7,7 @@ const Map: React.FC = () => {
       <div>
         {[...Array(60)].map((_, i) => (
           <li key={i}>
-            <a href={`/item-${i}`}>Пункт меню {i + 1}</a>
+            <a href={`/item-${i}`}>Строка {i + 1}</a>
           </li>
         ))}
       </div>

@@ -29,6 +29,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@app/*": ["./src/app/*"],
+      "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
       "@widgets/*": ["./src/widgets/*"],
       "@features/*": ["./src/features/*"],
