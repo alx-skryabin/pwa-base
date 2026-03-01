@@ -2,6 +2,7 @@ import React, { useState, useEffect, PropsWithChildren } from 'react'
 import { ConfigProvider, App as AntdApp } from 'antd'
 import { ThemeContext } from '@app/theme/ThemeContext.ts'
 import { darkTheme, lightTheme } from '@app/theme/config.ts'
+import { storeLogger } from '@shared/libs/logger'
 import './index.css'
 
 const THEME = {
@@ -20,7 +21,9 @@ export const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
   })
 
   useEffect(() => {
-    localStorage.setItem(LOCALSTORAGE_NAME, isDarkMode ? THEME.DARK : THEME.LIGHT)
+    const theme = isDarkMode ? THEME.DARK : THEME.LIGHT
+    storeLogger.info(`Set theme: ${theme}`)
+    localStorage.setItem(LOCALSTORAGE_NAME, theme)
   }, [isDarkMode])
 
   const toggleTheme = () => {

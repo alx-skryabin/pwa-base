@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { PWAContextType } from '@app/pwa/PWAContext.ts'
+import { pwaLogger, systemLogger } from '@shared/libs/logger'
 
 export type BeforeInstallPromptEvent = Event & {
   readonly platforms: string[]
@@ -17,8 +18,14 @@ export const usePWAInit = (): PWAContextType => {
 
   // Мониторинг онлайн статуса
   useEffect(() => {
-    const handleOnline = () => setIsOnline(true)
-    const handleOffline = () => setIsOnline(false)
+    const handleOnline = () => {
+      systemLogger.info('Network: online')
+      setIsOnline(true)
+    }
+    const handleOffline = () => {
+      systemLogger.info('Network: offline')
+      setIsOnline(false)
+    }
 
     window.addEventListener('online', handleOnline)
     window.addEventListener('offline', handleOffline)
@@ -78,7 +85,7 @@ export const usePWAInit = (): PWAContextType => {
   useEffect(() => {
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
-      console.log('beforeinstallprompt event fired')
+      pwaLogger.debug('beforeinstallprompt event fired')
       setInstallEvent(e as BeforeInstallPromptEvent)
     }
 
@@ -92,7 +99,7 @@ export const usePWAInit = (): PWAContextType => {
   // Отслеживаем событие appinstalled
   useEffect(() => {
     const handleAppInstalled = () => {
-      console.log('PWA was installed')
+      pwaLogger.info('PWA was installed')
       setIsInstalled(true)
       setInstallEvent(null)
     }
@@ -106,7 +113,7 @@ export const usePWAInit = (): PWAContextType => {
 
   const promptInstall = useCallback(async () => {
     if (!installEvent) {
-      console.warn('No install event available')
+      pwaLogger.warn('No install event available')
       return
     }
 
@@ -114,14 +121,14 @@ export const usePWAInit = (): PWAContextType => {
       await installEvent.prompt()
       const choiceResult = await installEvent.userChoice
 
-      console.log(`User ${choiceResult.outcome} the install prompt`)
+      pwaLogger.info(`User ${choiceResult.outcome} the install prompt`)
 
       if (choiceResult.outcome === 'accepted') {
         setInstallEvent(null)
         setIsInstalled(true)
       }
     } catch (error) {
-      console.error('Error during install prompt:', error)
+      pwaLogger.error('Error during install prompt:', error)
     }
   }, [installEvent])
 
