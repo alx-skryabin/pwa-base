@@ -78,10 +78,39 @@ const DEFAULT_CONFIG: LoggerConfig = {
 class BaseLogger {
   private config: LoggerConfig
   private section: LogSection
+  private logHistory: Map<string, number> = new Map()
 
   constructor(section: LogSection, config: LoggerConfig) {
     this.section = section
     this.config = config
+  }
+
+  private isDuplicate(level: LogLevel, message: string): boolean {
+    // В production не проверяем дубли
+    if (import.meta.env.PROD) return false
+
+    const key = `${this.section}-${level}-${message}`
+    const now = Date.now()
+    const lastLog = this.logHistory.get(key) || 0
+
+    // Если лог был менее 50мс назад - считаем дублем
+    if (now - lastLog < 50) {
+      return true
+    }
+
+    this.logHistory.set(key, now)
+
+    // Очищаем старые записи (более 1 секунды)
+    if (this.logHistory.size > 100) {
+      const oneSecondAgo = now - 1000
+      for (const [k, time] of this.logHistory.entries()) {
+        if (time < oneSecondAgo) {
+          this.logHistory.delete(k)
+        }
+      }
+    }
+
+    return false
   }
 
   // Проверка, нужно ли логировать с учетом уровня
@@ -133,8 +162,13 @@ class BaseLogger {
   }
 
   // Основной метод логирования
-  private log(level: LogLevel, message: string, ...data: any[]): void {
+  private log(level: LogLevel, message: string, ...data: unknown[]): void {
     if (!this.shouldLog(level)) return
+
+    // Проверяем на дубли в разработке из-за StrictMode
+    if (import.meta.env.DEV && this.isDuplicate(level, message)) {
+      return
+    }
 
     const consoleMethod = level === 'error' ? 'error' : level === 'warn' ? 'warn' : 'log'
     const formattedMessage = this.formatMessage(level, message)
@@ -148,19 +182,19 @@ class BaseLogger {
   }
 
   // Публичные методы
-  public debug(message: string, ...data: any[]): void {
+  public debug(message: string, ...data: unknown[]): void {
     this.log('debug', message, ...data)
   }
 
-  public info(message: string, ...data: any[]): void {
+  public info(message: string, ...data: unknown[]): void {
     this.log('info', message, ...data)
   }
 
-  public warn(message: string, ...data: any[]): void {
+  public warn(message: string, ...data: unknown[]): void {
     this.log('warn', message, ...data)
   }
 
-  public error(message: string, ...data: any[]): void {
+  public error(message: string, ...data: unknown[]): void {
     this.log('error', message, ...data)
   }
 

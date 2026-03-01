@@ -1,84 +1,75 @@
-# React + TypeScript + Vite
+# 📱 PWA Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное PWA-приложение на React с поддержкой темной и светлой темы, офлайн-режима, установки на устройства и
+продвинутой системой логирования.
 
-Currently, two official plugins are available:
+## 🚀 Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - библиотека для пользовательских интерфейсов
+- **TypeScript** - типизация кода
+- **Vite** - сборщик проекта
+- **Ant Design** - библиотека компонентов
+- **React Router** - маршрутизация
+- **PWA** - прогрессивное веб-приложение
+- **ESLint / Prettier** - линтинг и форматирование
+- **Logger** - Логирование [[**документация**](docs/logger.md)]
+- **FSD** - Архитектура [[**документация**](docs/directories.md)]
 
-## React Compiler
+## 📋 Требования
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+
+- npm или yarn
 
-## Expanding the ESLint configuration
+## 🛠 Установка
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Установить зависимости
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Запустить в режиме разработки
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Скрипты проекта
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🚀 `npm run dev`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Запускает сервер разработки Vite с поддержкой:
 
-Стратегии кэширования (handlers):
-CacheFirst — сначала кэш, потом сеть (для статики)
+- Горячей перезагрузки (HMR)
+- Быстрой компиляции TypeScript
 
-NetworkFirst — сначала сеть, потом кэш (для динамического контента)
+### 🏗️ `npm run build`
 
-StaleWhileRevalidate — отдаём из кэша, параллельно обновляем
+Выполняет два последовательных действия:
 
-NetworkOnly — только сеть
+1. `tsc -b` - компиляция TypeScript с проверкой типов
+2. `vite build` - сборка проекта для production
 
-CacheOnly — только кэш
+Результат сохраняется в папке `dist/`
+
+### 🔍 `npm run lint`
+
+Запускает ESLint для проверки кода:
+
+- Проверяет соответствие правилам линтинга
+- Находит потенциальные ошибки
+- Проверяет соответствие code style
+
+### ✨ `npm run prettier`
+
+Автоматически форматирует код во всех файлах с расширениями:
+
+- `.ts` - TypeScript файлы
+- `.tsx` - React компоненты
+- `.css` - стили
+- `.json` - конфигурационные файлы
+
+### 👁️ `npm run preview`
+
+Запускает локальный сервер для предпросмотра production сборки:
+
+- Проверка собранного приложения перед деплоем
+
+
+
