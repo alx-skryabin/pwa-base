@@ -8,9 +8,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
-    "preview": "vite preview"
+    "docker-compose": "docker compose up --build",
+    "docker-down": "docker compose down",
+    "docker-clean": "docker compose down --rmi local --volumes"
   },
   "dependencies": {
     "antd": "^6.2.2",

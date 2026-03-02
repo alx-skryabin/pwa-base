@@ -1,0 +1,17 @@
+# =============================================================================
+# Production: сборка приложения (Dockerfile) + nginx на порту 3000.
+# Запуск: npm run docker-compose
+# Остановка: npm run docker-down
+# Остановка и удаление образов/томов: npm run docker-clean
+# =============================================================================
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pwa-base
+    container_name: pwa-base-app
+    ports:
+      - "3000:80"
+    restart: unless-stopped

@@ -1,0 +1,34 @@
+# =============================================================================
+# Исключения из контекста сборки Docker (docker build).
+# Важно: .env.production НЕ исключён — он нужен при сборке prod-образа,
+# чтобы Vite подхватил все VITE_* переменные без прописывания их в Dockerfile.
+# =============================================================================
+
+node_modules
+dist
+dev-dist
+dist-ssr
+*.local
+
+.git
+.gitignore
+# Не исключаем .env.production — используется при npm run build в Dockerfile.
+.env.development
+.env*.local
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.vscode
+.idea
+.DS_Store
+*.md
+!README.md
+
+Dockerfile
+docker-compose*.yml
+.dockerignore
