@@ -5,7 +5,7 @@
 # =============================================================================
 
 node_modules
-dist
+/dist
 dev-dist
 dist-ssr
 *.local
@@ -16,7 +16,7 @@ dist-ssr
 .env.development
 .env*.local
 
-logs
+/logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -25,9 +25,14 @@ pnpm-debug.log*
 
 .vscode
 .idea
+.cursor
 .DS_Store
 *.md
 !README.md
+.firebaserc
+firebase.json
+cypress.config.ts
+docs
 
 Dockerfile
 docker-compose*.yml
