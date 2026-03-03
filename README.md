@@ -61,3 +61,5 @@ npm run dev
 
 ### **Formatter** (lint, prettier, husky) → [документация](docs/formatter.md)
 
+### **Release** (автоподъём версии и теги на master) → [документация](docs/release.md)
+
