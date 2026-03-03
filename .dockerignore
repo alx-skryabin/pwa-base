@@ -26,13 +26,14 @@ pnpm-debug.log*
 .vscode
 .idea
 .cursor
+.husky
 .DS_Store
 *.md
 !README.md
 .firebaserc
 firebase.json
 cypress.config.ts
-docs
+/docs
 
 Dockerfile
 docker-compose*.yml
