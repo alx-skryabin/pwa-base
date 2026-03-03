@@ -46,3 +46,9 @@ coverage
 **/*.test.tsx
 **/*.spec.ts
 **/*.spec.tsx
+
+# Storybook — не нужны в production-образе
+.storybook
+**/*.stories.ts
+**/*.stories.tsx
+storybook-static

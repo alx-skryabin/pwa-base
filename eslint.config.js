@@ -1,3 +1,4 @@
+import storybook from 'eslint-plugin-storybook'
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
@@ -17,6 +18,7 @@ export default defineConfig([
       '*.config.ts',
       'coverage',
       '.vitest',
+      'storybook-static',
     ],
   },
   {
@@ -85,16 +87,12 @@ export default defineConfig([
         version: 'detect',
       },
     },
-  },
-  // Тесты и тестовая конфигурация: отключаем react-refresh (не приложение)
+  }, // Тесты и тестовая конфигурация: отключаем react-refresh (не приложение)
   {
-    files: [
-      '**/*.test.{ts,tsx}',
-      '**/*.spec.{ts,tsx}',
-      'src/shared/config/testing/**',
-    ],
+    files: ['**/*.test.{ts,tsx}', '**/*.spec.{ts,tsx}', 'src/shared/config/testing/**'],
     rules: {
       'react-refresh/only-export-components': 'off',
     },
   },
+  ...storybook.configs['flat/recommended'],
 ])

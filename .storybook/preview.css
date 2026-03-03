@@ -1,0 +1,14 @@
+/* Полноширинный canvas для превью */
+#storybook-root,
+.sb-main-padded {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 1rem !important;
+  box-sizing: border-box !important;
+}
+
+#storybook-root > div,
+[data-storybook="canvas"] {
+  width: 100% !important;
+  max-width: none !important;
+}

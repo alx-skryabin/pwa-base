@@ -64,3 +64,5 @@ npm run dev
 ### **Formatter** (lint, prettier, husky) скрипты → [документация](docs/formatter.md)
 
 ### **Testing** (vitest) скрипты → [документация](docs/testing.md)
+
+### **Storybook** (vitest) скрипты → [документация](docs/storybook.md)

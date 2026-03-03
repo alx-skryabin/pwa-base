@@ -25,25 +25,30 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: [
-        'favicon.svg',
-        'apple-touch-icon.png',
-        'masked-icon.svg',
-        'robots.txt',
-        '*.svg',
-      ],
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
-        runtimeCaching: [],
-      },
-      devOptions: {
-        enabled: true, // Включаем PWA в dev режиме
-        type: 'module',
-        navigateFallback: 'index.html',
-      } as any,
-    }),
+    ...(process.env.STORYBOOK
+      ? []
+      : [
+          VitePWA({
+            registerType: 'autoUpdate',
+            includeAssets: [
+              'favicon.svg',
+              'apple-touch-icon.png',
+              'masked-icon.svg',
+              'robots.txt',
+              '*.svg',
+            ],
+            workbox: {
+              globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+              runtimeCaching: [],
+            },
+            devOptions: {
+              enabled: true,
+              // Включаем PWA в dev режиме
+              type: 'module',
+              navigateFallback: 'index.html',
+            } as any,
+          }),
+        ]),
   ],
   resolve: {
     alias: {

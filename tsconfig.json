@@ -30,9 +30,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     /* Code Style */
     "forceConsistentCasingInFileNames": true,
     "exactOptionalPropertyTypes": false,
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
@@ -58,7 +60,8 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    ".storybook"
   ],
   "exclude": [
     "node_modules",

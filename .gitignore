@@ -31,3 +31,9 @@ dist-ssr
 coverage
 .vitest
 **/vitest.config.*.timestamp-*
+
+# Storybook
+storybook-static
+storybook.log
+*storybook.log
+debug-storybook.log
