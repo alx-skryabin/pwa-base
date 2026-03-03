@@ -13,7 +13,8 @@
 - **Docker** - Для продакшена [[**документация**](docs/docker.md)]
 - **Logger** - Логирование [[**документация**](docs/logger.md)]
 - **FSD** - Архитектура [[**документация**](docs/directories.md)]
-- **ESLint / Prettier / Husky** - линтинг и форматирование
+- **Git Hooks** - Авто версионирование [[**документация**](docs/release.md)]
+- **ESLint / Prettier / Husky** - линтинг и форматирование [[**документация**](docs/formatter.md)]
 - **Ant Design** - библиотека компонентов
 
 ## 📋 Требования
@@ -59,7 +60,4 @@ npm run dev
 
 ### **Docker** скрипты → [документация](docs/docker.md)
 
-### **Formatter** (lint, prettier, husky) → [документация](docs/formatter.md)
-
-### **Release** (автоподъём версии и теги на master) → [документация](docs/release.md)
-
+### **Formatter** (lint, prettier, husky) скрипты → [документация](docs/formatter.md)
