@@ -8,7 +8,16 @@ import { defineConfig } from 'eslint/config'
 
 export default defineConfig([
   {
-    ignores: ['dist', 'dev-dist', 'node_modules', 'build', '*.config.js', '*.config.ts'],
+    ignores: [
+      'dist',
+      'dev-dist',
+      'node_modules',
+      'build',
+      '*.config.js',
+      '*.config.ts',
+      'coverage',
+      '.vitest',
+    ],
   },
   {
     files: ['**/*.{ts,tsx}'],
@@ -21,7 +30,19 @@ export default defineConfig([
     ],
     languageOptions: {
       ecmaVersion: 'latest',
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        // Vitest (для тестовых файлов *.test.* / *.spec.*)
+        describe: 'readonly',
+        it: 'readonly',
+        test: 'readonly',
+        expect: 'readonly',
+        vi: 'readonly',
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
+      },
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
@@ -63,6 +84,17 @@ export default defineConfig([
       react: {
         version: 'detect',
       },
+    },
+  },
+  // Тесты и тестовая конфигурация: отключаем react-refresh (не приложение)
+  {
+    files: [
+      '**/*.test.{ts,tsx}',
+      '**/*.spec.{ts,tsx}',
+      'src/shared/config/testing/**',
+    ],
+    rules: {
+      'react-refresh/only-export-components': 'off',
     },
   },
 ])

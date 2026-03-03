@@ -38,3 +38,11 @@ cypress.config.ts
 Dockerfile
 docker-compose*.yml
 .dockerignore
+
+# Тестирование — не нужны в образе и в контексте сборки
+coverage
+.vitest
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx

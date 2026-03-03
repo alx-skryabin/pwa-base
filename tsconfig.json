@@ -20,7 +20,9 @@
     "jsxImportSource": "react",
     "types": [
       "react",
-      "react-dom"
+      "react-dom",
+      "vitest/globals",
+      "@testing-library/jest-dom"
     ],
     /* Linting */
     "strict": true,

@@ -15,6 +15,7 @@
 - **FSD** - Архитектура [[**документация**](docs/directories.md)]
 - **Git Hooks** - Авто версионирование [[**документация**](docs/release.md)]
 - **ESLint / Prettier / Husky** - линтинг и форматирование [[**документация**](docs/formatter.md)]
+- **Vitest / React Testing Library** - тестирование [[**документация**](docs/testing.md)]
 - **Ant Design** - библиотека компонентов
 
 ## 📋 Требования
@@ -56,8 +57,10 @@ npm run dev
 
 - Проверка собранного приложения перед деплоем
 
----
+## Расширенные скрипты проекта
 
 ### **Docker** скрипты → [документация](docs/docker.md)
 
 ### **Formatter** (lint, prettier, husky) скрипты → [документация](docs/formatter.md)
+
+### **Testing** (vitest) скрипты → [документация](docs/testing.md)
