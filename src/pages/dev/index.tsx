@@ -1,7 +1,7 @@
 import React from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
-import { Button } from 'antd'
 import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { Button } from 'antd'
 
 const Dev: React.FC = () => {
   const meta = useMetaApp()
