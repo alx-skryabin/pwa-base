@@ -60,11 +60,11 @@ jobs:
       - name: Commit and tag
         if: steps.check_skip.outputs.skip != 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
           git add package.json package-lock.json
           V="${{ steps.version.outputs.version }}"
-          git commit -m "release: $V [skip ci]"
+          git commit -m "release: $V"
           git tag -a "v$V" -m "release: $V"
           git tag -f release
           git push origin HEAD:master
