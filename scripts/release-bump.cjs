@@ -36,8 +36,23 @@ run('npm version patch --no-git-tag-version', {
   env: { ...process.env, npm_config_commit_hooks: 'false' },
 })
 
-const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf-8'))
+const pkgPath = path.join(root, 'package.json')
+const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'))
 const V = pkg.version
+
+// releaseTime в формате "01.01.2026 14:32:07"
+const now = new Date()
+const pad = (n) => String(n).padStart(2, '0')
+pkg.releaseTime = [
+  pad(now.getDate()),
+  pad(now.getMonth() + 1),
+  now.getFullYear()
+].join('.') + ' ' + [
+  pad(now.getHours()),
+  pad(now.getMinutes()),
+  pad(now.getSeconds())
+].join(':')
+fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n', 'utf-8')
 
 run('git add package.json package-lock.json')
 run(`git commit -m "release: ${V}"`, { env: { ...process.env, HUSKY: '0' } })
