@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) 
   const { isOnline } = usePWA()
 
   return (
-    <header className="header" aria-label="Шапка сайта">
+    <header className="header" aria-label={'Шапка сайта'}>
       <div className="header-container">
         <NavLink
           to={ROUTES.HOME}
