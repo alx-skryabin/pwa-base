@@ -15,7 +15,7 @@ const Dev: React.FC = () => {
       <div>Name: {meta.name}</div>
       <div>Version: {meta.version}</div>
       <div>Mode: {meta.mode}</div>
-      <div>Build time: {meta.buildTime}</div>
+      <div>Build time: {meta.releaseTime}</div>
       <div>Author: {meta.author}</div>
 
       <br />

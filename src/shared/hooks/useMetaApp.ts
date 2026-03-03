@@ -4,7 +4,7 @@ export const useMetaApp = () => {
   return {
     version: packageJson.version,
     name: packageJson.name,
-    buildTime: packageJson.buildTime,
+    releaseTime: packageJson.releaseTime,
     author: packageJson.author,
     mode: import.meta.env.MODE, // development/production
   }
