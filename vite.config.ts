@@ -59,6 +59,7 @@ export default defineConfig({
       '@widgets': path.resolve(__dirname, './src/widgets'),
       '@features': path.resolve(__dirname, './src/features'),
       '@shared': path.resolve(__dirname, './src/shared'),
+      '@entities': path.resolve(__dirname, './src/entities'),
     },
   },
 })

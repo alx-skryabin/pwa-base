@@ -1,11 +1,13 @@
 import React from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
 import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useSession } from '@entities/session'
 import { Button } from 'antd'
 
 const Dev: React.FC = () => {
   const meta = useMetaApp()
   const { isInstallable, isInstalled, isOnline, promptInstall } = usePWA()
+  const session = useSession()
 
   return (
     <div>
@@ -33,6 +35,11 @@ const Dev: React.FC = () => {
           </Button>
         )}
       </div>
+
+      <br />
+      <h3>User</h3>
+      <div>Session ID: {session.user?.id}</div>
+      <div>Login: {session.user?.login}</div>
     </div>
   )
 }

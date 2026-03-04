@@ -3,13 +3,13 @@ import { useState } from 'react'
 import { Outlet } from 'react-router'
 import { Sidebar } from '@widgets/sidebar'
 import { Header } from '@widgets/header'
-import './layout.css'
+import './user-layout.css'
 
-interface LayoutProps {
+interface UserLayoutProps {
   children?: React.ReactNode
 }
 
-export const Layout: React.FC<LayoutProps> = () => {
+export const UserLayout: React.FC<UserLayoutProps> = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const toggleSidebar = () => {
@@ -21,13 +21,12 @@ export const Layout: React.FC<LayoutProps> = () => {
   }
 
   return (
-    <div className="app-container">
+    <div className="app-container" aria-label="Экран пользователя">
       <Header isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Sidebar
         isSidebarOpen={isSidebarOpen}
         closeSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
       />
-      {/*<main className={`${styles.content} ${!isSidebarOpen ? styles.contentExpanded : ''}`}>*/}
 
       <main
         className={`content ${isSidebarOpen ? 'sidebar-open' : ''}`}

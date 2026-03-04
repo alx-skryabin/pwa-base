@@ -11,6 +11,7 @@ describe('ROUTES', () => {
     expect(ROUTES).toHaveProperty('HOME')
     expect(ROUTES).toHaveProperty('MAP')
     expect(ROUTES).toHaveProperty('DEV')
+    expect(ROUTES).toHaveProperty('LOGIN')
   })
 
   // Главная страница должна быть по корневому пути

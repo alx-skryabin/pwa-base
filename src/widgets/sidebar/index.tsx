@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 import { usePWA } from '@app/pwa/usePWA.ts'
 import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useSession } from '@entities/session'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'
 import { ROUTES } from '@app/routes/path.ts'
@@ -13,13 +15,22 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar }) => {
+  const navigate = useNavigate()
+  const { logout } = useSession()
   const { isInstalled, isInstallable, promptInstall } = usePWA()
   const { version } = useMetaApp()
+
+  const handleLogout = () => {
+    logout()
+    closeSidebar()
+    navigate(ROUTES.LOGIN, { replace: true })
+  }
 
   const menuItems = [
     { path: ROUTES.HOME, icon: '🔔', label: 'Главная' },
     { path: ROUTES.MAP, icon: '📍️', label: 'Карта' },
     { path: ROUTES.DEV, icon: '🔥', label: 'Develop' },
+    { path: ROUTES.LOGIN, icon: '👈', label: 'Login' },
     { path: 'wrong', icon: '⛔', label: 'Wrong' },
   ]
 
@@ -54,6 +65,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
 
       <div className="sidebar-theme">
         <ThemeToggle />
+      </div>
+
+      <div className="sidebar-logout">
+        <Button onClick={handleLogout} block>
+          Выйти
+        </Button>
       </div>
 
       <div className="sidebar-version">

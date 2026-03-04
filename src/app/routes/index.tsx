@@ -1,39 +1,51 @@
 import { createBrowserRouter } from 'react-router'
 import { SuspenseWrapper } from '@app/routes/SuspenseWrapper.tsx'
-import { Layout } from '@widgets/layout'
+import { RequireAuth } from '@app/routes/RequireAuth.tsx'
+import { AuthLayout } from '@widgets/auth-layout'
+import { UserLayout } from '@widgets/user-layout'
 import Home from '@pages/home'
 import Dev from '@pages/dev'
 import Map from '@pages/map'
+import Login from '@pages/login'
 import NotFound from '@pages/not-found'
 import { ROUTES } from '@app/routes/path.ts'
 
-/*Настроить кеширование чанков в оффлайн режиме*/
-// const Home = lazy(() => import('@pages/home'))
-// const Map = lazy(() => import('@/pages/map'))
-// const Dev = lazy(() => import('@/pages/dev'))
-// const NotFound = lazy(() => import('@/pages/not-found'))
-
 export const router = createBrowserRouter([
   {
-    path: ROUTES.HOME,
-    element: <Layout />,
+    path: ROUTES.LOGIN,
+    element: <AuthLayout />,
     children: [
       {
         index: true,
-        element: <SuspenseWrapper children={<Home />} />,
-      },
-      {
-        path: ROUTES.MAP,
-        element: <SuspenseWrapper children={<Map />} />,
-      },
-      {
-        path: ROUTES.DEV,
-        element: <SuspenseWrapper children={<Dev />} />,
-      },
-      {
-        path: '*',
-        element: <SuspenseWrapper children={<NotFound />} />,
+        element: <SuspenseWrapper children={<Login />} />,
       },
     ],
+  },
+  {
+    path: ROUTES.HOME,
+    element: <RequireAuth />,
+    children: [
+      {
+        element: <UserLayout />,
+        children: [
+          {
+            index: true,
+            element: <SuspenseWrapper children={<Home />} />,
+          },
+          {
+            path: ROUTES.MAP,
+            element: <SuspenseWrapper children={<Map />} />,
+          },
+          {
+            path: ROUTES.DEV,
+            element: <SuspenseWrapper children={<Dev />} />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    path: '*',
+    element: <SuspenseWrapper children={<NotFound />} />,
   },
 ])
