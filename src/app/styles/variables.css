@@ -7,7 +7,7 @@
   --sidebar-width: 220px;
 
   /* z-index */
-  --z-pwa: 1100;
-  --z-header: 1000;
-  --z-sidebar: 900;
+  --z-pwa: 110;
+  --z-header: 100;
+  --z-sidebar: 90;
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { PWAContextType } from '@app/pwa/PWAContext.ts'
+import { PWAContextType } from '@app/pwa/context.ts'
 import { pwaLogger, systemLogger } from '@shared/libs/logger'
 
 export type BeforeInstallPromptEvent = Event & {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, PropsWithChildren } from 'react'
 import { ConfigProvider, App as AntdApp } from 'antd'
-import { ThemeContext } from '@app/theme/ThemeContext.ts'
+import { ThemeContext } from '@app/theme/context.ts'
 import { darkTheme, lightTheme } from '@app/theme/config.ts'
 import { storeLogger } from '@shared/libs/logger'
 import './index.css'

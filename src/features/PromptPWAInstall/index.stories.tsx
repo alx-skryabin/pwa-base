@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { fn } from 'storybook/test'
-import { PWAContext } from '@app/pwa/PWAContext.ts'
-import type { PWAContextType } from '@app/pwa/PWAContext.ts'
+import { PWAContext } from '@app/pwa/context.ts'
+import type { PWAContextType } from '@app/pwa/context.ts'
 import PromptPWAInstall from '@features/PromptPWAInstall/index.tsx'
 
 const mockPWAContext: PWAContextType = {

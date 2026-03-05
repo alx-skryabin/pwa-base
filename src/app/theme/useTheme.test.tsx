@@ -7,7 +7,7 @@
 import { describe, it, expect } from 'vitest'
 import { renderHook } from '@testing-library/react'
 import React from 'react'
-import { ThemeContext } from '@app/theme/ThemeContext'
+import { ThemeContext } from '@app/theme/context.ts'
 import { useTheme } from './useTheme'
 
 describe('useTheme', () => {

@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import { usePWAInit } from '@app/pwa/usePWAInit.ts'
-import { PWAContext } from '@app/pwa/PWAContext.ts'
+import { PWAContext } from '@app/pwa/context.ts'
 import PromptPWAInstall from '@features/PromptPWAInstall'
 
 export const PWAProvider: React.FC<PropsWithChildren> = ({ children }) => {

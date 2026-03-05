@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
-import { ThemeContext } from '@app/theme/ThemeContext'
+import { ThemeContext } from '@app/theme/context.ts'
 
 interface ThemeProviderMockProps extends PropsWithChildren {
   isDarkMode?: boolean

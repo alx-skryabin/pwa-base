@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router'
+import { FullScreenLoader } from '@shared/ui/FullScreenLoader'
 import { useSession } from '@entities/session'
 import { ROUTES } from '@app/routes/path'
 
@@ -12,7 +13,7 @@ export const RequireAuth: React.FC = () => {
   const location = useLocation()
 
   if (!isInitialized) {
-    return <div>Загрузка...</div>
+    return <FullScreenLoader size="large" />
   }
 
   if (!isAuthenticated) {
