@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router'
 import { SuspenseWrapper } from '@app/routes/SuspenseWrapper.tsx'
+import { RouteErrorFallback } from '@app/routes/RouteErrorFallback.tsx'
 import { RequireAuth } from '@app/routes/RequireAuth.tsx'
 import { AuthLayout } from '@widgets/auth-layout'
 import { UserLayout } from '@widgets/user-layout'
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
   {
     path: ROUTES.LOGIN,
     element: <AuthLayout />,
+    errorElement: <RouteErrorFallback />,
     children: [
       {
         index: true,
@@ -24,6 +26,7 @@ export const router = createBrowserRouter([
   {
     path: ROUTES.HOME,
     element: <RequireAuth />,
+    errorElement: <RouteErrorFallback />,
     children: [
       {
         element: <UserLayout />,
@@ -47,5 +50,6 @@ export const router = createBrowserRouter([
   {
     path: '*',
     element: <SuspenseWrapper children={<NotFound />} />,
+    errorElement: <RouteErrorFallback />,
   },
 ])
