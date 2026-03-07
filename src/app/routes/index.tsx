@@ -8,7 +8,7 @@ import Home from '@pages/home'
 import Dev from '@pages/dev'
 import Map from '@pages/map'
 import Login from '@pages/login'
-import NotFound from '@pages/not-found'
+import NotFound from '@widgets/not-found-layout'
 import { ROUTES } from '@app/routes/path.ts'
 
 export const router = createBrowserRouter([

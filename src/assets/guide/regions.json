@@ -1,0 +1,714 @@
+[
+  {
+    "name": "Республика Адыгея",
+    "center": "Майкоп",
+    "region": ["01"],
+    "type": "Республика",
+    "population": 463167,
+    "populationCenter": 141970
+  },
+  {
+    "name": "Республика Башкортостан",
+    "center": "Уфа",
+    "region": ["02", "102"],
+    "type": "Республика",
+    "population": 4083000,
+    "populationCenter": 1120547
+  },
+  {
+    "name": "Республика Бурятия",
+    "center": "Улан-Удэ",
+    "region": ["03"],
+    "type": "Республика",
+    "population": 985937,
+    "populationCenter": 437565
+  },
+  {
+    "name": "Республика Алтай",
+    "center": "Горно-Алтайск",
+    "region": ["04"],
+    "type": "Республика",
+    "population": 220140,
+    "populationCenter": 64368
+  },
+  {
+    "name": "Республика Дагестан",
+    "center": "Махачкала",
+    "region": ["05"],
+    "type": "Республика",
+    "population": 3131300,
+    "populationCenter": 717618
+  },
+  {
+    "name": "Республика Ингушетия",
+    "center": "Магас",
+    "region": ["06"],
+    "type": "Республика",
+    "population": 507061,
+    "populationCenter": 10487
+  },
+  {
+    "name": "Кабардино-Балкарская Республика",
+    "center": "Нальчик",
+    "region": ["07"],
+    "type": "Республика",
+    "population": 868350,
+    "populationCenter": 239710
+  },
+  {
+    "name": "Республика Калмыкия",
+    "center": "Элиста",
+    "region": ["08"],
+    "type": "Республика",
+    "population": 267133,
+    "populationCenter": 103132
+  },
+  {
+    "name": "Карачаево-Черкесская Республика",
+    "center": "Черкесск",
+    "region": ["09"],
+    "type": "Республика",
+    "population": 465528,
+    "populationCenter": 122395
+  },
+  {
+    "name": "Республика Карелия",
+    "center": "Петрозаводск",
+    "region": ["10"],
+    "type": "Республика",
+    "population": 614064,
+    "populationCenter": 280170
+  },
+  {
+    "name": "Республика Коми",
+    "center": "Сыктывкар",
+    "region": ["11"],
+    "type": "Республика",
+    "population": 737322,
+    "populationCenter": 245313
+  },
+  {
+    "name": "Республика Марий Эл",
+    "center": "Йошкар-Ола",
+    "region": ["12"],
+    "type": "Республика",
+    "population": 679417,
+    "populationCenter": 288432
+  },
+  {
+    "name": "Республика Мордовия",
+    "center": "Саранск",
+    "region": ["13", "113"],
+    "type": "Республика",
+    "population": 778965,
+    "populationCenter": 318578
+  },
+  {
+    "name": "Республика Саха (Якутия)",
+    "center": "Якутск",
+    "region": ["14"],
+    "type": "Республика",
+    "population": 981971,
+    "populationCenter": 330615
+  },
+  {
+    "name": "Республика Северная Осетия-Алания",
+    "center": "Владикавказ",
+    "region": ["15"],
+    "type": "Республика",
+    "population": 693098,
+    "populationCenter": 301543
+  },
+  {
+    "name": "Республика Татарстан",
+    "center": "Казань",
+    "region": ["16", "116", "716"],
+    "type": "Республика",
+    "population": 3902000,
+    "populationCenter": 1243500
+  },
+  {
+    "name": "Республика Тыва",
+    "center": "Кызыл",
+    "region": ["17"],
+    "type": "Республика",
+    "population": 327383,
+    "populationCenter": 120067
+  },
+  {
+    "name": "Удмуртская Республика",
+    "center": "Ижевск",
+    "region": ["18"],
+    "type": "Республика",
+    "population": 1493000,
+    "populationCenter": 648213
+  },
+  {
+    "name": "Республика Хакасия",
+    "center": "Абакан",
+    "region": ["19"],
+    "type": "Республика",
+    "population": 532036,
+    "populationCenter": 187339
+  },
+  {
+    "name": "Чеченская Республика",
+    "center": "Грозный",
+    "region": ["20", "95"],
+    "type": "Республика",
+    "population": 1478000,
+    "populationCenter": 324602
+  },
+  {
+    "name": "Чувашская Республика",
+    "center": "Чебоксары",
+    "region": ["21", "121"],
+    "type": "Республика",
+    "population": 1208000,
+    "populationCenter": 497618
+  },
+  {
+    "name": "Алтайский край",
+    "center": "Барнаул",
+    "region": ["22"],
+    "type": "Край",
+    "population": 2310000,
+    "populationCenter": 630877
+  },
+  {
+    "name": "Краснодарский край",
+    "center": "Краснодар",
+    "region": ["23", "93", "123"],
+    "type": "Край",
+    "population": 5684000,
+    "populationCenter": 899541
+  },
+  {
+    "name": "Красноярский край",
+    "center": "Красноярск",
+    "region": ["24", "124"],
+    "type": "Край",
+    "population": 2858000,
+    "populationCenter": 1090811
+  },
+  {
+    "name": "Приморский край",
+    "center": "Владивосток",
+    "region": ["25", "125"],
+    "type": "Край",
+    "population": 1845000,
+    "populationCenter": 592069
+  },
+  {
+    "name": "Ставропольский край",
+    "center": "Ставрополь",
+    "region": ["26", "126"],
+    "type": "Край",
+    "population": 2793000,
+    "populationCenter": 547443
+  },
+  {
+    "name": "Хабаровский край",
+    "center": "Хабаровск",
+    "region": ["27"],
+    "type": "Край",
+    "population": 1290000,
+    "populationCenter": 615570
+  },
+  {
+    "name": "Амурская область",
+    "center": "Благовещенск",
+    "region": ["28"],
+    "type": "Область",
+    "population": 766146,
+    "populationCenter": 241000
+  },
+  {
+    "name": "Архангельская область",
+    "center": "Архангельск",
+    "region": ["29"],
+    "type": "Область",
+    "population": 1045000,
+    "populationCenter": 344630
+  },
+  {
+    "name": "Астраханская область",
+    "center": "Астрахань",
+    "region": ["30"],
+    "type": "Область",
+    "population": 1019000,
+    "populationCenter": 524085
+  },
+  {
+    "name": "Белгородская область",
+    "center": "Белгород",
+    "region": ["31"],
+    "type": "Область",
+    "population": 1541000,
+    "populationCenter": 384425
+  },
+  {
+    "name": "Брянская область",
+    "center": "Брянск",
+    "region": ["32"],
+    "type": "Область",
+    "population": 1182000,
+    "populationCenter": 399579
+  },
+  {
+    "name": "Владимирская область",
+    "center": "Владимир",
+    "region": ["33"],
+    "type": "Область",
+    "population": 1342000,
+    "populationCenter": 349951
+  },
+  {
+    "name": "Волгоградская область",
+    "center": "Волгоград",
+    "region": ["34", "134"],
+    "type": "Область",
+    "population": 2490000,
+    "populationCenter": 1013533
+  },
+  {
+    "name": "Вологодская область",
+    "center": "Вологда",
+    "region": ["35"],
+    "type": "Область",
+    "population": 1160000,
+    "populationCenter": 312420
+  },
+  {
+    "name": "Воронежская область",
+    "center": "Воронеж",
+    "region": ["36", "136"],
+    "type": "Область",
+    "population": 2308000,
+    "populationCenter": 1047549
+  },
+  {
+    "name": "Ивановская область",
+    "center": "Иваново",
+    "region": ["37"],
+    "type": "Область",
+    "population": 1000000,
+    "populationCenter": 404598
+  },
+  {
+    "name": "Иркутская область",
+    "center": "Иркутск",
+    "region": ["38", "138"],
+    "type": "Область",
+    "population": 2406000,
+    "populationCenter": 606137
+  },
+  {
+    "name": "Калининградская область",
+    "center": "Калининград",
+    "region": ["39", "91"],
+    "type": "Область",
+    "population": 1011000,
+    "populationCenter": 498628
+  },
+  {
+    "name": "Калужская область",
+    "center": "Калуга",
+    "region": ["40"],
+    "type": "Область",
+    "population": 1006000,
+    "populationCenter": 337058
+  },
+  {
+    "name": "Камчатский край",
+    "center": "Петропавловск-Камчатский",
+    "region": ["41"],
+    "type": "Край",
+    "population": 311667,
+    "populationCenter": 164900
+  },
+  {
+    "name": "Кемеровская область",
+    "center": "Кемерово",
+    "region": ["42", "142"],
+    "type": "Область",
+    "population": 2658000,
+    "populationCenter": 552546
+  },
+  {
+    "name": "Кировская область",
+    "center": "Киров",
+    "region": ["43"],
+    "type": "Область",
+    "population": 1256000,
+    "populationCenter": 521091
+  },
+  {
+    "name": "Костромская область",
+    "center": "Кострома",
+    "region": ["44"],
+    "type": "Область",
+    "population": 633385,
+    "populationCenter": 276691
+  },
+  {
+    "name": "Курганская область",
+    "center": "Курган",
+    "region": ["45"],
+    "type": "Область",
+    "population": 827166,
+    "populationCenter": 312364
+  },
+  {
+    "name": "Курская область",
+    "center": "Курск",
+    "region": ["46"],
+    "type": "Область",
+    "population": 1102000,
+    "populationCenter": 450977
+  },
+  {
+    "name": "Ленинградская область",
+    "center": "Санкт-Петербург",
+    "region": ["47", "147"],
+    "type": "Область",
+    "population": 1849000,
+    "populationCenter": 5351935
+  },
+  {
+    "name": "Липецкая область",
+    "center": "Липецк",
+    "region": ["48"],
+    "type": "Область",
+    "population": 1136000,
+    "populationCenter": 496447
+  },
+  {
+    "name": "Магаданская область",
+    "center": "Магадан",
+    "region": ["49"],
+    "type": "Область",
+    "population": 139034,
+    "populationCenter": 90381
+  },
+  {
+    "name": "Московская область",
+    "center": "Москва",
+    "region": ["50", "90", "150", "190", "750"],
+    "type": "Область",
+    "population": 7700000,
+    "populationCenter": 13010000
+  },
+  {
+    "name": "Мурманская область",
+    "center": "Мурманск",
+    "region": ["51"],
+    "type": "Область",
+    "population": 732864,
+    "populationCenter": 270384
+  },
+  {
+    "name": "Нижегородская область",
+    "center": "Нижний Новгород",
+    "region": ["52", "152"],
+    "type": "Область",
+    "population": 3179000,
+    "populationCenter": 1259013
+  },
+  {
+    "name": "Новгородская область",
+    "center": "Великий Новгород",
+    "region": ["53"],
+    "type": "Область",
+    "population": 596508,
+    "populationCenter": 224297
+  },
+  {
+    "name": "Новосибирская область",
+    "center": "Новосибирск",
+    "region": ["54", "154"],
+    "type": "Область",
+    "population": 2792000,
+    "populationCenter": 1612833
+  },
+  {
+    "name": "Омская область",
+    "center": "Омск",
+    "region": ["55", "155"],
+    "type": "Область",
+    "population": 1926000,
+    "populationCenter": 1172070
+  },
+  {
+    "name": "Оренбургская область",
+    "center": "Оренбург",
+    "region": ["56", "156"],
+    "type": "Область",
+    "population": 1959000,
+    "populationCenter": 572188
+  },
+  {
+    "name": "Орловская область",
+    "center": "Орел",
+    "region": ["57"],
+    "type": "Область",
+    "population": 734363,
+    "populationCenter": 308838
+  },
+  {
+    "name": "Пензенская область",
+    "center": "Пенза",
+    "region": ["58"],
+    "type": "Область",
+    "population": 1308000,
+    "populationCenter": 517311
+  },
+  {
+    "name": "Пермский край",
+    "center": "Пермь",
+    "region": ["59", "159"],
+    "type": "Край",
+    "population": 2603000,
+    "populationCenter": 1024712
+  },
+  {
+    "name": "Псковская область",
+    "center": "Псков",
+    "region": ["60"],
+    "type": "Область",
+    "population": 626115,
+    "populationCenter": 209426
+  },
+  {
+    "name": "Ростовская область",
+    "center": "Ростов-на-Дону",
+    "region": ["61", "161", "761"],
+    "type": "Область",
+    "population": 4186000,
+    "populationCenter": 1130305
+  },
+  {
+    "name": "Рязанская область",
+    "center": "Рязань",
+    "region": ["62"],
+    "type": "Область",
+    "population": 1112000,
+    "populationCenter": 528347
+  },
+  {
+    "name": "Самарская область",
+    "center": "Самара",
+    "region": ["63", "163", "763"],
+    "type": "Область",
+    "population": 3173000,
+    "populationCenter": 1153652
+  },
+  {
+    "name": "Саратовская область",
+    "center": "Саратов",
+    "region": ["64", "164"],
+    "type": "Область",
+    "population": 2429000,
+    "populationCenter": 841902
+  },
+  {
+    "name": "Сахалинская область",
+    "center": "Южно-Сахалинск",
+    "region": ["65"],
+    "type": "Область",
+    "population": 487344,
+    "populationCenter": 200636
+  },
+  {
+    "name": "Свердловская область",
+    "center": "Екатеринбург",
+    "region": ["66", "96", "196"],
+    "type": "Область",
+    "population": 4313000,
+    "populationCenter": 1495066
+  },
+  {
+    "name": "Смоленская область",
+    "center": "Смоленск",
+    "region": ["67"],
+    "type": "Область",
+    "population": 921127,
+    "populationCenter": 316570
+  },
+  {
+    "name": "Тамбовская область",
+    "center": "Тамбов",
+    "region": ["68"],
+    "type": "Область",
+    "population": 1016000,
+    "populationCenter": 289693
+  },
+  {
+    "name": "Тверская область",
+    "center": "Тверь",
+    "region": ["69"],
+    "type": "Область",
+    "population": 1260000,
+    "populationCenter": 416442
+  },
+  {
+    "name": "Томская область",
+    "center": "Томск",
+    "region": ["70"],
+    "type": "Область",
+    "population": 1074000,
+    "populationCenter": 556478
+  },
+  {
+    "name": "Тульская область",
+    "center": "Тула",
+    "region": ["71"],
+    "type": "Область",
+    "population": 1472000,
+    "populationCenter": 473622
+  },
+  {
+    "name": "Тюменская область",
+    "center": "Тюмень",
+    "region": ["72", "172"],
+    "type": "Область",
+    "population": 1543000,
+    "populationCenter": 768358
+  },
+  {
+    "name": "Ульяновская область",
+    "center": "Ульяновск",
+    "region": ["73", "173"],
+    "type": "Область",
+    "population": 1224000,
+    "populationCenter": 617378
+  },
+  {
+    "name": "Челябинская область",
+    "center": "Челябинск",
+    "region": ["74", "174", "774"],
+    "type": "Область",
+    "population": 3463000,
+    "populationCenter": 1194370
+  },
+  {
+    "name": "Забайкальский край",
+    "center": "Чита",
+    "region": ["75", "80"],
+    "type": "Край",
+    "population": 1055000,
+    "populationCenter": 334427
+  },
+  {
+    "name": "Ярославская область",
+    "center": "Ярославль",
+    "region": ["76"],
+    "type": "Область",
+    "population": 1254000,
+    "populationCenter": 601403
+  },
+  {
+    "name": "Москва",
+    "center": "Москва",
+    "region": ["77", "97", "99", "177", "197", "199", "777", "799"],
+    "type": "Город федерального значения",
+    "population": 13010000,
+    "populationCenter": 13010000
+  },
+  {
+    "name": "Санкт-Петербург",
+    "center": "Санкт-Петербург",
+    "region": ["78", "98", "178", "198"],
+    "type": "Город федерального значения",
+    "population": 5351935,
+    "populationCenter": 5351935
+  },
+  {
+    "name": "Еврейская автономная область",
+    "center": "Биробиджан",
+    "region": ["79"],
+    "type": "Автономная область",
+    "population": 156500,
+    "populationCenter": 70300
+  },
+  {
+    "name": "Ненецкий автономный округ",
+    "center": "Нарьян-Мар",
+    "region": ["83"],
+    "type": "Автономный округ",
+    "population": 44000,
+    "populationCenter": 25300
+  },
+  {
+    "name": "Ханты-Мансийский автономный округ - Югра",
+    "center": "Ханты-Мансийск",
+    "region": ["86", "186"],
+    "type": "Автономный округ",
+    "population": 1711000,
+    "populationCenter": 101466
+  },
+  {
+    "name": "Чукотский автономный округ",
+    "center": "Анадырь",
+    "region": ["87"],
+    "type": "Автономный округ",
+    "population": 50000,
+    "populationCenter": 15800
+  },
+  {
+    "name": "Ямало-Ненецкий автономный округ",
+    "center": "Салехард",
+    "region": ["89"],
+    "type": "Автономный округ",
+    "population": 546170,
+    "populationCenter": 48500
+  },
+  {
+    "name": "Республика Крым",
+    "center": "Симферополь",
+    "region": ["82"],
+    "type": "Республика",
+    "population": 1914000,
+    "populationCenter": 332317
+  },
+  {
+    "name": "Севастополь",
+    "center": "Севастополь",
+    "region": ["92"],
+    "type": "Город федерального значения",
+    "population": 547820,
+    "populationCenter": 547820
+  },
+  {
+    "name": "Донецкая Народная Республика",
+    "center": "Донецк",
+    "region": ["80"],
+    "type": "Республика",
+    "population": 2200000,
+    "populationCenter": 905000
+  },
+  {
+    "name": "Луганская Народная Республика",
+    "center": "Луганск",
+    "region": ["81"],
+    "type": "Республика",
+    "population": 1400000,
+    "populationCenter": 400000
+  },
+  {
+    "name": "Запорожская область",
+    "center": "Мелитополь",
+    "region": ["85"],
+    "type": "Область",
+    "population": 1400000,
+    "populationCenter": 150000
+  },
+  {
+    "name": "Херсонская область",
+    "center": "Геническ",
+    "region": ["84"],
+    "type": "Область",
+    "population": 1000000,
+    "populationCenter": 50000
+  }
+]

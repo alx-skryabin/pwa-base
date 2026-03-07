@@ -1,6 +1,6 @@
 import React from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
-import logo from '@assets/logo.png'
+import logo from '@assets/img/logo.png'
 import { NavLink } from 'react-router'
 import { ROUTES } from '@app/routes/path.ts'
 import HamburgerToggle from '@features/HamburgerToggle'

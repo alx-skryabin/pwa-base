@@ -20,11 +20,17 @@ export const ErrorLayout = ({ message, isHomeBtn }: ErrorLayoutProps) => {
   return (
     <div className="error-container">
       <div className="error-content" aria-label="Ошибка приложения" role="alert">
-        <h2>Что-то пошло не так!</h2>
+        <h1>Что-то пошло не так!</h1>
         {isLocal() ? <p>{message}</p> : <p>Мы уже выясняем причину</p>}
 
-        <Button onClick={handleRetry}>Попробовать снова</Button>
-        {isHomeBtn && <Button onClick={handleHome}>Вернуться на главную</Button>}
+        <Button size="large" onClick={handleRetry}>
+          Попробовать снова
+        </Button>
+        {isHomeBtn && (
+          <Button size="large" onClick={handleHome}>
+            Вернуться на главную
+          </Button>
+        )}
       </div>
     </div>
   )
