@@ -1,6 +1,16 @@
 @import 'antd/dist/reset.css';
 @import 'app/styles/variables.css';
 
+/* Темная тема для body */
+body:has(#root .theme.theme__dark) {
+  background-color: #0e1621;
+}
+
+/* Светлая тема для body */
+body:has(#root .theme.theme__light) {
+  background-color: #dddddd;
+}
+
 .root {
   display: flex;
   flex-direction: column;

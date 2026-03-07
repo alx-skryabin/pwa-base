@@ -3,6 +3,10 @@
 declare module '*.png'
 declare module '*.svg'
 declare module '*.jpg'
+declare module '*.json' {
+  const value: unknown
+  export default value
+}
 
 interface ImportMetaEnv {
   // Логгер

@@ -200,12 +200,12 @@ class BaseLogger {
 
   public time(label: string): void {
     if (!this.shouldLog('debug')) return
-    console.time(`${this.section}:${label}`)
+    console.time(`[${this.section}] [TIME]: ${label}`)
   }
 
   public timeEnd(label: string): void {
     if (!this.shouldLog('debug')) return
-    console.timeEnd(`${this.section}:${label}`)
+    console.timeEnd(`[${this.section}] [TIME]: ${label}`)
   }
 
   public group(label: string, collapsed: boolean = false): void {
