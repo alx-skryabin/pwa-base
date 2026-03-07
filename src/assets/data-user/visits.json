@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "isMagnet": true,
+    "regionId": 26,
+    "countryId": 1,
+    "continentId": 1
+  },
+  {
+    "id": 2,
+    "isMagnet": false,
+    "regionId": 25,
+    "countryId": 1,
+    "continentId": 1
+  },
+  {
+    "id": 3,
+    "isMagnet": true,
+    "regionId": 23,
+    "countryId": 1,
+    "continentId": 1
+  },
+  {
+    "id": 4,
+    "isMagnet": false,
+    "regionId": 1,
+    "countryId": 2,
+    "continentId": 1
+  },
+  {
+    "id": 5,
+    "isMagnet": false,
+    "regionId": 2,
+    "countryId": 116,
+    "continentId": 3
+  }
+]

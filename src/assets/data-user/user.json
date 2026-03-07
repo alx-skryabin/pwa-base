@@ -1,0 +1,12 @@
+{
+  "sk": {
+    "login": "sk",
+    "name": "Aleksandr",
+    "role": 1
+  },
+  "demo": {
+    "login": "demo",
+    "name": "Demo",
+    "role": 2
+  }
+}

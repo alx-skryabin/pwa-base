@@ -2,22 +2,23 @@ import { openDb, bulkPut, count, DB_VERSION } from '@shared/libs/indexedDb'
 import { GUIDE_STORE_NAMES, type GuideStoreName, type GuideRecord } from '@entities/guide'
 import { storeLogger } from '@shared/libs/logger'
 
-import continentsData from '@assets/guide/guide-continents.json'
-import countriesData from '@assets/guide/guide-countries.json'
-import regionsData from '@assets/guide/guide-regions.json'
+import continentsData from '@assets/data-guides/continents.json'
+import countriesData from '@assets/data-guides/countries.json'
+import regionsRusData from '@assets/data-guides/regions-rus.json'
 
 /** Данные для первичного заполнения store; ключи должны совпадать с GUIDE_STORE_NAMES.
  * При добавлении справочника — импорт + запись сюда. */
 const GUIDE_DATA: Record<GuideStoreName, GuideRecord[]> = {
   continents: continentsData as GuideRecord[],
   countries: countriesData as GuideRecord[],
-  regions: regionsData as GuideRecord[],
+  regionsRus: regionsRusData as GuideRecord[],
 }
 
 function createStores(db: IDBDatabase): void {
   for (const storeName of GUIDE_STORE_NAMES) {
     if (!db.objectStoreNames.contains(storeName)) {
       db.createObjectStore(storeName, { keyPath: 'id' })
+      // create index
     }
   }
 }

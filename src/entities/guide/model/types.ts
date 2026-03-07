@@ -7,7 +7,7 @@ export interface GuideRecord {
 
 /** Список имён объектных хранилищ (таблиц) справочников в IndexedDB.
  * При добавлении нового справочника — добавить сюда и в GUIDE_JSON_FILES. */
-export const GUIDE_STORE_NAMES = ['continents', 'countries', 'regions'] as const
+export const GUIDE_STORE_NAMES = ['continents', 'countries', 'regionsRus'] as const
 export type GuideStoreName = (typeof GUIDE_STORE_NAMES)[number]
 
 /**
@@ -15,7 +15,7 @@ export type GuideStoreName = (typeof GUIDE_STORE_NAMES)[number]
  * Нужен как единый справочник и для возможной динамической загрузки по имени файла.
  */
 export const GUIDE_JSON_FILES: Record<GuideStoreName, string> = {
-  continents: 'guide-continents.json',
-  countries: 'guide-countries.json',
-  regions: 'guide-regions.json',
+  continents: 'continents.json',
+  countries: 'countries.json',
+  regionsRus: 'regions-rus.json',
 }

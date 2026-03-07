@@ -16,24 +16,26 @@
 
 ## Как добавить новый справочник
 
-1. **Добавить JSON-файл** в `src/assets/guide/`, имя с префиксом `guide-`, например:  
-   `guide-cities.json`.  
+1. **Добавить JSON-файл** в `src/assets/guide/`, например:  
+   `cities.json`.  
    Каждая запись в JSON должна содержать поле **`id`** (число) — оно используется как keyPath в
    IndexedDB.
 
 2. **Зарегистрировать store в entities/guide**  
    В `src/entities/guide/model/types.ts`:
-  - Добавить имя store в массив `GUIDE_STORE_NAMES`, например:  
-    `['continents', 'countries', 'regions', 'cities']`
-  - Добавить запись в `GUIDE_JSON_FILES`:  
-    `cities: 'guide-cities.json'`
+
+- Добавить имя store в массив `GUIDE_STORE_NAMES`, например:  
+  `['continents', 'countries', 'regions', 'cities']`
+- Добавить запись в `GUIDE_JSON_FILES`:  
+  `cities: 'cities.json'`
 
 3. **Подключить данные в app/init**  
    В `src/app/init/initGuideDb.ts`:
-  - Добавить импорт:  
-    `import citiesData from '@assets/guide/guide-cities.json'`
-  - Добавить в объект `GUIDE_DATA`:  
-    `cities: citiesData as GuideRecord[]`
+
+- Добавить импорт:  
+  `import citiesData from '@assets/guide/cities.json'`
+- Добавить в объект `GUIDE_DATA`:  
+  `cities: citiesData as GuideRecord[]`
 
 После этого при первом запуске (или после повышения `DB_VERSION`) будет создано хранилище `cities` и
 заполнено из JSON.
