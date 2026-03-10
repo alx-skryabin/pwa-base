@@ -1,18 +1,35 @@
 import React from 'react'
-import { Form, Input, Button, Card } from 'antd'
-import { useNavigate, useLocation, Navigate } from 'react-router'
+import { Form, Input, Button, Card, App } from 'antd'
+import { useLocation, Navigate } from 'react-router'
 import { useSession } from '@entities/session'
 import { ROUTES } from '@app/routes/path'
-import { apiLogger } from '@shared/libs/logger'
+import type { SessionUser } from '@entities/session'
+
+import usersData from '@assets/data-user/users.json'
+
+/** Формат записи в users.json: ключ — логин, значение — данные пользователя. */
+const users = usersData as Record<string, { login: string; name: string; role: number }>
 
 interface LoginFormValues {
   login: string
   password: string
 }
 
+/** Проверка по users.json: пользователь есть и пароль совпадает с логином (имитация). */
+function findUser(login: string, password: string): SessionUser | null {
+  const u = users[login]
+  if (!u || password !== u.login) return null
+  return {
+    id: u.login,
+    login: u.login,
+    name: u.name,
+    role: u.role,
+  }
+}
+
 const Login: React.FC = () => {
+  const { message } = App.useApp()
   const { login, isAuthenticated } = useSession()
-  const navigate = useNavigate()
   const location = useLocation()
   const from = (location.state as { from?: { pathname: string } })?.from?.pathname ?? ROUTES.HOME
 
@@ -20,14 +37,17 @@ const Login: React.FC = () => {
     return <Navigate to={from} replace />
   }
 
-  const onFinish = (values: LoginFormValues) => {
-    // Заглушка: после подключения API здесь вызов auth API и затем login(user)
-    apiLogger.info('Sending login form')
-    login({
-      id: '1',
-      login: values.login,
-    })
-    navigate(from, { replace: true })
+  const onFinish = async (values: LoginFormValues) => {
+    const user = findUser(values.login.trim(), values.password)
+    if (!user) {
+      message.error('Неверный логин или пароль')
+      return
+    }
+    try {
+      await login(user)
+    } catch {
+      message.error('Ошибка входа')
+    }
   }
 
   return (

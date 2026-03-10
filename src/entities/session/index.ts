@@ -1,4 +1,5 @@
 export { SessionProvider } from './model/sessionContext'
 export { SessionContext } from './model/context'
 export { useSession } from './model/useSession'
+export { SESSION_STORE_NAMES } from '@shared/libs/indexedDb'
 export type { SessionUser, SessionState } from './model/types'

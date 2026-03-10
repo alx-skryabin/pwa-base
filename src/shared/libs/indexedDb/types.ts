@@ -1,5 +1,5 @@
 /** Текущая версия схемы БД. При увеличении в onUpgradeNeeded пересоздаются все store. */
-export const DB_VERSION = 1
+export const DB_VERSION = 6
 
 export type StoreName = string
 

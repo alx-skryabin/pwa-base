@@ -1,2 +1,3 @@
-export { GUIDE_STORE_NAMES, GUIDE_JSON_FILES } from './model/types'
-export type { GuideRecord, GuideStoreName } from './model/types'
+export { GUIDE_STORE_NAMES } from '@shared/libs/indexedDb'
+export type { GuideStoreName } from '@shared/libs/indexedDb'
+export type { GuideRecord } from './model/types'

@@ -3,31 +3,17 @@ import type { SessionState, SessionUser } from './types'
 import type { SessionContextValue } from './context'
 import { SessionContext } from './context'
 import { authLogger, storeLogger } from '@shared/libs/logger'
+import { readCurrentUser, writeToStores, clearStoresList, type UserRecord } from './sessionStorage'
+import { SESSION_STORE_NAMES, USER_STORE_KEY } from '@shared/libs/indexedDb'
+import { useAppDb } from '@shared/hooks/useAppDb'
+import visitsData from '@assets/data-user/visits.json'
 
-const STORAGE_KEY = 'app_session'
-
-function readSessionFromStorage(): SessionUser | null {
-  if (typeof window === 'undefined') return null
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY)
-    if (!raw) return null
-    const data = JSON.parse(raw) as unknown
-    if (data && typeof data === 'object' && 'id' in data && 'login' in data) {
-      return { id: String((data as SessionUser).id), login: String((data as SessionUser).login) }
-    }
-    return null
-  } catch {
-    return null
-  }
-}
-
-function saveSessionToStorage(user: SessionUser | null): void {
-  if (typeof window === 'undefined') return
-  if (user) {
-    storeLogger.info(STORAGE_KEY, user)
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(user))
-  } else {
-    window.localStorage.removeItem(STORAGE_KEY)
+function toSessionUser(record: UserRecord): SessionUser {
+  return {
+    id: String(record.id),
+    login: record.login,
+    name: record.name,
+    role: record.role,
   }
 }
 
@@ -43,38 +29,68 @@ interface SessionProviderProps {
 
 export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) => {
   const [state, setState] = useState<SessionState>(initialState)
+  const { dbName, version } = useAppDb()
+  const dbOptions = useMemo(() => ({ dbName, version }), [dbName, version])
 
   useEffect(() => {
-    const user = readSessionFromStorage()
-    authLogger.info(user ? 'Session recovery' : 'Session failed', user)
-    queueMicrotask(() => {
-      setState({
-        user,
-        isAuthenticated: !!user,
-        isInitialized: true,
+    readCurrentUser<UserRecord>(dbOptions)
+      .then(record => {
+        const user = record ? toSessionUser(record) : null
+        authLogger.info(user ? 'Session recovery from IDB' : 'No session', user)
+        setState({
+          user,
+          isAuthenticated: !!user,
+          isInitialized: true,
+        })
       })
-    })
-  }, [])
+      .catch(err => {
+        storeLogger.error('Session read failed', err)
+        setState({
+          user: null,
+          isAuthenticated: false,
+          isInitialized: true,
+        })
+      })
+  }, [dbOptions])
 
-  const login = useCallback((user: SessionUser) => {
-    authLogger.info('Login successful')
-    saveSessionToStorage(user)
-    setState({
-      user,
-      isAuthenticated: true,
-      isInitialized: true,
-    })
-  }, [])
+  const login = useCallback(
+    (user: SessionUser): Promise<void> => {
+      authLogger.info('Login')
+      const userRecord: UserRecord = {
+        id: USER_STORE_KEY,
+        login: user.login,
+        name: user.name,
+        role: user.role,
+      }
+      const visits = visitsData as { id: number; [key: string]: unknown }[]
+      return writeToStores(dbOptions, {
+        user: [userRecord],
+        visits: visits.length ? visits : [],
+      }).then(() => {
+        setState({
+          user,
+          isAuthenticated: true,
+          isInitialized: true,
+        })
+      })
+    },
+    [dbOptions]
+  )
 
   const logout = useCallback(() => {
-    authLogger.info('Logout successful')
-    saveSessionToStorage(null)
-    setState({
-      user: null,
-      isAuthenticated: false,
-      isInitialized: true,
-    })
-  }, [])
+    authLogger.info('Logout')
+    clearStoresList(dbOptions, SESSION_STORE_NAMES)
+      .then(() => {
+        setState({
+          user: null,
+          isAuthenticated: false,
+          isInitialized: true,
+        })
+      })
+      .catch(err => {
+        storeLogger.error('Logout clear failed', err)
+      })
+  }, [dbOptions])
 
   const value = useMemo<SessionContextValue>(
     () => ({

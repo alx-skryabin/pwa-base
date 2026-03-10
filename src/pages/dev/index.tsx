@@ -38,7 +38,7 @@ const Dev: React.FC = () => {
 
       <br />
       <h3>User</h3>
-      <div>Session ID: {session.user?.id}</div>
+      <div>Session ID: {session.user?.name}</div>
       <div>Login: {session.user?.login}</div>
     </div>
   )

@@ -13,7 +13,7 @@ interface AppInitProviderProps {
 const MIN_DELAY = 1000
 
 /**
- * Показывает splash до завершения инициализации (IndexedDB guide),
+ * Показывает splash до завершения инициализации (IndexedDB),
  * затем рендерит children (далее SessionProvider решает: login или home).
  */
 export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) => {
@@ -36,9 +36,9 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
         })
 
         // Ждем выполнения обеих операций
-        logsLogger.time('Load guide')
+        logsLogger.time('Loading tables')
         await Promise.all([initPromise, delayPromise])
-        logsLogger.timeEnd('Load guide')
+        logsLogger.timeEnd('Loading tables')
 
         if (!isMounted) return
 
@@ -47,7 +47,7 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
         if (!isMounted) return
 
         const error = err instanceof Error ? err : new Error(String(err))
-        storeLogger.error('Guide DB init failed:', error)
+        storeLogger.error('Tables idb init failed:', error)
         setError(error)
       }
     }
