@@ -6,6 +6,7 @@ import { useSession } from '@entities/session'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'
 import { ROUTES } from '@app/routes/path.ts'
+import { DB_VERSION } from '@shared/libs/indexedDb'
 import { Button } from 'antd'
 import './sidebar.css'
 
@@ -74,7 +75,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
       </div>
 
       <div className="sidebar-version">
-        <span>Версия: {version}</span>
+        <span>
+          Версия: {version}:::{DB_VERSION}i
+        </span>
       </div>
     </aside>
   )

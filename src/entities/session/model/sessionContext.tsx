@@ -54,7 +54,7 @@ export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) =>
   }, [dbOptions])
 
   const login = useCallback(
-    (user: SessionUser): Promise<void> => {
+    async (user: SessionUser): Promise<void> => {
       authLogger.info('Login')
       const userRecord: UserRecord = {
         id: USER_STORE_KEY,
@@ -63,15 +63,14 @@ export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) =>
         role: user.role,
       }
       const visits = visitsData as { id: number; [key: string]: unknown }[]
-      return writeToStores(dbOptions, {
+      await writeToStores(dbOptions, {
         user: [userRecord],
         visits: visits.length ? visits : [],
-      }).then(() => {
-        setState({
-          user,
-          isAuthenticated: true,
-          isInitialized: true,
-        })
+      })
+      setState({
+        user,
+        isAuthenticated: true,
+        isInitialized: true,
       })
     },
     [dbOptions]

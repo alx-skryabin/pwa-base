@@ -7,7 +7,7 @@ import { Button } from 'antd'
 const Dev: React.FC = () => {
   const meta = useMetaApp()
   const { isInstallable, isInstalled, isOnline, promptInstall } = usePWA()
-  const session = useSession()
+  const { user } = useSession()
 
   return (
     <div>
@@ -38,8 +38,8 @@ const Dev: React.FC = () => {
 
       <br />
       <h3>User</h3>
-      <div>Session ID: {session.user?.name}</div>
-      <div>Login: {session.user?.login}</div>
+      <div>Session ID: {user?.name}</div>
+      <div>Login: {user?.login}</div>
     </div>
   )
 }

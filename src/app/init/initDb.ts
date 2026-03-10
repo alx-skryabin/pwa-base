@@ -35,7 +35,7 @@ function createStores(db: IDBDatabase): void {
  * Создаёт/открывает БД по имени, при апгрейде версии пересоздаёт все store.
  * Пустые store заполняет данными из GUIDE_DATA (JSON).
  */
-export async function initGuideDb(name: string): Promise<void> {
+export async function initDb(name: string): Promise<void> {
   const db = await openDb({
     name: name,
     version: DB_VERSION,

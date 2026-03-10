@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { initGuideDb } from './initGuideDb'
+import { initDb } from './initDb.ts'
 import { SplashScreen } from './SplashScreen'
 import { logsLogger, storeLogger } from '@shared/libs/logger'
 import { ErrorScreen } from '@app/init/ErrorScreen.tsx'
@@ -28,7 +28,7 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
     const initialize = async () => {
       try {
         // Запускаем инициализацию БД
-        const initPromise = initGuideDb(name)
+        const initPromise = initDb(name)
 
         // Создаем фейковую задержку
         const delayPromise = new Promise<void>(resolve => {
