@@ -1,3 +1,6 @@
 export { GUIDE_STORE_NAMES } from '@shared/libs/indexedDb'
 export type { GuideStoreName } from '@shared/libs/indexedDb'
-export type { GuideRecord } from './model/types'
+export type { GuideRecord, Continent, Country, RegionRus } from './model/types'
+export { getContinents, getCountriesByContinent } from './model/guideActions'
+export { useContinents } from './model/useContinents'
+export { useCountriesByContinent } from './model/useCountriesByContinent'

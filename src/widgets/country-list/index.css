@@ -1,0 +1,11 @@
+.country-list__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.country-list__flag {
+  font-size: 1.25rem;
+  line-height: 1;
+}

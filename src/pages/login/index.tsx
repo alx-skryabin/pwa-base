@@ -4,11 +4,11 @@ import { useLocation, Navigate } from 'react-router'
 import { useSession } from '@entities/session'
 import { ROUTES } from '@app/routes/path'
 import type { SessionUser } from '@entities/session'
+import type { UsersMap } from '@entities/user'
 
 import usersData from '@assets/data-user/users.json'
 
-/** Формат записи в users.json: ключ — логин, значение — данные пользователя. */
-const users = usersData as Record<string, { login: string; name: string; role: number }>
+const users = usersData as UsersMap
 
 interface LoginFormValues {
   login: string

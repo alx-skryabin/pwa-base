@@ -42,3 +42,9 @@ body:has(#root .theme.theme__light) {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-hover);
 }
+
+* {
+  scrollbar-color: var(--color-secondary) var(--color-primary);
+  scrollbar-width: thin;
+  scroll-padding-top: 5rem;
+}

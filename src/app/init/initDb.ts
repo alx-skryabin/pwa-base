@@ -6,6 +6,7 @@ import {
   ALL_STORE_NAMES,
   GUIDE_STORE_NAMES,
 } from '@shared/libs/indexedDb'
+import { STORE_INDEXES } from '@shared/libs/indexedDb'
 import type { GuideStoreName } from '@shared/libs/indexedDb'
 import type { GuideRecord } from '@entities/guide'
 import { storeLogger } from '@shared/libs/logger'
@@ -14,8 +15,7 @@ import continentsData from '@assets/data-guides/continents.json'
 import countriesData from '@assets/data-guides/countries.json'
 import regionsRusData from '@assets/data-guides/regions-rus.json'
 
-/** Данные для первичного заполнения store; ключи должны совпадать с GUIDE_STORE_NAMES.
- * При добавлении справочника — импорт + запись сюда. */
+/** Данные для первичного заполнения store; ключи должны совпадать с GUIDE_STORE_NAMES. */
 const GUIDE_DATA: Record<GuideStoreName, GuideRecord[]> = {
   continents: continentsData as GuideRecord[],
   countries: countriesData as GuideRecord[],
@@ -25,8 +25,19 @@ const GUIDE_DATA: Record<GuideStoreName, GuideRecord[]> = {
 function createStores(db: IDBDatabase): void {
   for (const storeName of ALL_STORE_NAMES) {
     if (!db.objectStoreNames.contains(storeName)) {
-      db.createObjectStore(storeName, { keyPath: 'id' })
-      storeLogger.info(`Created: ${storeName}`)
+      const store = db.createObjectStore(storeName, { keyPath: 'id' })
+      const indexes = STORE_INDEXES[storeName]
+      if (indexes?.length) {
+        for (const idx of indexes) {
+          store.createIndex(idx.name, idx.keyPath, {
+            unique: idx.unique ?? false,
+            multiEntry: idx.multiEntry ?? false,
+          })
+          storeLogger.info(`Created index: ${storeName}.${idx.name}`)
+        }
+      } else {
+        storeLogger.info(`Created: ${storeName}`)
+      }
     }
   }
 }

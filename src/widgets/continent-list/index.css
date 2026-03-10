@@ -1,0 +1,22 @@
+.continent-list__item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.continent-list__item:hover {
+  background-color: var(--color-hover);
+}
+
+.continent-list__item_active {
+  background-color: var(--color-hover);
+}
+
+.continent-list__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { initDb } from './initDb.ts'
+import { setAppDbOptions } from '@shared/libs/indexedDb'
 import { SplashScreen } from './SplashScreen'
 import { logsLogger, storeLogger } from '@shared/libs/logger'
 import { ErrorScreen } from '@app/init/ErrorScreen.tsx'
@@ -42,6 +43,7 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
 
         if (!isMounted) return
 
+        setAppDbOptions({ name })
         setIsReady(true)
       } catch (err) {
         if (!isMounted) return
