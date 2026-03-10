@@ -12,7 +12,7 @@
     "isoCode": "RU",
     "isoCode3": "RUS",
     "flag": "🇷🇺",
-    "neighbors": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 31, 32, 33, 34, 35],
+    "neighbors": [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 23, 25, 46],
     "population": 146000000,
     "populationCapital": 13010000,
     "urbanPercentage": 75,
@@ -65,7 +65,7 @@
     "isoCode": "CN",
     "isoCode3": "CHN",
     "flag": "🇨🇳",
-    "neighbors": [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 31, 34],
+    "neighbors": [1, 3, 4, 36, 37, 38, 42, 43, 46, 48, 49, 52, 147, 151, 224, 230],
     "population": 1410000000,
     "populationCapital": 21890000,
     "urbanPercentage": 64,
@@ -114,7 +114,7 @@
     "isoCode": "KZ",
     "isoCode3": "KAZ",
     "flag": "🇰🇿",
-    "neighbors": [1, 2, 31, 32, 33],
+    "neighbors": [1, 2, 40, 41, 43],
     "population": 19600000,
     "populationCapital": 1300000,
     "urbanPercentage": 58,
@@ -192,7 +192,7 @@
     "isoCode": "FI",
     "isoCode3": "FIN",
     "flag": "🇫🇮",
-    "neighbors": [1, 6],
+    "neighbors": [1, 6, 7],
     "population": 5500000,
     "populationCapital": 650000,
     "urbanPercentage": 85,
@@ -266,7 +266,7 @@
     "isoCode": "SE",
     "isoCode3": "SWE",
     "flag": "🇸🇪",
-    "neighbors": [6, 8],
+    "neighbors": [5, 6],
     "population": 10500000,
     "populationCapital": 1600000,
     "urbanPercentage": 88,
@@ -340,7 +340,7 @@
     "isoCode": "LV",
     "isoCode3": "LVA",
     "flag": "🇱🇻",
-    "neighbors": [1, 8, 10],
+    "neighbors": [1, 8, 10, 12],
     "population": 1900000,
     "populationCapital": 620000,
     "urbanPercentage": 68,
@@ -377,7 +377,7 @@
     "isoCode": "LT",
     "isoCode3": "LTU",
     "flag": "🇱🇹",
-    "neighbors": [1, 9, 11],
+    "neighbors": [1, 9, 11, 12],
     "population": 2800000,
     "populationCapital": 580000,
     "urbanPercentage": 68,
@@ -414,7 +414,7 @@
     "isoCode": "PL",
     "isoCode3": "POL",
     "flag": "🇵🇱",
-    "neighbors": [1, 10, 12, 13, 14, 27],
+    "neighbors": [1, 10, 12, 13, 14, 27, 28],
     "population": 38000000,
     "populationCapital": 1800000,
     "urbanPercentage": 60,
@@ -451,7 +451,7 @@
     "isoCode": "BY",
     "isoCode3": "BLR",
     "flag": "🇧🇾",
-    "neighbors": [1, 11, 13, 14],
+    "neighbors": [1, 9, 10, 11, 13],
     "population": 9400000,
     "populationCapital": 2000000,
     "urbanPercentage": 79,
@@ -488,7 +488,7 @@
     "isoCode": "UA",
     "isoCode3": "UKR",
     "flag": "🇺🇦",
-    "neighbors": [1, 11, 12, 14, 15, 16, 27],
+    "neighbors": [1, 11, 12, 14, 15, 16, 234],
     "population": 41000000,
     "populationCapital": 2900000,
     "urbanPercentage": 69,
@@ -525,7 +525,7 @@
     "isoCode": "SK",
     "isoCode3": "SVK",
     "flag": "🇸🇰",
-    "neighbors": [11, 12, 13, 15, 27],
+    "neighbors": [11, 13, 15, 26, 27],
     "population": 5500000,
     "populationCapital": 430000,
     "urbanPercentage": 54,
@@ -566,7 +566,7 @@
     "isoCode": "HU",
     "isoCode3": "HUN",
     "flag": "🇭🇺",
-    "neighbors": [13, 14, 16, 17, 26],
+    "neighbors": [13, 14, 16, 17, 26, 213, 254],
     "population": 9700000,
     "populationCapital": 1700000,
     "urbanPercentage": 72,
@@ -603,7 +603,7 @@
     "isoCode": "RO",
     "isoCode3": "ROU",
     "flag": "🇷🇴",
-    "neighbors": [13, 15, 17, 18, 19],
+    "neighbors": [13, 15, 17, 18, 234],
     "population": 19000000,
     "populationCapital": 1800000,
     "urbanPercentage": 54,
@@ -640,7 +640,7 @@
     "isoCode": "RS",
     "isoCode3": "SRB",
     "flag": "🇷🇸",
-    "neighbors": [15, 16, 18, 19, 20, 21],
+    "neighbors": [15, 16, 18, 20, 179, 203, 213],
     "population": 6900000,
     "populationCapital": 1400000,
     "urbanPercentage": 56,
@@ -681,7 +681,7 @@
     "isoCode": "BG",
     "isoCode3": "BGR",
     "flag": "🇧🇬",
-    "neighbors": [16, 17, 19, 22],
+    "neighbors": [16, 17, 19, 20, 22],
     "population": 6500000,
     "populationCapital": 1300000,
     "urbanPercentage": 76,
@@ -722,7 +722,7 @@
     "isoCode": "GR",
     "isoCode3": "GRC",
     "flag": "🇬🇷",
-    "neighbors": [16, 17, 18, 20],
+    "neighbors": [18, 20, 21, 22],
     "population": 10400000,
     "populationCapital": 3150000,
     "urbanPercentage": 79,
@@ -759,7 +759,7 @@
     "isoCode": "MK",
     "isoCode3": "MKD",
     "flag": "🇲🇰",
-    "neighbors": [17, 19, 21],
+    "neighbors": [17, 18, 19, 21],
     "population": 2100000,
     "populationCapital": 580000,
     "urbanPercentage": 58,
@@ -796,7 +796,7 @@
     "isoCode": "AL",
     "isoCode3": "ALB",
     "flag": "🇦🇱",
-    "neighbors": [17, 19, 20],
+    "neighbors": [19, 20, 179],
     "population": 2800000,
     "populationCapital": 520000,
     "urbanPercentage": 62,
@@ -833,7 +833,7 @@
     "isoCode": "TR",
     "isoCode3": "TUR",
     "flag": "🇹🇷",
-    "neighbors": [18, 23, 24, 25, 26, 27],
+    "neighbors": [18, 19, 23, 24, 25, 39, 225, 258],
     "population": 85000000,
     "populationCapital": 5700000,
     "urbanPercentage": 76,
@@ -866,7 +866,7 @@
     "isoCode": "GE",
     "isoCode3": "GEO",
     "flag": "🇬🇪",
-    "neighbors": [1, 22, 24],
+    "neighbors": [1, 22, 24, 25],
     "population": 3700000,
     "populationCapital": 1200000,
     "urbanPercentage": 59,
@@ -903,7 +903,7 @@
     "isoCode": "AM",
     "isoCode3": "ARM",
     "flag": "🇦🇲",
-    "neighbors": [22, 23, 25],
+    "neighbors": [22, 23, 25, 39],
     "population": 2800000,
     "populationCapital": 1100000,
     "urbanPercentage": 63,
@@ -936,7 +936,7 @@
     "isoCode": "AZ",
     "isoCode3": "AZE",
     "flag": "🇦🇿",
-    "neighbors": [1, 22, 23, 24],
+    "neighbors": [1, 22, 23, 24, 39],
     "population": 10100000,
     "populationCapital": 2300000,
     "urbanPercentage": 56,
@@ -969,7 +969,7 @@
     "isoCode": "AT",
     "isoCode3": "AUT",
     "flag": "🇦🇹",
-    "neighbors": [15, 27, 28, 29, 30],
+    "neighbors": [14, 15, 27, 28, 29, 30, 171, 254],
     "population": 9000000,
     "populationCapital": 1900000,
     "urbanPercentage": 58,
@@ -1006,7 +1006,7 @@
     "isoCode": "CZ",
     "isoCode3": "CZE",
     "flag": "🇨🇿",
-    "neighbors": [11, 13, 14, 26, 28],
+    "neighbors": [11, 14, 26, 28],
     "population": 10700000,
     "populationCapital": 1300000,
     "urbanPercentage": 74,
@@ -1043,7 +1043,7 @@
     "isoCode": "DE",
     "isoCode3": "DEU",
     "flag": "🇩🇪",
-    "neighbors": [26, 27, 29, 30, 31, 32, 33],
+    "neighbors": [11, 26, 27, 29, 31, 172, 201, 214, 236],
     "population": 83200000,
     "populationCapital": 3670000,
     "urbanPercentage": 78,
@@ -1084,7 +1084,7 @@
     "isoCode": "CH",
     "isoCode3": "CHE",
     "flag": "🇨🇭",
-    "neighbors": [26, 28, 30, 31, 32],
+    "neighbors": [26, 28, 30, 31, 171],
     "population": 8700000,
     "populationCapital": 140000,
     "urbanPercentage": 74,
@@ -1125,7 +1125,7 @@
     "isoCode": "IT",
     "isoCode3": "ITA",
     "flag": "🇮🇹",
-    "neighbors": [26, 28, 29, 31, 32],
+    "neighbors": [26, 29, 31, 174, 175, 254],
     "population": 59000000,
     "populationCapital": 2870000,
     "urbanPercentage": 71,
@@ -1166,7 +1166,7 @@
     "isoCode": "FR",
     "isoCode3": "FRA",
     "flag": "🇫🇷",
-    "neighbors": [28, 29, 30, 32, 33, 34],
+    "neighbors": [28, 29, 30, 32, 172, 173, 176, 201],
     "population": 67800000,
     "populationCapital": 2140000,
     "urbanPercentage": 81,
@@ -1207,7 +1207,7 @@
     "isoCode": "ES",
     "isoCode3": "ESP",
     "flag": "🇪🇸",
-    "neighbors": [31, 33],
+    "neighbors": [31, 33, 78, 176, 195],
     "population": 47400000,
     "populationCapital": 3260000,
     "urbanPercentage": 81,
@@ -1281,7 +1281,7 @@
     "isoCode": "GB",
     "isoCode3": "GBR",
     "flag": "🇬🇧",
-    "neighbors": [31],
+    "neighbors": [35],
     "population": 67800000,
     "populationCapital": 8800000,
     "urbanPercentage": 84,
@@ -1359,7 +1359,7 @@
     "isoCode": "IN",
     "isoCode3": "IND",
     "flag": "🇮🇳",
-    "neighbors": [2, 37, 38, 39, 40],
+    "neighbors": [2, 37, 52, 147, 148, 151],
     "population": 1480000000,
     "populationCapital": 32000000,
     "urbanPercentage": 34,
@@ -1408,7 +1408,7 @@
     "isoCode": "PK",
     "isoCode3": "PAK",
     "flag": "🇵🇰",
-    "neighbors": [2, 36, 38],
+    "neighbors": [2, 36, 38, 39],
     "population": 261714024,
     "populationCapital": 1200000,
     "urbanPercentage": 37,
@@ -1449,7 +1449,7 @@
     "isoCode": "AF",
     "isoCode3": "AFG",
     "flag": "🇦🇫",
-    "neighbors": [2, 36, 37, 39],
+    "neighbors": [2, 37, 39, 40, 41, 42],
     "population": 41100000,
     "populationCapital": 4300000,
     "urbanPercentage": 26,
@@ -1482,7 +1482,7 @@
     "isoCode": "IR",
     "isoCode3": "IRN",
     "flag": "🇮🇷",
-    "neighbors": [22, 36, 38, 40],
+    "neighbors": [22, 24, 25, 37, 38, 40, 225],
     "population": 88500000,
     "populationCapital": 14000000,
     "urbanPercentage": 75,
@@ -1515,7 +1515,7 @@
     "isoCode": "TM",
     "isoCode3": "TKM",
     "flag": "🇹🇲",
-    "neighbors": [2, 31, 39],
+    "neighbors": [3, 38, 39, 41],
     "population": 6500000,
     "populationCapital": 950000,
     "urbanPercentage": 52,
@@ -1552,7 +1552,7 @@
     "isoCode": "UZ",
     "isoCode3": "UZB",
     "flag": "🇺🇿",
-    "neighbors": [3, 31, 34, 35, 40, 42],
+    "neighbors": [3, 38, 40, 42, 43],
     "population": 35000000,
     "populationCapital": 2700000,
     "urbanPercentage": 50,
@@ -1585,7 +1585,7 @@
     "isoCode": "TJ",
     "isoCode3": "TJK",
     "flag": "🇹🇯",
-    "neighbors": [2, 34, 35, 41],
+    "neighbors": [2, 38, 41, 43],
     "population": 10000000,
     "populationCapital": 1000000,
     "urbanPercentage": 27,
@@ -1618,7 +1618,7 @@
     "isoCode": "KG",
     "isoCode3": "KGZ",
     "flag": "🇰🇬",
-    "neighbors": [2, 3, 34, 41],
+    "neighbors": [2, 3, 41, 42],
     "population": 7000000,
     "populationCapital": 1100000,
     "urbanPercentage": 36,
@@ -1733,7 +1733,7 @@
     "isoCode": "KP",
     "isoCode3": "PRK",
     "flag": "🇰🇵",
-    "neighbors": [2, 45],
+    "neighbors": [1, 2, 45],
     "population": 26000000,
     "populationCapital": 3200000,
     "urbanPercentage": 62,
@@ -1963,7 +1963,7 @@
     "isoCode": "MM",
     "isoCode3": "MMR",
     "flag": "🇲🇲",
-    "neighbors": [2, 49, 51, 53, 54],
+    "neighbors": [2, 36, 49, 51, 148],
     "population": 54400000,
     "populationCapital": 1150000,
     "urbanPercentage": 31,
@@ -2004,7 +2004,7 @@
     "isoCode": "MY",
     "isoCode3": "MYS",
     "flag": "🇲🇾",
-    "neighbors": [51, 52],
+    "neighbors": [51, 54, 156],
     "population": 33900000,
     "populationCapital": 1800000,
     "urbanPercentage": 77,
@@ -2045,7 +2045,7 @@
     "isoCode": "ID",
     "isoCode3": "IDN",
     "flag": "🇮🇩",
-    "neighbors": [52, 53, 55],
+    "neighbors": [53, 136, 155],
     "population": 287890000,
     "populationCapital": 10700000,
     "urbanPercentage": 57,
@@ -2194,7 +2194,7 @@
     "timezones": ["UTC+12"],
     "established": 1907,
     "government": "Парламентская монархия",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 58,
@@ -2209,7 +2209,7 @@
     "isoCode": "EG",
     "isoCode3": "EGY",
     "flag": "🇪🇬",
-    "neighbors": [39, 59, 60],
+    "neighbors": [59, 60, 226, 244],
     "population": 105000000,
     "populationCapital": 21000000,
     "urbanPercentage": 43,
@@ -2242,7 +2242,7 @@
     "isoCode": "LY",
     "isoCode3": "LBY",
     "flag": "🇱🇾",
-    "neighbors": [58, 60, 61, 62],
+    "neighbors": [58, 60, 61, 62, 79, 80],
     "population": 7000000,
     "populationCapital": 1100000,
     "urbanPercentage": 81,
@@ -2275,7 +2275,7 @@
     "isoCode": "SD",
     "isoCode3": "SDN",
     "flag": "🇸🇩",
-    "neighbors": [58, 59, 61, 63],
+    "neighbors": [58, 59, 61, 81, 82, 100, 102],
     "population": 48000000,
     "populationCapital": 6000000,
     "urbanPercentage": 35,
@@ -2308,7 +2308,7 @@
     "isoCode": "TD",
     "isoCode3": "TCD",
     "flag": "🇹🇩",
-    "neighbors": [59, 60, 62, 64, 65],
+    "neighbors": [59, 60, 62, 65, 66, 100],
     "population": 18200000,
     "populationCapital": 1400000,
     "urbanPercentage": 23,
@@ -2345,7 +2345,7 @@
     "isoCode": "NE",
     "isoCode3": "NER",
     "flag": "🇳🇪",
-    "neighbors": [59, 61, 63, 64, 66],
+    "neighbors": [59, 61, 63, 64, 66, 68, 79],
     "population": 27200000,
     "populationCapital": 1300000,
     "urbanPercentage": 16,
@@ -2378,7 +2378,7 @@
     "isoCode": "ML",
     "isoCode3": "MLI",
     "flag": "🇲🇱",
-    "neighbors": [60, 62, 64, 66, 67],
+    "neighbors": [62, 64, 67, 71, 74, 76, 79],
     "population": 23300000,
     "populationCapital": 2400000,
     "urbanPercentage": 44,
@@ -2411,7 +2411,7 @@
     "isoCode": "BF",
     "isoCode3": "BFA",
     "flag": "🇧🇫",
-    "neighbors": [61, 62, 63, 66, 68],
+    "neighbors": [62, 63, 68, 69, 70, 71],
     "population": 23600000,
     "populationCapital": 2500000,
     "urbanPercentage": 31,
@@ -2452,7 +2452,7 @@
     "isoCode": "CM",
     "isoCode3": "CMR",
     "flag": "🇨🇲",
-    "neighbors": [61, 66, 69, 70, 71],
+    "neighbors": [61, 66, 98, 99, 100, 101],
     "population": 28600000,
     "populationCapital": 2800000,
     "urbanPercentage": 58,
@@ -2489,7 +2489,7 @@
     "isoCode": "NG",
     "isoCode3": "NGA",
     "flag": "🇳🇬",
-    "neighbors": [62, 63, 64, 65, 67, 68, 69],
+    "neighbors": [61, 62, 65, 68],
     "population": 250228859,
     "populationCapital": 2800000,
     "urbanPercentage": 52,
@@ -2526,7 +2526,7 @@
     "isoCode": "MR",
     "isoCode3": "MRT",
     "flag": "🇲🇷",
-    "neighbors": [63, 66],
+    "neighbors": [63, 76, 79, 268],
     "population": 4900000,
     "populationCapital": 1200000,
     "urbanPercentage": 55,
@@ -2555,7 +2555,7 @@
     "isoCode": "BJ",
     "isoCode3": "BEN",
     "flag": "🇧🇯",
-    "neighbors": [64, 66, 69],
+    "neighbors": [62, 64, 66, 69],
     "population": 13700000,
     "populationCapital": 264000,
     "urbanPercentage": 48,
@@ -2596,7 +2596,7 @@
     "isoCode": "TG",
     "isoCode3": "TGO",
     "flag": "🇹🇬",
-    "neighbors": [65, 66, 68, 70],
+    "neighbors": [64, 68, 70],
     "population": 8900000,
     "populationCapital": 1800000,
     "urbanPercentage": 43,
@@ -2637,7 +2637,7 @@
     "isoCode": "GH",
     "isoCode3": "GHA",
     "flag": "🇬🇭",
-    "neighbors": [65, 69, 71],
+    "neighbors": [64, 69, 71],
     "population": 34100000,
     "populationCapital": 2500000,
     "urbanPercentage": 57,
@@ -2678,7 +2678,7 @@
     "isoCode": "CI",
     "isoCode3": "CIV",
     "flag": "🇨🇮",
-    "neighbors": [65, 70, 72, 73],
+    "neighbors": [63, 64, 70, 72, 74],
     "population": 29100000,
     "populationCapital": 355000,
     "urbanPercentage": 52,
@@ -2719,7 +2719,7 @@
     "isoCode": "LR",
     "isoCode3": "LBR",
     "flag": "🇱🇷",
-    "neighbors": [71, 73],
+    "neighbors": [71, 73, 74],
     "population": 5400000,
     "populationCapital": 1500000,
     "urbanPercentage": 52,
@@ -2756,7 +2756,7 @@
     "isoCode": "SL",
     "isoCode3": "SLE",
     "flag": "🇸🇱",
-    "neighbors": [71, 72],
+    "neighbors": [72, 74],
     "population": 8800000,
     "populationCapital": 1200000,
     "urbanPercentage": 43,
@@ -2793,7 +2793,7 @@
     "isoCode": "GN",
     "isoCode3": "GIN",
     "flag": "🇬🇳",
-    "neighbors": [71, 73, 75, 76],
+    "neighbors": [63, 71, 72, 73, 75, 76],
     "population": 14500000,
     "populationCapital": 2000000,
     "urbanPercentage": 37,
@@ -2871,7 +2871,7 @@
     "isoCode": "SN",
     "isoCode3": "SEN",
     "flag": "🇸🇳",
-    "neighbors": [67, 74, 75],
+    "neighbors": [63, 67, 74, 75, 77],
     "population": 18400000,
     "populationCapital": 3100000,
     "urbanPercentage": 49,
@@ -2945,7 +2945,7 @@
     "isoCode": "MA",
     "isoCode3": "MAR",
     "flag": "🇲🇦",
-    "neighbors": [67, 79],
+    "neighbors": [32, 79, 268],
     "population": 38000000,
     "populationCapital": 1800000,
     "urbanPercentage": 64,
@@ -2978,7 +2978,7 @@
     "isoCode": "DZ",
     "isoCode3": "DZA",
     "flag": "🇩🇿",
-    "neighbors": [59, 78, 80, 81],
+    "neighbors": [59, 62, 63, 67, 78, 80, 268],
     "population": 46000000,
     "populationCapital": 3400000,
     "urbanPercentage": 74,
@@ -3011,7 +3011,7 @@
     "isoCode": "TN",
     "isoCode3": "TUN",
     "flag": "🇹🇳",
-    "neighbors": [79],
+    "neighbors": [59, 79],
     "population": 12000000,
     "populationCapital": 2400000,
     "urbanPercentage": 69,
@@ -3044,7 +3044,7 @@
     "isoCode": "ET",
     "isoCode3": "ETH",
     "flag": "🇪🇹",
-    "neighbors": [60, 82, 83, 84, 85],
+    "neighbors": [60, 82, 83, 84, 85, 102],
     "population": 138900000,
     "populationCapital": 5000000,
     "urbanPercentage": 22,
@@ -3176,7 +3176,7 @@
     "isoCode": "KE",
     "isoCode3": "KEN",
     "flag": "🇰🇪",
-    "neighbors": [40, 44, 45, 46, 47],
+    "neighbors": [81, 84, 86, 89, 102],
     "population": 56000000,
     "populationCapital": 4400000,
     "urbanPercentage": 28,
@@ -3213,7 +3213,7 @@
     "isoCode": "UG",
     "isoCode3": "UGA",
     "flag": "🇺🇬",
-    "neighbors": [44, 45, 85, 87, 88],
+    "neighbors": [85, 87, 89, 97, 102],
     "population": 48000000,
     "populationCapital": 3500000,
     "urbanPercentage": 25,
@@ -3250,7 +3250,7 @@
     "isoCode": "RW",
     "isoCode3": "RWA",
     "flag": "🇷🇼",
-    "neighbors": [86, 88],
+    "neighbors": [86, 88, 89, 97],
     "population": 14000000,
     "populationCapital": 1200000,
     "urbanPercentage": 18,
@@ -3287,7 +3287,7 @@
     "isoCode": "BI",
     "isoCode3": "BDI",
     "flag": "🇧🇮",
-    "neighbors": [86, 87, 89],
+    "neighbors": [87, 89, 97],
     "population": 13000000,
     "populationCapital": 135000,
     "urbanPercentage": 14,
@@ -3324,7 +3324,7 @@
     "isoCode": "TZ",
     "isoCode3": "TZA",
     "flag": "🇹🇿",
-    "neighbors": [42, 44, 46, 47, 85, 86, 88, 90],
+    "neighbors": [85, 86, 87, 88, 90, 91, 92, 97],
     "population": 67000000,
     "populationCapital": 410000,
     "urbanPercentage": 35,
@@ -3361,7 +3361,7 @@
     "isoCode": "MZ",
     "isoCode3": "MOZ",
     "flag": "🇲🇿",
-    "neighbors": [45, 46, 47, 48, 49, 89, 91],
+    "neighbors": [89, 91, 92, 93, 112, 255],
     "population": 33000000,
     "populationCapital": 1100000,
     "urbanPercentage": 37,
@@ -3398,7 +3398,7 @@
     "isoCode": "MW",
     "isoCode3": "MWI",
     "flag": "🇲🇼",
-    "neighbors": [47, 89, 90],
+    "neighbors": [89, 90, 92],
     "population": 21000000,
     "populationCapital": 990000,
     "urbanPercentage": 18,
@@ -3435,7 +3435,7 @@
     "isoCode": "ZM",
     "isoCode3": "ZMB",
     "flag": "🇿🇲",
-    "neighbors": [45, 46, 47, 48, 89, 90, 93],
+    "neighbors": [89, 90, 91, 93, 94, 95, 96, 97],
     "population": 20000000,
     "populationCapital": 2500000,
     "urbanPercentage": 44,
@@ -3468,7 +3468,7 @@
     "isoCode": "ZW",
     "isoCode3": "ZWE",
     "flag": "🇿🇼",
-    "neighbors": [46, 47, 48, 49, 92, 94],
+    "neighbors": [90, 92, 94, 255],
     "population": 16000000,
     "populationCapital": 1500000,
     "urbanPercentage": 32,
@@ -3501,7 +3501,7 @@
     "isoCode": "BW",
     "isoCode3": "BWA",
     "flag": "🇧🇼",
-    "neighbors": [46, 47, 48, 49, 93, 95],
+    "neighbors": [92, 93, 95, 255],
     "population": 2600000,
     "populationCapital": 250000,
     "urbanPercentage": 70,
@@ -3534,7 +3534,7 @@
     "isoCode": "NA",
     "isoCode3": "NAM",
     "flag": "🇳🇦",
-    "neighbors": [46, 49, 94, 96, 97],
+    "neighbors": [92, 94, 96, 255],
     "population": 2600000,
     "populationCapital": 430000,
     "urbanPercentage": 52,
@@ -3567,7 +3567,7 @@
     "isoCode": "AO",
     "isoCode3": "AGO",
     "flag": "🇦🇴",
-    "neighbors": [46, 47, 95, 97],
+    "neighbors": [92, 95, 97, 98],
     "population": 36000000,
     "populationCapital": 8800000,
     "urbanPercentage": 67,
@@ -3600,7 +3600,7 @@
     "isoCode": "CD",
     "isoCode3": "COD",
     "flag": "🇨🇩",
-    "neighbors": [46, 47, 48, 86, 89, 92, 95, 96, 98, 99],
+    "neighbors": [86, 87, 88, 89, 92, 96, 98, 100, 102],
     "population": 99000000,
     "populationCapital": 15000000,
     "urbanPercentage": 45,
@@ -3633,7 +3633,7 @@
     "isoCode": "CG",
     "isoCode3": "COG",
     "flag": "🇨🇬",
-    "neighbors": [65, 69, 70, 97, 99],
+    "neighbors": [65, 96, 97, 99, 100],
     "population": 6100000,
     "populationCapital": 2300000,
     "urbanPercentage": 68,
@@ -3666,7 +3666,7 @@
     "isoCode": "GA",
     "isoCode3": "GAB",
     "flag": "🇬🇦",
-    "neighbors": [65, 98],
+    "neighbors": [65, 98, 101],
     "population": 2400000,
     "populationCapital": 800000,
     "urbanPercentage": 90,
@@ -3699,7 +3699,7 @@
     "isoCode": "CF",
     "isoCode3": "CAF",
     "flag": "🇨🇫",
-    "neighbors": [61, 65, 97, 100],
+    "neighbors": [60, 61, 65, 97, 98, 102],
     "population": 5600000,
     "populationCapital": 910000,
     "urbanPercentage": 42,
@@ -3736,7 +3736,7 @@
     "isoCode": "GQ",
     "isoCode3": "GNQ",
     "flag": "🇬🇶",
-    "neighbors": [65],
+    "neighbors": [65, 99],
     "population": 1700000,
     "populationCapital": 300000,
     "urbanPercentage": 73,
@@ -3769,7 +3769,7 @@
     "isoCode": "SS",
     "isoCode3": "SSD",
     "flag": "🇸🇸",
-    "neighbors": [60, 81, 97],
+    "neighbors": [60, 81, 85, 86, 97, 100],
     "population": 11000000,
     "populationCapital": 525000,
     "urbanPercentage": 20,
@@ -3810,7 +3810,7 @@
     "isoCode": "RW",
     "isoCode3": "RWA",
     "flag": "🇷🇼",
-    "neighbors": [86, 88],
+    "neighbors": [86, 88, 89, 97],
     "population": 14000000,
     "populationCapital": 1200000,
     "urbanPercentage": 18,
@@ -3847,7 +3847,7 @@
     "isoCode": "BI",
     "isoCode3": "BDI",
     "flag": "🇧🇮",
-    "neighbors": [86, 87, 88],
+    "neighbors": [87, 89, 97],
     "population": 13000000,
     "populationCapital": 135000,
     "urbanPercentage": 14,
@@ -4098,7 +4098,7 @@
     "isoCode": "DJ",
     "isoCode3": "DJI",
     "flag": "🇩🇯",
-    "neighbors": [81, 82, 83],
+    "neighbors": [81, 82, 84],
     "population": 1100000,
     "populationCapital": 600000,
     "urbanPercentage": 78,
@@ -4131,7 +4131,7 @@
     "isoCode": "SZ",
     "isoCode3": "SWZ",
     "flag": "🇸🇿",
-    "neighbors": [46, 47],
+    "neighbors": [90, 255],
     "population": 1200000,
     "populationCapital": 95000,
     "urbanPercentage": 24,
@@ -4164,7 +4164,7 @@
     "isoCode": "LS",
     "isoCode3": "LSO",
     "flag": "🇱🇸",
-    "neighbors": [47],
+    "neighbors": [255],
     "population": 2300000,
     "populationCapital": 330000,
     "urbanPercentage": 29,
@@ -4197,7 +4197,7 @@
     "isoCode": "MW",
     "isoCode3": "MWI",
     "flag": "🇲🇼",
-    "neighbors": [46, 47, 89],
+    "neighbors": [89, 90, 92],
     "population": 21000000,
     "populationCapital": 990000,
     "urbanPercentage": 18,
@@ -4234,7 +4234,7 @@
     "isoCode": "Somaliland",
     "isoCode3": "Somaliland",
     "flag": "🇸🇴",
-    "neighbors": [83, 84],
+    "neighbors": [],
     "population": 5700000,
     "populationCapital": 1200000,
     "urbanPercentage": 46,
@@ -4263,7 +4263,7 @@
     "isoCode": "CA",
     "isoCode3": "CAN",
     "flag": "🇨🇦",
-    "neighbors": [3],
+    "neighbors": [261],
     "population": 38900000,
     "populationCapital": 1010000,
     "urbanPercentage": 82,
@@ -4308,7 +4308,7 @@
     "isoCode": "MX",
     "isoCode3": "MEX",
     "flag": "🇲🇽",
-    "neighbors": [3],
+    "neighbors": [118, 119, 261],
     "population": 132807523,
     "populationCapital": 9200000,
     "urbanPercentage": 81,
@@ -4349,7 +4349,7 @@
     "isoCode": "GT",
     "isoCode3": "GTM",
     "flag": "🇬🇹",
-    "neighbors": [117, 119, 120],
+    "neighbors": [117, 119, 120, 170],
     "population": 18000000,
     "populationCapital": 3000000,
     "urbanPercentage": 52,
@@ -4382,7 +4382,7 @@
     "isoCode": "BZ",
     "isoCode3": "BLZ",
     "flag": "🇧🇿",
-    "neighbors": [117],
+    "neighbors": [117, 118],
     "population": 410000,
     "populationCapital": 17000,
     "urbanPercentage": 46,
@@ -4415,7 +4415,7 @@
     "isoCode": "SV",
     "isoCode3": "SLV",
     "flag": "🇸🇻",
-    "neighbors": [117],
+    "neighbors": [118, 170],
     "population": 6500000,
     "populationCapital": 1700000,
     "urbanPercentage": 74,
@@ -4485,7 +4485,7 @@
     "isoCode": "HT",
     "isoCode3": "HTI",
     "flag": "🇭🇹",
-    "neighbors": [124],
+    "neighbors": [123],
     "population": 11700000,
     "populationCapital": 2800000,
     "urbanPercentage": 58,
@@ -4696,7 +4696,7 @@
     "timezones": ["UTC-4"],
     "established": 1962,
     "government": "Парламентская республика",
-    "continentId": 4
+    "continentId": 3
   },
   {
     "id": 128,
@@ -4934,47 +4934,6 @@
     "continentId": 3
   },
   {
-    "id": 135,
-    "name": "Фиджи",
-    "nameEn": "Fiji",
-    "capital": "Сува",
-    "capitalEn": "Suva",
-    "languages": "Английский, Фиджийский, Хинди",
-    "currency": "Фиджийский доллар",
-    "currencySymbol": "$",
-    "phoneCode": "+679",
-    "isoCode": "FJ",
-    "isoCode3": "FJI",
-    "flag": "🇫🇯",
-    "neighbors": [],
-    "population": 940000,
-    "populationCapital": 94000,
-    "urbanPercentage": 58,
-    "square": 18274,
-    "religions": [
-      {
-        "name": "Христианство",
-        "percentage": 64
-      },
-      {
-        "name": "Индуизм",
-        "percentage": 27
-      },
-      {
-        "name": "Ислам",
-        "percentage": 6
-      },
-      {
-        "name": "Другие",
-        "percentage": 3
-      }
-    ],
-    "timezones": ["UTC+12"],
-    "established": 1970,
-    "government": "Парламентская республика",
-    "continentId": 5
-  },
-  {
     "id": 136,
     "name": "Папуа - Новая Гвинея",
     "nameEn": "Papua New Guinea",
@@ -4987,7 +4946,7 @@
     "isoCode": "PG",
     "isoCode3": "PNG",
     "flag": "🇵🇬",
-    "neighbors": [54],
+    "neighbors": [],
     "population": 10500000,
     "populationCapital": 400000,
     "urbanPercentage": 13,
@@ -5005,7 +4964,7 @@
     "timezones": ["UTC+10"],
     "established": 1975,
     "government": "Парламентская монархия",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 137,
@@ -5038,7 +4997,7 @@
     "timezones": ["UTC+11"],
     "established": 1978,
     "government": "Парламентская монархия",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 138,
@@ -5075,7 +5034,7 @@
     "timezones": ["UTC+11"],
     "established": 1980,
     "government": "Парламентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 139,
@@ -5108,7 +5067,7 @@
     "timezones": ["UTC+13"],
     "established": 1962,
     "government": "Парламентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 140,
@@ -5141,7 +5100,7 @@
     "timezones": ["UTC+13"],
     "established": 1970,
     "government": "Конституционная монархия",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 141,
@@ -5174,40 +5133,7 @@
     "timezones": ["UTC+12", "UTC+13", "UTC+14"],
     "established": 1979,
     "government": "Президентская республика",
-    "continentId": 5
-  },
-  {
-    "id": 142,
-    "name": "Микронезия",
-    "nameEn": "Micronesia",
-    "capital": "Паликир",
-    "capitalEn": "Palikir",
-    "languages": "Английский",
-    "currency": "Доллар США",
-    "currencySymbol": "$",
-    "phoneCode": "+691",
-    "isoCode": "FM",
-    "isoCode3": "FSM",
-    "flag": "🇫🇲",
-    "neighbors": [],
-    "population": 115000,
-    "populationCapital": 6600,
-    "urbanPercentage": 23,
-    "square": 702,
-    "religions": [
-      {
-        "name": "Христианство",
-        "percentage": 95
-      },
-      {
-        "name": "Другие",
-        "percentage": 5
-      }
-    ],
-    "timezones": ["UTC+10", "UTC+11"],
-    "established": 1986,
-    "government": "Федеративная президентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 143,
@@ -5240,7 +5166,7 @@
     "timezones": ["UTC+12"],
     "established": 1986,
     "government": "Президентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 144,
@@ -5273,7 +5199,7 @@
     "timezones": ["UTC+9"],
     "established": 1994,
     "government": "Президентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 145,
@@ -5306,7 +5232,7 @@
     "timezones": ["UTC+12"],
     "established": 1968,
     "government": "Парламентская республика",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 146,
@@ -5339,7 +5265,7 @@
     "timezones": ["UTC+12"],
     "established": 1978,
     "government": "Парламентская монархия",
-    "continentId": 5
+    "continentId": 7
   },
   {
     "id": 147,
@@ -5354,7 +5280,7 @@
     "isoCode": "BT",
     "isoCode3": "BTN",
     "flag": "🇧🇹",
-    "neighbors": [2, 14],
+    "neighbors": [2, 36],
     "population": 790000,
     "populationCapital": 115000,
     "urbanPercentage": 43,
@@ -5391,7 +5317,7 @@
     "isoCode": "BD",
     "isoCode3": "BGD",
     "flag": "🇧🇩",
-    "neighbors": [14, 37],
+    "neighbors": [36, 52],
     "population": 175927589,
     "populationCapital": 21000000,
     "urbanPercentage": 39,
@@ -5498,7 +5424,7 @@
     "isoCode": "NP",
     "isoCode3": "NPL",
     "flag": "🇳🇵",
-    "neighbors": [2, 14],
+    "neighbors": [2, 36],
     "population": 31000000,
     "populationCapital": 1000000,
     "urbanPercentage": 21,
@@ -5539,7 +5465,7 @@
     "isoCode": "MM",
     "isoCode3": "MMR",
     "flag": "🇲🇲",
-    "neighbors": [2, 48, 49, 51, 53],
+    "neighbors": [2, 36, 49, 51, 148],
     "population": 54400000,
     "populationCapital": 1150000,
     "urbanPercentage": 31,
@@ -5761,7 +5687,7 @@
     "isoCode": "QA",
     "isoCode3": "QAT",
     "flag": "🇶🇦",
-    "neighbors": [25],
+    "neighbors": [251],
     "population": 2900000,
     "populationCapital": 1500000,
     "urbanPercentage": 99,
@@ -5802,7 +5728,7 @@
     "isoCode": "AE",
     "isoCode3": "ARE",
     "flag": "🇦🇪",
-    "neighbors": [25, 126],
+    "neighbors": [243, 251],
     "population": 10500000,
     "populationCapital": 1500000,
     "urbanPercentage": 87,
@@ -5843,7 +5769,7 @@
     "isoCode": "YE",
     "isoCode3": "YEM",
     "flag": "🇾🇪",
-    "neighbors": [25, 126],
+    "neighbors": [243, 251],
     "population": 35000000,
     "populationCapital": 4000000,
     "urbanPercentage": 39,
@@ -5876,7 +5802,7 @@
     "isoCode": "GY",
     "isoCode3": "GUY",
     "flag": "🇬🇾",
-    "neighbors": [6, 54, 168],
+    "neighbors": [162, 168, 205],
     "population": 813000,
     "populationCapital": 235000,
     "urbanPercentage": 27,
@@ -5917,7 +5843,7 @@
     "isoCode": "SR",
     "isoCode3": "SUR",
     "flag": "🇸🇷",
-    "neighbors": [6, 161],
+    "neighbors": [161, 163, 205],
     "population": 632000,
     "populationCapital": 241000,
     "urbanPercentage": 66,
@@ -5958,7 +5884,7 @@
     "isoCode": "GF",
     "isoCode3": "GUF",
     "flag": "🇬🇫",
-    "neighbors": [6, 162],
+    "neighbors": [162, 205],
     "population": 297000,
     "populationCapital": 61000,
     "urbanPercentage": 80,
@@ -5991,7 +5917,7 @@
     "isoCode": "EC",
     "isoCode3": "ECU",
     "flag": "🇪🇨",
-    "neighbors": [48, 54],
+    "neighbors": [210, 246],
     "population": 18444506,
     "populationCapital": 2800000,
     "urbanPercentage": 64,
@@ -6028,7 +5954,7 @@
     "isoCode": "BO",
     "isoCode3": "BOL",
     "flag": "🇧🇴",
-    "neighbors": [7, 48, 80, 166, 167],
+    "neighbors": [166, 167, 199, 205, 246],
     "population": 12749291,
     "populationCapital": 300000,
     "urbanPercentage": 70,
@@ -6061,7 +5987,7 @@
     "isoCode": "PY",
     "isoCode3": "PRY",
     "flag": "🇵🇾",
-    "neighbors": [7, 8, 165],
+    "neighbors": [165, 199, 205],
     "population": 7095279,
     "populationCapital": 525000,
     "urbanPercentage": 62,
@@ -6094,7 +6020,7 @@
     "isoCode": "CL",
     "isoCode3": "CHL",
     "flag": "🇨🇱",
-    "neighbors": [7, 48, 165],
+    "neighbors": [165, 199, 246],
     "population": 19945850,
     "populationCapital": 6200000,
     "urbanPercentage": 88,
@@ -6131,7 +6057,7 @@
     "isoCode": "VE",
     "isoCode3": "VEN",
     "flag": "🇻🇪",
-    "neighbors": [6, 48, 54, 161],
+    "neighbors": [161, 205, 210],
     "population": 28633711,
     "populationCapital": 2840000,
     "urbanPercentage": 88,
@@ -6168,7 +6094,7 @@
     "isoCode": "NI",
     "isoCode3": "NIC",
     "flag": "🇳🇮",
-    "neighbors": [117, 128],
+    "neighbors": [170, 212],
     "population": 7097329,
     "populationCapital": 1035000,
     "urbanPercentage": 59,
@@ -6205,7 +6131,7 @@
     "isoCode": "HN",
     "isoCode3": "HND",
     "flag": "🇭🇳",
-    "neighbors": [117, 118, 120, 169],
+    "neighbors": [118, 120, 169],
     "population": 11184760,
     "populationCapital": 1200000,
     "urbanPercentage": 59,
@@ -6279,7 +6205,7 @@
     "isoCode": "LU",
     "isoCode3": "LUX",
     "flag": "🇱🇺",
-    "neighbors": [28, 31, 32],
+    "neighbors": [28, 31, 201],
     "population": 650000,
     "populationCapital": 130000,
     "urbanPercentage": 91,
@@ -6411,7 +6337,7 @@
     "isoCode": "AD",
     "isoCode3": "AND",
     "flag": "🇦🇩",
-    "neighbors": [32, 31],
+    "neighbors": [31, 32],
     "population": 80000,
     "populationCapital": 23000,
     "urbanPercentage": 88,
@@ -6514,7 +6440,7 @@
     "isoCode": "ME",
     "isoCode3": "MNE",
     "flag": "🇲🇪",
-    "neighbors": [16, 17, 136],
+    "neighbors": [17, 21, 203, 213],
     "population": 620000,
     "populationCapital": 185000,
     "urbanPercentage": 67,
@@ -6551,7 +6477,7 @@
     "isoCode": "XK",
     "isoCode3": "XKX",
     "flag": "🇽🇰",
-    "neighbors": [16, 17, 20, 139],
+    "neighbors": [17, 20, 21, 179],
     "population": 1800000,
     "populationCapital": 205000,
     "urbanPercentage": 40,
@@ -6658,7 +6584,7 @@
     "isoCode": "AB",
     "isoCode3": "ABH",
     "flag": "🇦🇧",
-    "neighbors": [1, 23],
+    "neighbors": [],
     "population": 245000,
     "populationCapital": 65000,
     "urbanPercentage": 52,
@@ -6695,7 +6621,7 @@
     "isoCode": "OS",
     "isoCode3": "OST",
     "flag": "🇴🇸",
-    "neighbors": [1, 23],
+    "neighbors": [],
     "population": 53500,
     "populationCapital": 30000,
     "urbanPercentage": 56,
@@ -6728,7 +6654,7 @@
     "isoCode": "PMR",
     "isoCode3": "PMR",
     "flag": "🇵🇲",
-    "neighbors": [13, 135],
+    "neighbors": [],
     "population": 465000,
     "populationCapital": 135000,
     "urbanPercentage": 69,
@@ -6761,7 +6687,7 @@
     "isoCode": "NK",
     "isoCode3": "NKR",
     "flag": "🇳🇰",
-    "neighbors": [24, 25],
+    "neighbors": [],
     "population": 148000,
     "populationCapital": 55000,
     "urbanPercentage": 54,
@@ -6794,7 +6720,7 @@
     "isoCode": "SL",
     "isoCode3": "SOL",
     "flag": "🇸🇱",
-    "neighbors": [83, 84],
+    "neighbors": [72, 74],
     "population": 5700000,
     "populationCapital": 1200000,
     "urbanPercentage": 46,
@@ -7077,5 +7003,2632 @@
     "established": 1704,
     "government": "Британская заморская территория",
     "continentId": 1
+  },
+  {
+    "id": 196,
+    "name": "Американское Самоа",
+    "nameEn": "American Samoa",
+    "capital": "Паго-Паго",
+    "capitalEn": "Pago Pago",
+    "languages": "Английский, Самоанский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-684",
+    "isoCode": "AS",
+    "isoCode3": "ASM",
+    "flag": "🇦🇸",
+    "neighbors": [],
+    "population": 55000,
+    "populationCapital": 37000,
+    "urbanPercentage": 87,
+    "square": 199,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 98
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-11"],
+    "established": 1900,
+    "government": "Неинкорпорированная неорганизованная территория США",
+    "continentId": 7
+  },
+  {
+    "id": 197,
+    "name": "Ангилья",
+    "nameEn": "Anguilla",
+    "capital": "Валли",
+    "capitalEn": "The Valley",
+    "languages": "Английский",
+    "currency": "Восточно-карибский доллар",
+    "currencySymbol": "EC$",
+    "phoneCode": "+1-264",
+    "isoCode": "AI",
+    "isoCode3": "AIA",
+    "flag": "🇦🇮",
+    "neighbors": [],
+    "population": 18090,
+    "populationCapital": 1300,
+    "urbanPercentage": 100,
+    "square": 91,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Другие",
+        "percentage": 10
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1980,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 198,
+    "name": "Антарктида",
+    "nameEn": "Antarctica",
+    "capital": "-",
+    "capitalEn": "-",
+    "languages": "-",
+    "currency": "-",
+    "currencySymbol": "-",
+    "phoneCode": "",
+    "isoCode": "AQ",
+    "isoCode3": "ATA",
+    "flag": "🇦🇶",
+    "neighbors": [],
+    "population": 4000,
+    "populationCapital": 0,
+    "urbanPercentage": 0,
+    "square": 14107100,
+    "religions": [
+      {
+        "name": "Нерелигиозные",
+        "percentage": 100
+      }
+    ],
+    "timezones": [
+      "UTC-12",
+      "UTC-11",
+      "UTC-10",
+      "UTC-9",
+      "UTC-8",
+      "UTC-7",
+      "UTC-6",
+      "UTC-5",
+      "UTC-4",
+      "UTC-3",
+      "UTC-2",
+      "UTC-1",
+      "UTC+0",
+      "UTC+1",
+      "UTC+2",
+      "UTC+3",
+      "UTC+4",
+      "UTC+5",
+      "UTC+6",
+      "UTC+7",
+      "UTC+8",
+      "UTC+9",
+      "UTC+10",
+      "UTC+11",
+      "UTC+12"
+    ],
+    "established": 1959,
+    "government": "Управляется по системе Договора об Антарктике",
+    "continentId": 6
+  },
+  {
+    "id": 199,
+    "name": "Аргентина",
+    "nameEn": "Argentina",
+    "capital": "Буэнос-Айрес",
+    "capitalEn": "Buenos Aires",
+    "languages": "Испанский",
+    "currency": "Аргентинское песо",
+    "currencySymbol": "$",
+    "phoneCode": "+54",
+    "isoCode": "AR",
+    "isoCode3": "ARG",
+    "flag": "🇦🇷",
+    "neighbors": [165, 166, 167, 205, 263],
+    "population": 47327000,
+    "populationCapital": 15600000,
+    "urbanPercentage": 92,
+    "square": 2780400,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 89
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 10
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC-3"],
+    "established": 1816,
+    "government": "Федеративная президентская республика",
+    "continentId": 4
+  },
+  {
+    "id": 200,
+    "name": "Аруба",
+    "nameEn": "Aruba",
+    "capital": "Ораньестад",
+    "capitalEn": "Oranjestad",
+    "languages": "Нидерландский, Папьяменто",
+    "currency": "Арубанский флорин",
+    "currencySymbol": "ƒ",
+    "phoneCode": "+297",
+    "isoCode": "AW",
+    "isoCode3": "ABW",
+    "flag": "🇦🇼",
+    "neighbors": [],
+    "population": 122000,
+    "populationCapital": 28000,
+    "urbanPercentage": 45,
+    "square": 180,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 92
+      },
+      {
+        "name": "Другие",
+        "percentage": 8
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1986,
+    "government": "Составное королевство в составе Нидерландов",
+    "continentId": 3
+  },
+  {
+    "id": 201,
+    "name": "Бельгия",
+    "nameEn": "Belgium",
+    "capital": "Брюссель",
+    "capitalEn": "Brussels",
+    "languages": "Нидерландский, Французский, Немецкий",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+32",
+    "isoCode": "BE",
+    "isoCode3": "BEL",
+    "flag": "🇧🇪",
+    "neighbors": [28, 31, 172, 236],
+    "population": 11700000,
+    "populationCapital": 2080000,
+    "urbanPercentage": 98,
+    "square": 30528,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 63
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 27
+      },
+      {
+        "name": "Ислам",
+        "percentage": 7
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1830,
+    "government": "Федеративная парламентская конституционная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 202,
+    "name": "Бермудские Острова",
+    "nameEn": "Bermuda",
+    "capital": "Гамильтон",
+    "capitalEn": "Hamilton",
+    "languages": "Английский",
+    "currency": "Бермудский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+1-441",
+    "isoCode": "BM",
+    "isoCode3": "BMU",
+    "flag": "🇧🇲",
+    "neighbors": [],
+    "population": 64000,
+    "populationCapital": 18000,
+    "urbanPercentage": 100,
+    "square": 54,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 85
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 12
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1612,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 203,
+    "name": "Босния и Герцеговина",
+    "nameEn": "Bosnia and Herzegovina",
+    "capital": "Сараево",
+    "capitalEn": "Sarajevo",
+    "languages": "Боснийский, Сербский, Хорватский",
+    "currency": "Конвертируемая марка",
+    "currencySymbol": "KM",
+    "phoneCode": "+387",
+    "isoCode": "BA",
+    "isoCode3": "BIH",
+    "flag": "🇧🇦",
+    "neighbors": [17, 179, 213],
+    "population": 3200000,
+    "populationCapital": 275000,
+    "urbanPercentage": 52,
+    "square": 51197,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 51
+      },
+      {
+        "name": "Христианство",
+        "percentage": 46
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 2
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1992,
+    "government": "Федеративная парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 204,
+    "name": "Остров Буве",
+    "nameEn": "Bouvet Island",
+    "capital": "-",
+    "capitalEn": "-",
+    "languages": "-",
+    "currency": "Норвежская крона",
+    "currencySymbol": "kr",
+    "phoneCode": "",
+    "isoCode": "BV",
+    "isoCode3": "BVT",
+    "flag": "🇧🇻",
+    "neighbors": [],
+    "population": 0,
+    "populationCapital": 0,
+    "urbanPercentage": 0,
+    "square": 49,
+    "religions": [
+      {
+        "name": "Нерелигиозные",
+        "percentage": 100
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 1927,
+    "government": "Зависимая территория Норвегии",
+    "continentId": 7
+  },
+  {
+    "id": 205,
+    "name": "Бразилия",
+    "nameEn": "Brazil",
+    "capital": "Бразилиа",
+    "capitalEn": "Brasília",
+    "languages": "Португальский",
+    "currency": "Бразильский реал",
+    "currencySymbol": "R$",
+    "phoneCode": "+55",
+    "isoCode": "BR",
+    "isoCode3": "BRA",
+    "flag": "🇧🇷",
+    "neighbors": [161, 162, 163, 165, 166, 168, 199, 210, 246, 263],
+    "population": 217000000,
+    "populationCapital": 4300000,
+    "urbanPercentage": 88,
+    "square": 8515767,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 86
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 9
+      },
+      {
+        "name": "Спиритизм",
+        "percentage": 3
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-5", "UTC-4", "UTC-3", "UTC-2"],
+    "established": 1822,
+    "government": "Федеративная президентская республика",
+    "continentId": 4
+  },
+  {
+    "id": 206,
+    "name": "Британская территория в Индийском океане",
+    "nameEn": "British Indian Ocean Territory",
+    "capital": "Диего-Гарсия",
+    "capitalEn": "Diego Garcia",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+246",
+    "isoCode": "IO",
+    "isoCode3": "IOT",
+    "flag": "🇮🇴",
+    "neighbors": [],
+    "population": 3000,
+    "populationCapital": 3000,
+    "urbanPercentage": 100,
+    "square": 60,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Другие",
+        "percentage": 10
+      }
+    ],
+    "timezones": ["UTC+6"],
+    "established": 1810,
+    "government": "Британская заморская территория",
+    "continentId": 2
+  },
+  {
+    "id": 207,
+    "name": "Каймановы Острова",
+    "nameEn": "Cayman Islands",
+    "capital": "Джорджтаун",
+    "capitalEn": "George Town",
+    "languages": "Английский",
+    "currency": "Доллар Каймановых Островов",
+    "currencySymbol": "$",
+    "phoneCode": "+1-345",
+    "isoCode": "KY",
+    "isoCode3": "CYM",
+    "flag": "🇰🇾",
+    "neighbors": [],
+    "population": 82000,
+    "populationCapital": 40000,
+    "urbanPercentage": 100,
+    "square": 264,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 8
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-5"],
+    "established": 1962,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 208,
+    "name": "Остров Рождества",
+    "nameEn": "Christmas Island",
+    "capital": "Флайинг-Фиш-Коув",
+    "capitalEn": "Flying Fish Cove",
+    "languages": "Английский",
+    "currency": "Австралийский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+61",
+    "isoCode": "CX",
+    "isoCode3": "CXR",
+    "flag": "🇨🇽",
+    "neighbors": [],
+    "population": 2000,
+    "populationCapital": 1500,
+    "urbanPercentage": 75,
+    "square": 135,
+    "religions": [
+      {
+        "name": "Буддизм",
+        "percentage": 75
+      },
+      {
+        "name": "Христианство",
+        "percentage": 20
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+7"],
+    "established": 1958,
+    "government": "Внешняя территория Австралии",
+    "continentId": 7
+  },
+  {
+    "id": 209,
+    "name": "Кокосовые (Килинг) острова",
+    "nameEn": "Cocos (Keeling) Islands",
+    "capital": "Уэст-Айленд",
+    "capitalEn": "West Island",
+    "languages": "Английский, Мальтийский",
+    "currency": "Австралийский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+61",
+    "isoCode": "CC",
+    "isoCode3": "CCK",
+    "flag": "🇨🇨",
+    "neighbors": [],
+    "population": 600,
+    "populationCapital": 150,
+    "urbanPercentage": 25,
+    "square": 14,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 80
+      },
+      {
+        "name": "Христианство",
+        "percentage": 20
+      }
+    ],
+    "timezones": ["UTC+6:30"],
+    "established": 1955,
+    "government": "Внешняя территория Австралии",
+    "continentId": 7
+  },
+  {
+    "id": 210,
+    "name": "Колумбия",
+    "nameEn": "Colombia",
+    "capital": "Богота",
+    "capitalEn": "Bogotá",
+    "languages": "Испанский",
+    "currency": "Колумбийское песо",
+    "currencySymbol": "$",
+    "phoneCode": "+57",
+    "isoCode": "CO",
+    "isoCode3": "COL",
+    "flag": "🇨🇴",
+    "neighbors": [164, 168, 205, 245, 246],
+    "population": 53600000,
+    "populationCapital": 7980000,
+    "urbanPercentage": 82,
+    "square": 1141700,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 8
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-5"],
+    "established": 1810,
+    "government": "Президентская республика",
+    "continentId": 4
+  },
+  {
+    "id": 211,
+    "name": "Острова Кука",
+    "nameEn": "Cook Islands",
+    "capital": "Аваруа",
+    "capitalEn": "Avarua",
+    "languages": "Английский, Маори",
+    "currency": "Новозеландский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+682",
+    "isoCode": "CK",
+    "isoCode3": "COK",
+    "flag": "🇨🇰",
+    "neighbors": [],
+    "population": 20000,
+    "populationCapital": 1500,
+    "urbanPercentage": 75,
+    "square": 241,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 96
+      },
+      {
+        "name": "Другие",
+        "percentage": 4
+      }
+    ],
+    "timezones": ["UTC-10"],
+    "established": 1965,
+    "government": "Самоуправляемая территория в свободной ассоциации с Новой Зеландией",
+    "continentId": 7
+  },
+  {
+    "id": 212,
+    "name": "Коста-Рика",
+    "nameEn": "Costa Rica",
+    "capital": "Сан-Хосе",
+    "capitalEn": "San José",
+    "languages": "Испанский",
+    "currency": "Коста-риканский колон",
+    "currencySymbol": "₡",
+    "phoneCode": "+506",
+    "isoCode": "CR",
+    "isoCode3": "CRI",
+    "flag": "🇨🇷",
+    "neighbors": [169, 245],
+    "population": 5200000,
+    "populationCapital": 890000,
+    "urbanPercentage": 81,
+    "square": 51100,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 70
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 27
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC-6"],
+    "established": 1821,
+    "government": "Президентская республика",
+    "continentId": 3
+  },
+  {
+    "id": 213,
+    "name": "Хорватия",
+    "nameEn": "Croatia",
+    "capital": "Загреб",
+    "capitalEn": "Zagreb",
+    "languages": "Хорватский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+385",
+    "isoCode": "HR",
+    "isoCode3": "HRV",
+    "flag": "🇭🇷",
+    "neighbors": [15, 17, 179, 203, 254],
+    "population": 3860000,
+    "populationCapital": 804000,
+    "urbanPercentage": 58,
+    "square": 56590,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 91
+      },
+      {
+        "name": "Ислам",
+        "percentage": 1
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 5
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1991,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 214,
+    "name": "Дания",
+    "nameEn": "Denmark",
+    "capital": "Копенгаген",
+    "capitalEn": "Copenhagen",
+    "languages": "Датский",
+    "currency": "Датская крона",
+    "currencySymbol": "kr",
+    "phoneCode": "+45",
+    "isoCode": "DK",
+    "isoCode3": "DNK",
+    "flag": "🇩🇰",
+    "neighbors": [28],
+    "population": 5960000,
+    "populationCapital": 1100000,
+    "urbanPercentage": 88,
+    "square": 43094,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 75
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 22
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 935,
+    "government": "Конституционная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 215,
+    "name": "Англия",
+    "nameEn": "England",
+    "capital": "Лондон",
+    "capitalEn": "London",
+    "languages": "Английский",
+    "currency": "Фунт стерлингов",
+    "currencySymbol": "£",
+    "phoneCode": "+44",
+    "isoCode": "GB-ENG",
+    "isoCode3": "ENG",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "neighbors": [],
+    "population": 53000000,
+    "populationCapital": 8800000,
+    "urbanPercentage": 84,
+    "square": 133396,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 59
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 36
+      },
+      {
+        "name": "Ислам",
+        "percentage": 3
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 927,
+    "government": "Конституционная монархия (часть Великобритании)",
+    "continentId": 1
+  },
+  {
+    "id": 216,
+    "name": "Фолклендские острова",
+    "nameEn": "Falkland Islands",
+    "capital": "Стэнли",
+    "capitalEn": "Stanley",
+    "languages": "Английский",
+    "currency": "Фунт Фолклендских островов",
+    "currencySymbol": "£",
+    "phoneCode": "+500",
+    "isoCode": "FK",
+    "isoCode3": "FLK",
+    "flag": "🇫🇰",
+    "neighbors": [],
+    "population": 3800,
+    "populationCapital": 2500,
+    "urbanPercentage": 66,
+    "square": 12173,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-3"],
+    "established": 1833,
+    "government": "Британская заморская территория",
+    "continentId": 4
+  },
+  {
+    "id": 217,
+    "name": "Фиджи",
+    "nameEn": "Fiji",
+    "capital": "Сува",
+    "capitalEn": "Suva",
+    "languages": "Английский, Фиджийский, Хинди",
+    "currency": "Фиджийский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+679",
+    "isoCode": "FJ",
+    "isoCode3": "FJI",
+    "flag": "🇫🇯",
+    "neighbors": [],
+    "population": 924000,
+    "populationCapital": 94000,
+    "urbanPercentage": 57,
+    "square": 18274,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 64
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 28
+      },
+      {
+        "name": "Ислам",
+        "percentage": 6
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC+12"],
+    "established": 1970,
+    "government": "Парламентская республика",
+    "continentId": 7
+  },
+  {
+    "id": 218,
+    "name": "Французская Полинезия",
+    "nameEn": "French Polynesia",
+    "capital": "Папеэте",
+    "capitalEn": "Papeete",
+    "languages": "Французский, Таитянский",
+    "currency": "Французский тихоокеанский франк",
+    "currencySymbol": "₣",
+    "phoneCode": "+689",
+    "isoCode": "PF",
+    "isoCode3": "PYF",
+    "flag": "🇵🇫",
+    "neighbors": [],
+    "population": 304000,
+    "populationCapital": 26000,
+    "urbanPercentage": 63,
+    "square": 4167,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 94
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC-10", "UTC-9:30", "UTC-9"],
+    "established": 1842,
+    "government": "Заморское сообщество Франции",
+    "continentId": 7
+  },
+  {
+    "id": 219,
+    "name": "Французские Южные и Антарктические территории",
+    "nameEn": "French Southern territories",
+    "capital": "Порт-о-Франсэ",
+    "capitalEn": "Port-aux-Français",
+    "languages": "Французский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "",
+    "isoCode": "TF",
+    "isoCode3": "ATF",
+    "flag": "🇹🇫",
+    "neighbors": [],
+    "population": 150,
+    "populationCapital": 150,
+    "urbanPercentage": 100,
+    "square": 7747,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Другие",
+        "percentage": 10
+      }
+    ],
+    "timezones": ["UTC+5"],
+    "established": 1955,
+    "government": "Заморская территория Франции",
+    "continentId": 7
+  },
+  {
+    "id": 220,
+    "name": "Гваделупа",
+    "nameEn": "Guadeloupe",
+    "capital": "Бас-Тер",
+    "capitalEn": "Basse-Terre",
+    "languages": "Французский, Антильский креольский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+590",
+    "isoCode": "GP",
+    "isoCode3": "GLP",
+    "flag": "🇬🇵",
+    "neighbors": [],
+    "population": 384000,
+    "populationCapital": 11000,
+    "urbanPercentage": 98,
+    "square": 1628,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1946,
+    "government": "Заморский департамент Франции",
+    "continentId": 3
+  },
+  {
+    "id": 221,
+    "name": "Гуам",
+    "nameEn": "Guam",
+    "capital": "Хагатна",
+    "capitalEn": "Hagåtña",
+    "languages": "Английский, Чаморро",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-671",
+    "isoCode": "GU",
+    "isoCode3": "GUM",
+    "flag": "🇬🇺",
+    "neighbors": [],
+    "population": 169000,
+    "populationCapital": 1000,
+    "urbanPercentage": 95,
+    "square": 544,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 94
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC+10"],
+    "established": 1898,
+    "government": "Неинкорпорированная организованная территория США",
+    "continentId": 7
+  },
+  {
+    "id": 222,
+    "name": "Остров Херд и острова Макдональд",
+    "nameEn": "Heard Island and McDonald Islands",
+    "capital": "-",
+    "capitalEn": "-",
+    "languages": "-",
+    "currency": "Австралийский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "",
+    "isoCode": "HM",
+    "isoCode3": "HMD",
+    "flag": "🇭🇲",
+    "neighbors": [],
+    "population": 0,
+    "populationCapital": 0,
+    "urbanPercentage": 0,
+    "square": 412,
+    "religions": [
+      {
+        "name": "Нерелигиозные",
+        "percentage": 100
+      }
+    ],
+    "timezones": ["UTC+5"],
+    "established": 1947,
+    "government": "Внешняя территория Австралии",
+    "continentId": 7
+  },
+  {
+    "id": 223,
+    "name": "Ватикан",
+    "nameEn": "Holy See (Vatican City State)",
+    "capital": "Ватикан",
+    "capitalEn": "Vatican City",
+    "languages": "Итальянский, Латынь",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+379",
+    "isoCode": "VA",
+    "isoCode3": "VAT",
+    "flag": "🇻🇦",
+    "neighbors": [30],
+    "population": 900,
+    "populationCapital": 900,
+    "urbanPercentage": 100,
+    "square": 0.44,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 100
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1929,
+    "government": "Абсолютная теократическая монархия",
+    "continentId": 1
+  },
+  {
+    "id": 224,
+    "name": "Гонконг",
+    "nameEn": "Hong Kong",
+    "capital": "Гонконг",
+    "capitalEn": "Hong Kong",
+    "languages": "Китайский (кантонский), Английский",
+    "currency": "Гонконгский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+852",
+    "isoCode": "HK",
+    "isoCode3": "HKG",
+    "flag": "🇭🇰",
+    "neighbors": [2],
+    "population": 7500000,
+    "populationCapital": 7500000,
+    "urbanPercentage": 100,
+    "square": 1104,
+    "religions": [
+      {
+        "name": "Китайская народная религия",
+        "percentage": 45
+      },
+      {
+        "name": "Буддизм",
+        "percentage": 30
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 20
+      },
+      {
+        "name": "Христианство",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+8"],
+    "established": 1997,
+    "government": "Специальный административный район Китая",
+    "continentId": 1
+  },
+  {
+    "id": 225,
+    "name": "Ирак",
+    "nameEn": "Iraq",
+    "capital": "Багдад",
+    "capitalEn": "Baghdad",
+    "languages": "Арабский, Курдский",
+    "currency": "Иракский динар",
+    "currencySymbol": "ع.د",
+    "phoneCode": "+964",
+    "isoCode": "IQ",
+    "isoCode3": "IRQ",
+    "flag": "🇮🇶",
+    "neighbors": [22, 39, 227, 228, 251, 258],
+    "population": 47000000,
+    "populationCapital": 8100000,
+    "urbanPercentage": 71,
+    "square": 438317,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 99
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+3"],
+    "established": 1932,
+    "government": "Федеративная парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 226,
+    "name": "Израиль",
+    "nameEn": "Israel",
+    "capital": "Иерусалим",
+    "capitalEn": "Jerusalem",
+    "languages": "Иврит, Арабский",
+    "currency": "Новый израильский шекель",
+    "currencySymbol": "₪",
+    "phoneCode": "+972",
+    "isoCode": "IL",
+    "isoCode3": "ISR",
+    "flag": "🇮🇱",
+    "neighbors": [58, 227, 229, 244, 258],
+    "population": 10100000,
+    "populationCapital": 970000,
+    "urbanPercentage": 93,
+    "square": 22072,
+    "religions": [
+      {
+        "name": "Иудаизм",
+        "percentage": 73
+      },
+      {
+        "name": "Ислам",
+        "percentage": 21
+      },
+      {
+        "name": "Христианство",
+        "percentage": 2
+      },
+      {
+        "name": "Другие",
+        "percentage": 4
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1948,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 227,
+    "name": "Иордания",
+    "nameEn": "Jordan",
+    "capital": "Амман",
+    "capitalEn": "Amman",
+    "languages": "Арабский",
+    "currency": "Иорданский динар",
+    "currencySymbol": "د.ا",
+    "phoneCode": "+962",
+    "isoCode": "JO",
+    "isoCode3": "JOR",
+    "flag": "🇯🇴",
+    "neighbors": [225, 226, 244, 251, 258],
+    "population": 11500000,
+    "populationCapital": 4300000,
+    "urbanPercentage": 92,
+    "square": 89342,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 97
+      },
+      {
+        "name": "Христианство",
+        "percentage": 2
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+3"],
+    "established": 1946,
+    "government": "Конституционная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 228,
+    "name": "Кувейт",
+    "nameEn": "Kuwait",
+    "capital": "Эль-Кувейт",
+    "capitalEn": "Kuwait City",
+    "languages": "Арабский",
+    "currency": "Кувейтский динар",
+    "currencySymbol": "د.ك",
+    "phoneCode": "+965",
+    "isoCode": "KW",
+    "isoCode3": "KWT",
+    "flag": "🇰🇼",
+    "neighbors": [225, 251],
+    "population": 4980000,
+    "populationCapital": 3100000,
+    "urbanPercentage": 100,
+    "square": 17818,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 85
+      },
+      {
+        "name": "Христианство",
+        "percentage": 15
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+3"],
+    "established": 1961,
+    "government": "Унитарная конституционная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 229,
+    "name": "Ливан",
+    "nameEn": "Lebanon",
+    "capital": "Бейрут",
+    "capitalEn": "Beirut",
+    "languages": "Арабский, Французский",
+    "currency": "Ливанский фунт",
+    "currencySymbol": "ل.ل",
+    "phoneCode": "+961",
+    "isoCode": "LB",
+    "isoCode3": "LBN",
+    "flag": "🇱🇧",
+    "neighbors": [226, 258],
+    "population": 5350000,
+    "populationCapital": 2200000,
+    "urbanPercentage": 89,
+    "square": 10400,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 61
+      },
+      {
+        "name": "Христианство",
+        "percentage": 34
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1943,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 230,
+    "name": "Макао",
+    "nameEn": "Macao",
+    "capital": "Макао",
+    "capitalEn": "Macao",
+    "languages": "Китайский (кантонский), Португальский",
+    "currency": "Патака Макао",
+    "currencySymbol": "MOP$",
+    "phoneCode": "+853",
+    "isoCode": "MO",
+    "isoCode3": "MAC",
+    "flag": "🇲🇴",
+    "neighbors": [2],
+    "population": 687000,
+    "populationCapital": 687000,
+    "urbanPercentage": 100,
+    "square": 33,
+    "religions": [
+      {
+        "name": "Китайская народная религия",
+        "percentage": 50
+      },
+      {
+        "name": "Буддизм",
+        "percentage": 40
+      },
+      {
+        "name": "Христианство",
+        "percentage": 7
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+8"],
+    "established": 1999,
+    "government": "Специальный административный район Китая",
+    "continentId": 1
+  },
+  {
+    "id": 231,
+    "name": "Мартиника",
+    "nameEn": "Martinique",
+    "capital": "Фор-де-Франс",
+    "capitalEn": "Fort-de-France",
+    "languages": "Французский, Антильский креольский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+596",
+    "isoCode": "MQ",
+    "isoCode3": "MTQ",
+    "flag": "🇲🇶",
+    "neighbors": [],
+    "population": 352300,
+    "populationCapital": 76000,
+    "urbanPercentage": 89,
+    "square": 1128,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1946,
+    "government": "Заморский департамент Франции",
+    "continentId": 3
+  },
+  {
+    "id": 232,
+    "name": "Майотта",
+    "nameEn": "Mayotte",
+    "capital": "Мамудзу",
+    "capitalEn": "Mamoudzou",
+    "languages": "Французский, Маоре, Буши",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+262",
+    "isoCode": "YT",
+    "isoCode3": "MYT",
+    "flag": "🇾🇹",
+    "neighbors": [],
+    "population": 321000,
+    "populationCapital": 71000,
+    "urbanPercentage": 64,
+    "square": 374,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 97
+      },
+      {
+        "name": "Христианство",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+3"],
+    "established": 2011,
+    "government": "Заморский департамент Франции",
+    "continentId": 2
+  },
+  {
+    "id": 233,
+    "name": "Федеративные Штаты Микронезии",
+    "nameEn": "Micronesia, Federated States of",
+    "capital": "Паликир",
+    "capitalEn": "Palikir",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+691",
+    "isoCode": "FM",
+    "isoCode3": "FSM",
+    "flag": "🇫🇲",
+    "neighbors": [],
+    "population": 115000,
+    "populationCapital": 7000,
+    "urbanPercentage": 22,
+    "square": 702,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+10", "UTC+11"],
+    "established": 1986,
+    "government": "Федеративная президентская республика в свободной ассоциации с США",
+    "continentId": 7
+  },
+  {
+    "id": 234,
+    "name": "Молдова",
+    "nameEn": "Moldova",
+    "capital": "Кишинёв",
+    "capitalEn": "Chișinău",
+    "languages": "Румынский (молдавский)",
+    "currency": "Молдавский лей",
+    "currencySymbol": "lei",
+    "phoneCode": "+373",
+    "isoCode": "MD",
+    "isoCode3": "MDA",
+    "flag": "🇲🇩",
+    "neighbors": [13, 16],
+    "population": 2400000,
+    "populationCapital": 906000,
+    "urbanPercentage": 43,
+    "square": 33851,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 3
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1991,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 235,
+    "name": "Монтсеррат",
+    "nameEn": "Montserrat",
+    "capital": "Брейдс (фактическая), Плимут (официальная, заброшена)",
+    "capitalEn": "Brades (de facto), Plymouth (official, abandoned)",
+    "languages": "Английский",
+    "currency": "Восточно-карибский доллар",
+    "currencySymbol": "EC$",
+    "phoneCode": "+1-664",
+    "isoCode": "MS",
+    "isoCode3": "MSR",
+    "flag": "🇲🇸",
+    "neighbors": [],
+    "population": 4600,
+    "populationCapital": 1000,
+    "urbanPercentage": 25,
+    "square": 102,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1632,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 236,
+    "name": "Нидерланды",
+    "nameEn": "Netherlands",
+    "capital": "Амстердам (столица), Гаага (резиденция правительства)",
+    "capitalEn": "Amsterdam (capital), The Hague (seat of government)",
+    "languages": "Нидерландский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+31",
+    "isoCode": "NL",
+    "isoCode3": "NLD",
+    "flag": "🇳🇱",
+    "neighbors": [28, 201],
+    "population": 18400000,
+    "populationCapital": 921000,
+    "urbanPercentage": 93,
+    "square": 41865,
+    "religions": [
+      {
+        "name": "Нерелигиозные",
+        "percentage": 58
+      },
+      {
+        "name": "Христианство",
+        "percentage": 36
+      },
+      {
+        "name": "Ислам",
+        "percentage": 5
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+1", "UTC-4 (на карибских островах)"],
+    "established": 1581,
+    "government": "Конституционная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 237,
+    "name": "Нидерландские Антильские острова",
+    "nameEn": "Netherlands Antilles",
+    "capital": "Виллемстад",
+    "capitalEn": "Willemstad",
+    "languages": "Нидерландский, Папьяменто, Английский",
+    "currency": "Нидерландский антильский гульден",
+    "currencySymbol": "NAƒ",
+    "phoneCode": "+599",
+    "isoCode": "AN",
+    "isoCode3": "ANT",
+    "flag": "🇧🇶",
+    "neighbors": [],
+    "population": 183000,
+    "populationCapital": 150000,
+    "urbanPercentage": 82,
+    "square": 800,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 92
+      },
+      {
+        "name": "Другие",
+        "percentage": 8
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1954,
+    "government": "Автономная территория в составе Королевства Нидерландов (распущена в 2010)",
+    "continentId": 3
+  },
+  {
+    "id": 238,
+    "name": "Новая Каледония",
+    "nameEn": "New Caledonia",
+    "capital": "Нумеа",
+    "capitalEn": "Nouméa",
+    "languages": "Французский",
+    "currency": "Французский тихоокеанский франк",
+    "currencySymbol": "₣",
+    "phoneCode": "+687",
+    "isoCode": "NC",
+    "isoCode3": "NCL",
+    "flag": "🇳🇨",
+    "neighbors": [],
+    "population": 294000,
+    "populationCapital": 100000,
+    "urbanPercentage": 70,
+    "square": 18575,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 85
+      },
+      {
+        "name": "Другие",
+        "percentage": 15
+      }
+    ],
+    "timezones": ["UTC+11"],
+    "established": 1853,
+    "government": "Заморское сообщество Франции (с особым статусом)",
+    "continentId": 7
+  },
+  {
+    "id": 239,
+    "name": "Ниуэ",
+    "nameEn": "Niue",
+    "capital": "Алофи",
+    "capitalEn": "Alofi",
+    "languages": "Английский, Ниуэанский",
+    "currency": "Новозеландский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+683",
+    "isoCode": "NU",
+    "isoCode3": "NIU",
+    "flag": "🇳🇺",
+    "neighbors": [],
+    "population": 1822,
+    "populationCapital": 600,
+    "urbanPercentage": 33,
+    "square": 260,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 97
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC-11"],
+    "established": 1974,
+    "government": "Самоуправляющаяся территория в свободной ассоциации с Новой Зеландией",
+    "continentId": 7
+  },
+  {
+    "id": 240,
+    "name": "Остров Норфолк",
+    "nameEn": "Norfolk Island",
+    "capital": "Кингстон",
+    "capitalEn": "Kingston",
+    "languages": "Английский, Норфолкский",
+    "currency": "Австралийский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+672",
+    "isoCode": "NF",
+    "isoCode3": "NFK",
+    "flag": "🇳🇫",
+    "neighbors": [],
+    "population": 2188,
+    "populationCapital": 300,
+    "urbanPercentage": 40,
+    "square": 35,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 85
+      },
+      {
+        "name": "Другие",
+        "percentage": 15
+      }
+    ],
+    "timezones": ["UTC+11"],
+    "established": 1856,
+    "government": "Внешняя территория Австралии",
+    "continentId": 7
+  },
+  {
+    "id": 241,
+    "name": "Северная Ирландия",
+    "nameEn": "Northern Ireland",
+    "capital": "Белфаст",
+    "capitalEn": "Belfast",
+    "languages": "Английский, Ирландский, Ольстерско-шотландский",
+    "currency": "Фунт стерлингов",
+    "currencySymbol": "£",
+    "phoneCode": "+44",
+    "isoCode": "GB-NIR",
+    "isoCode3": "NIR",
+    "flag": "🇬🇧",
+    "neighbors": [],
+    "population": 1903543,
+    "populationCapital": 634000,
+    "urbanPercentage": 85,
+    "square": 14130,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 79
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 18
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 1921,
+    "government": "Административно-политическая часть Великобритании",
+    "continentId": 1
+  },
+  {
+    "id": 242,
+    "name": "Северные Марианские Острова",
+    "nameEn": "Northern Mariana Islands",
+    "capital": "Сайпан",
+    "capitalEn": "Saipan",
+    "languages": "Английский, Чаморро, Каролинский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-670",
+    "isoCode": "MP",
+    "isoCode3": "MNP",
+    "flag": "🇲🇵",
+    "neighbors": [],
+    "population": 53883,
+    "populationCapital": 43000,
+    "urbanPercentage": 92,
+    "square": 464,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+10"],
+    "established": 1978,
+    "government": "Содружество в политическом союзе с США",
+    "continentId": 7
+  },
+  {
+    "id": 243,
+    "name": "Оман",
+    "nameEn": "Oman",
+    "capital": "Маскат",
+    "capitalEn": "Muscat",
+    "languages": "Арабский",
+    "currency": "Оманский риал",
+    "currencySymbol": "ر.ع.",
+    "phoneCode": "+968",
+    "isoCode": "OM",
+    "isoCode3": "OMN",
+    "flag": "🇴🇲",
+    "neighbors": [159, 160, 251],
+    "population": 5494691,
+    "populationCapital": 1630000,
+    "urbanPercentage": 87,
+    "square": 309500,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 88
+      },
+      {
+        "name": "Христианство",
+        "percentage": 6
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 3
+      },
+      {
+        "name": "Другие",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+4"],
+    "established": 1650,
+    "government": "Унитарная исламская абсолютная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 244,
+    "name": "Палестина",
+    "nameEn": "Palestine",
+    "capital": "Восточный Иерусалим (де-юре), Рамаллах (адм. центр Западного берега), Газа (адм. центр сектора Газа)",
+    "capitalEn": "East Jerusalem (de jure), Ramallah (admin. center West Bank), Gaza (admin. center Gaza Strip)",
+    "languages": "Арабский",
+    "currency": "Новый израильский шекель, Иорданский динар",
+    "currencySymbol": "₪, د.ا",
+    "phoneCode": "+970",
+    "isoCode": "PS",
+    "isoCode3": "PSE",
+    "flag": "🇵🇸",
+    "neighbors": [58, 226, 227],
+    "population": 5700000,
+    "populationCapital": 154000,
+    "urbanPercentage": 77,
+    "square": 6020,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 93
+      },
+      {
+        "name": "Христианство",
+        "percentage": 6
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1988,
+    "government": "Президентская республика (частично признанное государство)",
+    "continentId": 1
+  },
+  {
+    "id": 245,
+    "name": "Панама",
+    "nameEn": "Panama",
+    "capital": "Панама",
+    "capitalEn": "Panama City",
+    "languages": "Испанский",
+    "currency": "Панамский бальбоа, Доллар США",
+    "currencySymbol": "B/., $",
+    "phoneCode": "+507",
+    "isoCode": "PA",
+    "isoCode3": "PAN",
+    "flag": "🇵🇦",
+    "neighbors": [210, 212],
+    "population": 4438000,
+    "populationCapital": 1880000,
+    "urbanPercentage": 69,
+    "square": 75417,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 88
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 10
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-5"],
+    "established": 1903,
+    "government": "Президентская республика",
+    "continentId": 3
+  },
+  {
+    "id": 246,
+    "name": "Перу",
+    "nameEn": "Peru",
+    "capital": "Лима",
+    "capitalEn": "Lima",
+    "languages": "Испанский, Кечуа, Аймара",
+    "currency": "Перуанский соль",
+    "currencySymbol": "S/.",
+    "phoneCode": "+51",
+    "isoCode": "PE",
+    "isoCode3": "PER",
+    "flag": "🇵🇪",
+    "neighbors": [164, 165, 167, 205, 210],
+    "population": 34400000,
+    "populationCapital": 9800000,
+    "urbanPercentage": 78,
+    "square": 1285216,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 94
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 5
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC-5"],
+    "established": 1821,
+    "government": "Президентская республика",
+    "continentId": 4
+  },
+  {
+    "id": 247,
+    "name": "Питкэрн",
+    "nameEn": "Pitcairn",
+    "capital": "Адамстаун",
+    "capitalEn": "Adamstown",
+    "languages": "Английский, Питкэрнский",
+    "currency": "Новозеландский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+64",
+    "isoCode": "PN",
+    "isoCode3": "PCN",
+    "flag": "🇵🇳",
+    "neighbors": [],
+    "population": 50,
+    "populationCapital": 50,
+    "urbanPercentage": 100,
+    "square": 47,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 100
+      }
+    ],
+    "timezones": ["UTC-8"],
+    "established": 1838,
+    "government": "Британская заморская территория",
+    "continentId": 7
+  },
+  {
+    "id": 248,
+    "name": "Реюньон",
+    "nameEn": "Reunion",
+    "capital": "Сен-Дени",
+    "capitalEn": "Saint-Denis",
+    "languages": "Французский, Реюньонский креольский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+262",
+    "isoCode": "RE",
+    "isoCode3": "REU",
+    "flag": "🇷🇪",
+    "neighbors": [],
+    "population": 895000,
+    "populationCapital": 151000,
+    "urbanPercentage": 100,
+    "square": 2511,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 86
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 7
+      },
+      {
+        "name": "Ислам",
+        "percentage": 2
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC+4"],
+    "established": 1946,
+    "government": "Заморский департамент Франции",
+    "continentId": 2
+  },
+  {
+    "id": 249,
+    "name": "Остров Святой Елены",
+    "nameEn": "Saint Helena",
+    "capital": "Джеймстаун",
+    "capitalEn": "Jamestown",
+    "languages": "Английский",
+    "currency": "Фунт Святой Елены",
+    "currencySymbol": "£",
+    "phoneCode": "+290",
+    "isoCode": "SH",
+    "isoCode3": "SHN",
+    "flag": "🇸🇭",
+    "neighbors": [],
+    "population": 4500,
+    "populationCapital": 700,
+    "urbanPercentage": 40,
+    "square": 121,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 96
+      },
+      {
+        "name": "Другие",
+        "percentage": 4
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 1659,
+    "government": "Британская заморская территория",
+    "continentId": 2
+  },
+  {
+    "id": 250,
+    "name": "Сен-Пьер и Микелон",
+    "nameEn": "Saint Pierre and Miquelon",
+    "capital": "Сен-Пьер",
+    "capitalEn": "Saint-Pierre",
+    "languages": "Французский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+508",
+    "isoCode": "PM",
+    "isoCode3": "SPM",
+    "flag": "🇵🇲",
+    "neighbors": [],
+    "population": 5819,
+    "populationCapital": 5400,
+    "urbanPercentage": 93,
+    "square": 242,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-3"],
+    "established": 1814,
+    "government": "Заморское сообщество Франции",
+    "continentId": 3
+  },
+  {
+    "id": 251,
+    "name": "Саудовская Аравия",
+    "nameEn": "Saudi Arabia",
+    "capital": "Эр-Рияд",
+    "capitalEn": "Riyadh",
+    "languages": "Арабский",
+    "currency": "Саудовский риял",
+    "currencySymbol": "ر.س",
+    "phoneCode": "+966",
+    "isoCode": "SA",
+    "isoCode3": "SAU",
+    "flag": "🇸🇦",
+    "neighbors": [158, 159, 160, 225, 227, 228, 243],
+    "population": 32175000,
+    "populationCapital": 7700000,
+    "urbanPercentage": 84,
+    "square": 2149690,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 97
+      },
+      {
+        "name": "Христианство",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+3"],
+    "established": 1932,
+    "government": "Абсолютная монархия",
+    "continentId": 1
+  },
+  {
+    "id": 252,
+    "name": "Шотландия",
+    "nameEn": "Scotland",
+    "capital": "Эдинбург",
+    "capitalEn": "Edinburgh",
+    "languages": "Английский, Гэльский, Скотс",
+    "currency": "Фунт стерлингов",
+    "currencySymbol": "£",
+    "phoneCode": "+44",
+    "isoCode": "GB-SCT",
+    "isoCode3": "SCT",
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "neighbors": [],
+    "population": 5463300,
+    "populationCapital": 525000,
+    "urbanPercentage": 83,
+    "square": 77933,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 54
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 40
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 843,
+    "government": "Административно-политическая часть Великобритании",
+    "continentId": 1
+  },
+  {
+    "id": 253,
+    "name": "Сингапур",
+    "nameEn": "Singapore",
+    "capital": "Сингапур",
+    "capitalEn": "Singapore",
+    "languages": "Английский, Китайский, Малайский, Тамильский",
+    "currency": "Сингапурский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+65",
+    "isoCode": "SG",
+    "isoCode3": "SGP",
+    "flag": "🇸🇬",
+    "neighbors": [],
+    "population": 6050000,
+    "populationCapital": 6050000,
+    "urbanPercentage": 100,
+    "square": 735,
+    "religions": [
+      {
+        "name": "Буддизм",
+        "percentage": 31
+      },
+      {
+        "name": "Христианство",
+        "percentage": 19
+      },
+      {
+        "name": "Ислам",
+        "percentage": 15
+      },
+      {
+        "name": "Даосизм",
+        "percentage": 8
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 5
+      },
+      {
+        "name": "Другие",
+        "percentage": 22
+      }
+    ],
+    "timezones": ["UTC+8"],
+    "established": 1965,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 254,
+    "name": "Словения",
+    "nameEn": "Slovenia",
+    "capital": "Любляна",
+    "capitalEn": "Ljubljana",
+    "languages": "Словенский",
+    "currency": "Евро",
+    "currencySymbol": "€",
+    "phoneCode": "+386",
+    "isoCode": "SI",
+    "isoCode3": "SVN",
+    "flag": "🇸🇮",
+    "neighbors": [15, 26, 30, 213],
+    "population": 2120000,
+    "populationCapital": 278000,
+    "urbanPercentage": 55,
+    "square": 20273,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 78
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 18
+      },
+      {
+        "name": "Другие",
+        "percentage": 4
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1991,
+    "government": "Парламентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 255,
+    "name": "Южно-Африканская Республика",
+    "nameEn": "South Africa",
+    "capital": "Претория (административная), Кейптаун (законодательная), Блумфонтейн (судебная)",
+    "capitalEn": "Pretoria (executive), Cape Town (legislative), Bloemfontein (judicial)",
+    "languages": "Английский, Африкаанс, Зулу, Коса, и еще 8 официальных языков",
+    "currency": "Южноафриканский рэнд",
+    "currencySymbol": "R",
+    "phoneCode": "+27",
+    "isoCode": "ZA",
+    "isoCode3": "ZAF",
+    "flag": "🇿🇦",
+    "neighbors": [90, 93, 94, 95, 112, 113],
+    "population": 63419000,
+    "populationCapital": 4337000,
+    "urbanPercentage": 67,
+    "square": 1220813,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 86
+      },
+      {
+        "name": "Традиционные верования",
+        "percentage": 5
+      },
+      {
+        "name": "Ислам",
+        "percentage": 2
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 1
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1910,
+    "government": "Парламентская республика",
+    "continentId": 2
+  },
+  {
+    "id": 256,
+    "name": "Южная Георгия и Южные Сандвичевы острова",
+    "nameEn": "South Georgia and the South Sandwich Islands",
+    "capital": "Кинг-Эдуард-Пойнт (Грютвикен)",
+    "capitalEn": "King Edward Point (Grytviken)",
+    "languages": "Английский",
+    "currency": "Фунт стерлингов",
+    "currencySymbol": "£",
+    "phoneCode": "+500",
+    "isoCode": "GS",
+    "isoCode3": "SGS",
+    "flag": "🇬🇸",
+    "neighbors": [],
+    "population": 30,
+    "populationCapital": 22,
+    "urbanPercentage": 100,
+    "square": 3903,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 100
+      }
+    ],
+    "timezones": ["UTC-2"],
+    "established": 1775,
+    "government": "Британская заморская территория",
+    "continentId": 7
+  },
+  {
+    "id": 257,
+    "name": "Шпицберген и Ян-Майен",
+    "nameEn": "Svalbard and Jan Mayen",
+    "capital": "Лонгйир (административный центр Шпицбергена)",
+    "capitalEn": "Longyearbyen (administrative center of Svalbard)",
+    "languages": "Норвежский",
+    "currency": "Норвежская крона",
+    "currencySymbol": "kr",
+    "phoneCode": "+47",
+    "isoCode": "SJ",
+    "isoCode3": "SJM",
+    "flag": "🇸🇯",
+    "neighbors": [],
+    "population": 2650,
+    "populationCapital": 2400,
+    "urbanPercentage": 91,
+    "square": 62045,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 85
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 15
+      }
+    ],
+    "timezones": ["UTC+1"],
+    "established": 1925,
+    "government": "Территория Норвегии",
+    "continentId": 1
+  },
+  {
+    "id": 258,
+    "name": "Сирия",
+    "nameEn": "Syria",
+    "capital": "Дамаск",
+    "capitalEn": "Damascus",
+    "languages": "Арабский",
+    "currency": "Сирийский фунт",
+    "currencySymbol": "ل.س",
+    "phoneCode": "+963",
+    "isoCode": "SY",
+    "isoCode3": "SYR",
+    "flag": "🇸🇾",
+    "neighbors": [22, 225, 226, 227, 229],
+    "population": 24350000,
+    "populationCapital": 2690000,
+    "urbanPercentage": 57,
+    "square": 185180,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 87
+      },
+      {
+        "name": "Христианство",
+        "percentage": 10
+      },
+      {
+        "name": "Друзы",
+        "percentage": 3
+      }
+    ],
+    "timezones": ["UTC+2"],
+    "established": 1946,
+    "government": "Президентская республика",
+    "continentId": 1
+  },
+  {
+    "id": 259,
+    "name": "Токелау",
+    "nameEn": "Tokelau",
+    "capital": "Нукунону (административный центр, неофициальная столица)",
+    "capitalEn": "Nukunonu (administrative center, unofficial capital)",
+    "languages": "Английский, Токелауский",
+    "currency": "Новозеландский доллар",
+    "currencySymbol": "$",
+    "phoneCode": "+690",
+    "isoCode": "TK",
+    "isoCode3": "TKL",
+    "flag": "🇹🇰",
+    "neighbors": [],
+    "population": 2560,
+    "populationCapital": 600,
+    "urbanPercentage": 0,
+    "square": 10,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 98
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC+13"],
+    "established": 1948,
+    "government": "Территория Новой Зеландии",
+    "continentId": 7
+  },
+  {
+    "id": 260,
+    "name": "Тёркс и Кайкос",
+    "nameEn": "Turks and Caicos Islands",
+    "capital": "Коберн-Таун",
+    "capitalEn": "Cockburn Town",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-649",
+    "isoCode": "TC",
+    "isoCode3": "TCA",
+    "flag": "🇹🇨",
+    "neighbors": [],
+    "population": 38900,
+    "populationCapital": 3700,
+    "urbanPercentage": 90,
+    "square": 948,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-5"],
+    "established": 1848,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 261,
+    "name": "Соединённые Штаты Америки",
+    "nameEn": "United States",
+    "capital": "Вашингтон",
+    "capitalEn": "Washington, D.C.",
+    "languages": "Английский (де-факто)",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1",
+    "isoCode": "US",
+    "isoCode3": "USA",
+    "flag": "🇺🇸",
+    "neighbors": [116, 117],
+    "population": 339000000,
+    "populationCapital": 689000,
+    "urbanPercentage": 83,
+    "square": 9833517,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 63
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 29
+      },
+      {
+        "name": "Иудаизм",
+        "percentage": 2
+      },
+      {
+        "name": "Ислам",
+        "percentage": 1
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-5", "UTC-6", "UTC-7", "UTC-8", "UTC-9", "UTC-10", "UTC+12", "UTC+10"],
+    "established": 1776,
+    "government": "Федеративная президентская республика",
+    "continentId": 3
+  },
+  {
+    "id": 262,
+    "name": "Внешние малые острова США",
+    "nameEn": "United States Minor Outlying Islands",
+    "capital": "Нет официальной столицы (администрация из Вашингтона)",
+    "capitalEn": "No official capital (administered from Washington, D.C.)",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "",
+    "isoCode": "UM",
+    "isoCode3": "UMI",
+    "flag": "🇺🇲",
+    "neighbors": [],
+    "population": 300,
+    "populationCapital": 0,
+    "urbanPercentage": 0,
+    "square": 34,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 90
+      },
+      {
+        "name": "Другие",
+        "percentage": 10
+      }
+    ],
+    "timezones": ["UTC-11", "UTC-10", "UTC-9", "UTC+12"],
+    "established": 1856,
+    "government": "Территории США",
+    "continentId": 7
+  },
+  {
+    "id": 263,
+    "name": "Уругвай",
+    "nameEn": "Uruguay",
+    "capital": "Монтевидео",
+    "capitalEn": "Montevideo",
+    "languages": "Испанский",
+    "currency": "Уругвайское песо",
+    "currencySymbol": "$",
+    "phoneCode": "+598",
+    "isoCode": "UY",
+    "isoCode3": "URY",
+    "flag": "🇺🇾",
+    "neighbors": [199, 205],
+    "population": 3430000,
+    "populationCapital": 1380000,
+    "urbanPercentage": 96,
+    "square": 176215,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 57
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 41
+      },
+      {
+        "name": "Другие",
+        "percentage": 2
+      }
+    ],
+    "timezones": ["UTC-3"],
+    "established": 1825,
+    "government": "Президентская республика",
+    "continentId": 4
+  },
+  {
+    "id": 264,
+    "name": "Британские Виргинские острова",
+    "nameEn": "Virgin Islands, British",
+    "capital": "Род-Таун",
+    "capitalEn": "Road Town",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-284",
+    "isoCode": "VG",
+    "isoCode3": "VGB",
+    "flag": "🇻🇬",
+    "neighbors": [],
+    "population": 31200,
+    "populationCapital": 9500,
+    "urbanPercentage": 52,
+    "square": 151,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 95
+      },
+      {
+        "name": "Другие",
+        "percentage": 5
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1672,
+    "government": "Британская заморская территория",
+    "continentId": 3
+  },
+  {
+    "id": 265,
+    "name": "Американские Виргинские острова",
+    "nameEn": "Virgin Islands, U.S.",
+    "capital": "Шарлотта-Амалия",
+    "capitalEn": "Charlotte Amalie",
+    "languages": "Английский",
+    "currency": "Доллар США",
+    "currencySymbol": "$",
+    "phoneCode": "+1-340",
+    "isoCode": "VI",
+    "isoCode3": "VIR",
+    "flag": "🇻🇮",
+    "neighbors": [],
+    "population": 87000,
+    "populationCapital": 14500,
+    "urbanPercentage": 96,
+    "square": 347,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 94
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC-4"],
+    "established": 1917,
+    "government": "Неинкорпорированная организованная территория США",
+    "continentId": 3
+  },
+  {
+    "id": 266,
+    "name": "Уэльс",
+    "nameEn": "Wales",
+    "capital": "Кардифф",
+    "capitalEn": "Cardiff",
+    "languages": "Английский, Валлийский",
+    "currency": "Фунт стерлингов",
+    "currencySymbol": "£",
+    "phoneCode": "+44",
+    "isoCode": "GB-WLS",
+    "isoCode3": "WLS",
+    "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "neighbors": [],
+    "population": 3100000,
+    "populationCapital": 372000,
+    "urbanPercentage": 81,
+    "square": 20779,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 58
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 36
+      },
+      {
+        "name": "Другие",
+        "percentage": 6
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 1536,
+    "government": "Административно-политическая часть Великобритании",
+    "continentId": 1
+  },
+  {
+    "id": 267,
+    "name": "Уоллис и Футуна",
+    "nameEn": "Wallis and Futuna",
+    "capital": "Мата-Уту",
+    "capitalEn": "Mata-Utu",
+    "languages": "Французский, Уоллисский, Футунский",
+    "currency": "Французский тихоокеанский франк",
+    "currencySymbol": "₣",
+    "phoneCode": "+681",
+    "isoCode": "WF",
+    "isoCode3": "WLF",
+    "flag": "🇼🇫",
+    "neighbors": [],
+    "population": 11500,
+    "populationCapital": 1200,
+    "urbanPercentage": 0,
+    "square": 142,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 99
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+12"],
+    "established": 1961,
+    "government": "Заморское сообщество Франции",
+    "continentId": 7
+  },
+  {
+    "id": 268,
+    "name": "Западная Сахара",
+    "nameEn": "Western Sahara",
+    "capital": "Эль-Аюн (под контролем Марокко), Тифарити (временная столица САДР)",
+    "capitalEn": "Laayoune (under Moroccan control), Tifariti (temporary capital of SADR)",
+    "languages": "Арабский, Испанский",
+    "currency": "Марокканский дирхам, Сахарская песета",
+    "currencySymbol": "د.م., ₧",
+    "phoneCode": "+212",
+    "isoCode": "EH",
+    "isoCode3": "ESH",
+    "flag": "🇪🇭",
+    "neighbors": [67, 78, 79],
+    "population": 590000,
+    "populationCapital": 210000,
+    "urbanPercentage": 90,
+    "square": 266000,
+    "religions": [
+      {
+        "name": "Ислам",
+        "percentage": 99
+      },
+      {
+        "name": "Другие",
+        "percentage": 1
+      }
+    ],
+    "timezones": ["UTC+0"],
+    "established": 1976,
+    "government": "Спорная территория (администрация Марокко / Сахарская Арабская Демократическая Республика)",
+    "continentId": 2
   }
 ]

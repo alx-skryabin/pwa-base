@@ -6,8 +6,8 @@
     "squarePercentage": 36,
     "population": 5400000000,
     "populationPercentage": 70,
-    "countries": 92,
-    "countriesPercentage": 41,
+    "countries": 117,
+    "countriesPercentage": 44,
     "religions": [
       {
         "name": "Христианство",
@@ -40,7 +40,7 @@
     "squarePercentage": 20,
     "population": 1400000000,
     "populationPercentage": 18,
-    "countries": 54,
+    "countries": 65,
     "countriesPercentage": 24,
     "religions": [
       {
@@ -70,8 +70,8 @@
     "squarePercentage": 16.5,
     "population": 592000000,
     "populationPercentage": 7.6,
-    "countries": 23,
-    "countriesPercentage": 10,
+    "countries": 37,
+    "countriesPercentage": 14,
     "religions": [
       {
         "name": "Христианство",
@@ -104,7 +104,7 @@
     "squarePercentage": 12,
     "population": 434000000,
     "populationPercentage": 5.6,
-    "countries": 12,
+    "countries": 14,
     "countriesPercentage": 5,
     "religions": [
       {
@@ -140,8 +140,8 @@
     "squarePercentage": 5.7,
     "population": 43000000,
     "populationPercentage": 0.5,
-    "countries": 3,
-    "countriesPercentage": 1.3,
+    "countries": 1,
+    "countriesPercentage": 0.5,
     "religions": [
       {
         "name": "Христианство",
@@ -178,8 +178,8 @@
     "squarePercentage": 9.3,
     "population": 5000,
     "populationPercentage": 0.00006,
-    "countries": 0,
-    "countriesPercentage": 0,
+    "countries": 1,
+    "countriesPercentage": 0.5,
     "religions": [
       {
         "name": "Нет данных",
@@ -188,5 +188,49 @@
     ],
     "climate": ["Антарктический", "Субантарктический"],
     "description": "Самый холодный материк, покрытый ледяным щитом (содержит 90% льда планеты). Здесь нет постоянного населения, только научные станции. Летом температура поднимается до -30°C, зимой опускается до -80°C."
+  },
+  {
+    "id": 7,
+    "name": "Океания",
+    "square": 8520000,
+    "squarePercentage": 5.7,
+    "population": 46000000,
+    "populationPercentage": 0.6,
+    "countries": 31,
+    "countriesPercentage": 9.4,
+    "religions": [
+      {
+        "name": "Христианство",
+        "percentage": 73
+      },
+      {
+        "name": "Нерелигиозные",
+        "percentage": 18
+      },
+      {
+        "name": "Индуизм",
+        "percentage": 2
+      },
+      {
+        "name": "Ислам",
+        "percentage": 2
+      },
+      {
+        "name": "Буддизм",
+        "percentage": 1
+      },
+      {
+        "name": "Другие",
+        "percentage": 4
+      }
+    ],
+    "climate": [
+      "Экваториальный",
+      "Субэкваториальный",
+      "Тропический",
+      "Субтропический",
+      "Умеренный"
+    ],
+    "description": "Океания — самый малонаселенный регион мира, занимающий около 5.7% поверхности Земли. Включает тысячи островов Тихого океана, разделенных на Меланезию, Микронезию и Полинезию. Здесь находятся крупнейшее в мире государство-архипелаг (Индонезия, частично), уникальная флора и фауна, а также разнообразные культуры коренных народов."
   }
 ]
