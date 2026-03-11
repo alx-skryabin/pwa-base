@@ -29,9 +29,23 @@
   },
   {
     "id": 5,
+    "isMagnet": true,
+    "regionId": 77,
+    "countryId": 1,
+    "continentId": 1
+  },
+  {
+    "id": 6,
     "isMagnet": false,
     "regionId": 2,
     "countryId": 116,
     "continentId": 3
+  },
+  {
+    "id": 7,
+    "isMagnet": true,
+    "regionId": 1,
+    "countryId": 1,
+    "continentId": 1
   }
 ]

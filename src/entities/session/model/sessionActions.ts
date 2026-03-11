@@ -1,5 +1,6 @@
 import { get, bulkPut, runWithDb, USER_STORE_KEY, clear } from '@shared/libs/indexedDb'
 import { storeLogger } from '@shared/libs/logger'
+import { USER_STORE } from '@shared/libs/indexedDb/storeNames.ts'
 
 /** Запись в store user: один объект с фиксированным id. */
 export interface UserRecord {
@@ -13,7 +14,7 @@ export interface UserRecord {
  * Читает текущего пользователя из store user. Опции БД заданы при инициализации приложения.
  */
 export async function readCurrentUser<T = UserRecord>(): Promise<T | undefined> {
-  return runWithDb(db => get<T>(db, 'user', USER_STORE_KEY))
+  return runWithDb(db => get<T>(db, USER_STORE, USER_STORE_KEY))
 }
 
 /**

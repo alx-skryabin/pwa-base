@@ -52,7 +52,6 @@ export interface Country {
 }
 
 // --- regions-rus.json ---
-
 export interface RegionRus {
   id: number
   name: string

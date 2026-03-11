@@ -40,6 +40,7 @@ const Dev: React.FC = () => {
       <h3>User</h3>
       <div>Session ID: {user?.name}</div>
       <div>Login: {user?.login}</div>
+      <div>Role: {user?.role}</div>
     </div>
   )
 }

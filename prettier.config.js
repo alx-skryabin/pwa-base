@@ -19,5 +19,5 @@ export default {
   trailingComma: 'es5',
   arrowParens: 'avoid',
   printWidth: 100,
-  endOfLine: 'lf'
+  // endOfLine: 'lf'
 }
