@@ -15,6 +15,7 @@ export const usePWAInit = (): PWAContextType => {
   const [isOnline, setIsOnline] = useState<boolean>(navigator.onLine)
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstalled, setIsInstalled] = useState<boolean>(false)
+  const [hasManifest, setHasManifest] = useState<boolean>(false)
 
   // Мониторинг онлайн статуса
   useEffect(() => {
@@ -81,8 +82,20 @@ export const usePWAInit = (): PWAContextType => {
     }
   }, [])
 
-  // Отслеживаем событие beforeinstallprompt
+  // Наличие манифеста (для показа инструкции в браузерах без beforeinstallprompt)
   useEffect(() => {
+    const link = document.querySelector('link[rel="manifest"]')
+    setHasManifest(!!link?.getAttribute('href'))
+  }, [])
+
+  // Отслеживаем событие beforeinstallprompt (Chrome/Edge/Яндекс). Читаем событие, сохранённое до загрузки React (capture-pwa-prompt.js)
+  useEffect(() => {
+    if (window.__PWA_INSTALL_PROMPT__) {
+      pwaLogger.debug('using stored beforeinstallprompt event')
+      setInstallEvent(window.__PWA_INSTALL_PROMPT__)
+      window.__PWA_INSTALL_PROMPT__ = null
+    }
+
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault()
       pwaLogger.debug('beforeinstallprompt event fired')
@@ -132,10 +145,17 @@ export const usePWAInit = (): PWAContextType => {
     }
   }, [installEvent])
 
+  // Установка доступна только когда браузер дал событие beforeinstallprompt (Chrome, Edge, Яндекс).
+  const isInstallable = !isInstalled && !!installEvent
+  // Показывать инструкцию: приложение не установлено,
+  // нативного prompt нет (Firefox, Safari), манифест есть.
+  const showInstallInstructions = !isInstalled && !installEvent && hasManifest
+
   return {
     isOnline,
-    isInstallable: !!installEvent && !isInstalled,
+    isInstallable,
     isInstalled,
+    showInstallInstructions,
     promptInstall,
     installEvent,
   }

@@ -5,6 +5,7 @@ export interface PWAContextType {
   isOnline: boolean
   isInstallable: boolean
   isInstalled: boolean
+  showInstallInstructions: boolean
   promptInstall: () => Promise<void>
   installEvent: BeforeInstallPromptEvent | null
 }

@@ -5,6 +5,7 @@ import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
 import { useSession } from '@entities/session'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'
+import PWAInstallInstructions from '@features/PWAInstallInstructions'
 import { ROUTES } from '@app/routes/path.ts'
 import { DB_VERSION } from '@shared/libs/indexedDb'
 import { Button } from 'antd'
@@ -55,12 +56,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
       </nav>
 
       <div className="sidebar-app">
-        {!isInstalled && isInstallable ? (
-          <Button icon="📲" onClick={promptInstall} title="Install App to Home Screen">
+        {isInstalled ? (
+          <small>📲 Приложение установлено</small>
+        ) : isInstallable ? (
+          <Button icon="📲" onClick={promptInstall} title="Установить приложение">
             Установить
           </Button>
         ) : (
-          <small>📲 Приложение установленно</small>
+          <PWAInstallInstructions />
         )}
       </div>
 

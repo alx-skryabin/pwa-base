@@ -7,6 +7,16 @@ interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface WindowEventMap {
   beforeinstallprompt: BeforeInstallPromptEvent
 }
+
+declare global {
+  interface Window {
+    /** Событие beforeinstallprompt, сохранённое до загрузки React (см. index.html) */
+    __PWA_INSTALL_PROMPT__?: BeforeInstallPromptEvent | null
+  }
+}
+
+export {}

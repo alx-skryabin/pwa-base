@@ -4,7 +4,14 @@ import { PWAContext } from '@app/pwa/context.ts'
 import PromptPWAInstall from '@features/PromptPWAInstall'
 
 export const PWAProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  const { isOnline, isInstallable, isInstalled, installEvent, promptInstall } = usePWAInit()
+  const {
+    isOnline,
+    isInstallable,
+    isInstalled,
+    showInstallInstructions,
+    installEvent,
+    promptInstall,
+  } = usePWAInit()
 
   return (
     <PWAContext.Provider
@@ -12,6 +19,7 @@ export const PWAProvider: React.FC<PropsWithChildren> = ({ children }) => {
         isOnline,
         isInstalled,
         isInstallable,
+        showInstallInstructions,
         promptInstall,
         installEvent,
       }}
