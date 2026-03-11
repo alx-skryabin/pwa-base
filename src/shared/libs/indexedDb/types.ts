@@ -1,5 +1,5 @@
 /** Текущая версия схемы БД. При увеличении в onUpgradeNeeded пересоздаются все store. */
-export const DB_VERSION = 8
+export const DB_VERSION = 1
 
 export interface OpenDbOptions {
   name: string
