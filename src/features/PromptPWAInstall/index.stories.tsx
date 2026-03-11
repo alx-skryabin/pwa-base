@@ -10,6 +10,8 @@ const mockPWAContext: PWAContextType = {
   isInstallable: true,
   isInstalled: false,
   showInstallInstructions: false,
+  openModal: false,
+  setOpenModal: fn(),
   promptInstall: fn(),
   installEvent: null,
 }

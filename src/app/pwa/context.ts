@@ -8,6 +8,8 @@ export interface PWAContextType {
   showInstallInstructions: boolean
   promptInstall: () => Promise<void>
   installEvent: BeforeInstallPromptEvent | null
+  openModal: boolean
+  setOpenModal: (state: boolean) => void
 }
 
 export const PWAContext = createContext<PWAContextType | undefined>(undefined)

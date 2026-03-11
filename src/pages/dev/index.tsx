@@ -2,11 +2,12 @@ import React from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
 import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
 import { useSession } from '@entities/session'
+import ModalPWAInstructions from '@features/ButtonPWAInstructions'
 import { Button } from 'antd'
 
 const Dev: React.FC = () => {
   const meta = useMetaApp()
-  const { isInstallable, isInstalled, isOnline, promptInstall } = usePWA()
+  const { isInstallable, isInstalled, isOnline, promptInstall, showInstallInstructions } = usePWA()
   const { user } = useSession()
 
   return (
@@ -25,14 +26,19 @@ const Dev: React.FC = () => {
       <div>Online: {isOnline ? 'Yes' : 'No'}</div>
       <div>PWA support: {isInstallable ? 'Yes' : 'No'}</div>
       <div>Installed: {isInstalled ? 'Yes' : 'No'}</div>
+      <div>showInstallInstructions: {showInstallInstructions ? 'Yes' : 'No'}</div>
       <div>
         Display Mode: {window.matchMedia('(display-mode: standalone)').matches ? 'App' : 'Browser'}
       </div>
       <div style={{ marginTop: 10 }}>
-        {isInstallable && !isInstalled && (
+        {isInstalled ? (
+          <small>📲 Приложение установлено</small>
+        ) : isInstallable ? (
           <Button icon="📲" onClick={promptInstall} title="Install App to Home Screen">
-            Install App
+            Установить
           </Button>
+        ) : (
+          <ModalPWAInstructions />
         )}
       </div>
 

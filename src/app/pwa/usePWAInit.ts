@@ -16,6 +16,7 @@ export const usePWAInit = (): PWAContextType => {
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstalled, setIsInstalled] = useState<boolean>(false)
   const [hasManifest, setHasManifest] = useState<boolean>(false)
+  const [openModal, setOpenModal] = useState<boolean>(false)
 
   // Мониторинг онлайн статуса
   useEffect(() => {
@@ -158,5 +159,7 @@ export const usePWAInit = (): PWAContextType => {
     showInstallInstructions,
     promptInstall,
     installEvent,
+    openModal,
+    setOpenModal,
   }
 }

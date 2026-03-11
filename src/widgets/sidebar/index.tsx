@@ -5,7 +5,7 @@ import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
 import { useSession } from '@entities/session'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'
-import PWAInstallInstructions from '@features/PWAInstallInstructions'
+import ButtonPWAInstructions from '@features/ButtonPWAInstructions'
 import { ROUTES } from '@app/routes/path.ts'
 import { DB_VERSION } from '@shared/libs/indexedDb'
 import { Button } from 'antd'
@@ -63,7 +63,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
             Установить
           </Button>
         ) : (
-          <PWAInstallInstructions />
+          <ButtonPWAInstructions />
         )}
       </div>
 

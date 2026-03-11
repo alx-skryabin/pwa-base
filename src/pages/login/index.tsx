@@ -38,7 +38,7 @@ const Login: React.FC = () => {
   }
 
   const onFinish = async (values: LoginFormValues) => {
-    const user = findUser(values.login.trim(), values.password)
+    const user = findUser(values.login.trim().toLowerCase(), values.password.toLowerCase())
     if (!user) {
       message.error('Неверный логин или пароль')
       return
