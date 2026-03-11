@@ -15,11 +15,11 @@ const App: React.FC = () => {
     <ErrorBoundary>
       <ThemeProvider>
         <AppInitProvider>
-          <SessionProvider>
-            <PWAProvider>
+          <PWAProvider>
+            <SessionProvider>
               <RouterProvider router={router} />
-            </PWAProvider>
-          </SessionProvider>
+            </SessionProvider>
+          </PWAProvider>
         </AppInitProvider>
       </ThemeProvider>
     </ErrorBoundary>
