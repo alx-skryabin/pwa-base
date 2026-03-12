@@ -4,6 +4,7 @@ import logo from '@assets/img/logo.png'
 import { NavLink } from 'react-router'
 import { ROUTES } from '@app/routes/path.ts'
 import HamburgerToggle from '@features/HamburgerToggle'
+import { WifiOutlined, DisconnectOutlined } from '@ant-design/icons'
 import './header.css'
 
 interface HeaderProps {
@@ -25,9 +26,13 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) 
         >
           <div className="logo">
             <img src={logo} alt="Логотип" width="40" height="40" />
-            <span>My App {isOnline ? '🟢' : '🔴'}</span>
+            <span>My App</span>
           </div>
         </NavLink>
+        <span>
+          {isOnline ? <WifiOutlined /> : <DisconnectOutlined />}{' '}
+          <small>{isOnline ? 'Online' : 'Offline'}</small>
+        </span>
 
         <HamburgerToggle toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       </div>

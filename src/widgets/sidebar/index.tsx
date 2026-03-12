@@ -9,6 +9,15 @@ import ButtonPWAInstructions from '@features/ButtonPWAInstructions'
 import { ROUTES } from '@app/routes/path.ts'
 import { DB_VERSION } from '@shared/libs/indexedDb'
 import { Button } from 'antd'
+import {
+  StopOutlined,
+  DownloadOutlined,
+  HomeOutlined,
+  LoginOutlined,
+  LogoutOutlined,
+  EnvironmentOutlined,
+  GithubOutlined,
+} from '@ant-design/icons'
 import './sidebar.css'
 
 interface SidebarProps {
@@ -29,11 +38,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
   }
 
   const menuItems = [
-    { path: ROUTES.HOME, icon: '🔔', label: 'Главная' },
-    { path: ROUTES.MAP, icon: '📍️', label: 'Карта' },
-    { path: ROUTES.DEV, icon: '🔥', label: 'Develop' },
-    { path: ROUTES.LOGIN, icon: '👈', label: 'Login' },
-    { path: 'wrong', icon: '⛔', label: 'Wrong' },
+    { path: ROUTES.HOME, icon: <HomeOutlined />, label: 'Главная' },
+    { path: ROUTES.MAP, icon: <EnvironmentOutlined />, label: 'Карта' },
+    { path: ROUTES.DEV, icon: <GithubOutlined />, label: 'Develop' },
+    { path: ROUTES.LOGIN, icon: <LoginOutlined />, label: 'Login' },
+    { path: 'wrong', icon: <StopOutlined />, label: '404' },
   ]
 
   return (
@@ -59,7 +68,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
         {isInstalled ? (
           <small>📲 Приложение установлено</small>
         ) : isInstallable ? (
-          <Button icon="📲" onClick={promptInstall} title="Установить приложение">
+          <Button
+            size="large"
+            icon={<DownloadOutlined />}
+            onClick={promptInstall}
+            title="Установить приложение"
+          >
             Установить
           </Button>
         ) : (
@@ -72,7 +86,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar })
       </div>
 
       <div className="sidebar-logout">
-        <Button onClick={handleLogout} block>
+        <Button icon={<LogoutOutlined />} size="large" onClick={handleLogout} block>
           Выйти
         </Button>
       </div>

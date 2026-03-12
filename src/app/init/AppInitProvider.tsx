@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { initDb } from './initDb.ts'
 import { setAppDbOptions } from '@shared/libs/indexedDb'
 import { SplashScreen } from './SplashScreen'
-import { logsLogger, storeLogger } from '@shared/libs/logger'
+import { logsLogger } from '@shared/libs/logger'
 import { ErrorScreen } from '@app/init/ErrorScreen.tsx'
 import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { reportError } from '@shared/libs/errorReporting'
 
 interface AppInitProviderProps {
   children: React.ReactNode
@@ -49,7 +50,7 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
         if (!isMounted) return
 
         const error = err instanceof Error ? err : new Error(String(err))
-        storeLogger.error('Tables idb init failed:', error)
+        reportError('react:app', error)
         setError(error)
       }
     }
@@ -72,5 +73,5 @@ export const AppInitProvider: React.FC<AppInitProviderProps> = ({ children }) =>
     return <SplashScreen />
   }
 
-  return <>{children}</>
+  return children
 }

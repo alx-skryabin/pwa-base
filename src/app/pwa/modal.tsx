@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
+import { CheckCircleOutlined } from '@ant-design/icons'
 import { Button, Modal } from 'antd'
 import { pwaLogger } from '@shared/libs/logger'
 
@@ -25,7 +26,9 @@ const PWAInstructionsModal: React.FC = () => {
       onCancel={() => setOpenModal(false)}
       footer={[
         <Button
+          size="large"
           key="close"
+          icon={<CheckCircleOutlined />}
           onClick={() => {
             setOpenModal(false)
             pwaLogger.debug('The choice is remembered:', SESSION_KEY_AGREE)

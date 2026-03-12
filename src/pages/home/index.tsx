@@ -72,6 +72,7 @@ const Home: React.FC = () => {
         <Input
           placeholder="Поиск..."
           style={{ maxWidth: 180 }}
+          size="large"
           onChange={onSearchInputChange}
           allowClear
         ></Input>

@@ -1,5 +1,6 @@
 import { ROUTES } from '@app/routes/path.ts'
 import { Button } from 'antd'
+import { HomeOutlined, ReloadOutlined } from '@ant-design/icons'
 import { isLocal } from '@shared/utils'
 import './index.css'
 
@@ -23,11 +24,11 @@ export const ErrorLayout = ({ message, isHomeBtn }: ErrorLayoutProps) => {
         <h1>Что-то пошло не так!</h1>
         {isLocal() ? <p>{message}</p> : <p>Мы уже выясняем причину</p>}
 
-        <Button size="large" onClick={handleRetry}>
+        <Button icon={<ReloadOutlined />} size="large" onClick={handleRetry}>
           Попробовать снова
         </Button>
         {isHomeBtn && (
-          <Button size="large" onClick={handleHome}>
+          <Button icon={<HomeOutlined />} size="large" onClick={handleHome}>
             Вернуться на главную
           </Button>
         )}

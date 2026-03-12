@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { usePWA } from '@app/pwa/usePWA'
 import { Button } from 'antd'
+import { ClockCircleOutlined, BellOutlined, DownloadOutlined } from '@ant-design/icons'
 import './index.css'
 
 const PromptPWAInstall: React.FC = () => {
@@ -26,11 +27,15 @@ const PromptPWAInstall: React.FC = () => {
 
   return (
     <div className="prompt-pwa">
-      <h3>📲 Установите приложение</h3>
+      <h3>
+        <BellOutlined /> Установите приложение
+      </h3>
       <small>После установки ярлык добавится на рабочий стол.</small>
       <div className="prompt-pwa_actions">
-        <Button onClick={() => setIsShowBanner(false)}>Позже</Button>
-        <Button type="primary" onClick={handleInstall}>
+        <Button icon={<ClockCircleOutlined />} size="large" onClick={() => setIsShowBanner(false)}>
+          Позже
+        </Button>
+        <Button icon={<DownloadOutlined />} size="large" type="primary" onClick={handleInstall}>
           Установить
         </Button>
       </div>
