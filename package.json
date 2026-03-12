@@ -1,8 +1,8 @@
 {
   "name": "my-app",
   "private": true,
-  "version": "1.0.1",
-  "releaseTime": "12.03.2026 03:06:10",
+  "version": "1.0.2",
+  "releaseTime": "12.03.2026 15:51:35",
   "type": "module",
   "author": "@alx.sryabin",
   "scripts": {
