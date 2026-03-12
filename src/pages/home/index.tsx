@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useCallback, useMemo, useState } from 'react'
 import { useRegionRusWithMagnet } from '@entities/user'
 import { RegionsRusList } from '@widgets/regions-rus-list'
-import { Checkbox, CheckboxChangeEvent, Flex, Input, Result, Typography } from 'antd'
+import { Checkbox, CheckboxChangeEvent, Flex, Input, Result, Skeleton, Typography } from 'antd'
 import { debounce } from '@shared/utils'
 
 const { Title } = Typography
@@ -80,7 +80,9 @@ const Home: React.FC = () => {
         </Checkbox>
       </Flex>
 
-      {filteredData.length === 0 ? (
+      {isLoading ? (
+        <Skeleton active paragraph={{ rows: 5 }} />
+      ) : filteredData.length === 0 ? (
         <Result title="Ничего не найдено" subTitle={searchText} />
       ) : (
         <RegionsRusList regions={filteredData} loading={isLoading} />

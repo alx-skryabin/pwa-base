@@ -69,7 +69,7 @@ export const RegionsRusList: React.FC<RegionsRusListProps> = ({ regions, loading
                       </Text>
                     </div>
                     <div>
-                      <Text type="secondary">Доп.: </Text>
+                      <Text type="secondary">Все регионы: </Text>
                       <Space size={[4, 4]} wrap>
                         {region.searchCodes.map(code => (
                           <Tag key={code} color="cyan">

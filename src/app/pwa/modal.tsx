@@ -1,13 +1,18 @@
 import React, { useEffect } from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
 import { Button, Modal } from 'antd'
+import { pwaLogger } from '@shared/libs/logger'
+
+const SESSION_KEY_AGREE = 'read_instructions'
 
 const PWAInstructionsModal: React.FC = () => {
   const { openModal, setOpenModal, showInstallInstructions } = usePWA()
 
   // Показываем баннер через 3 с, если PWA не поддерживается нативно
   useEffect(() => {
-    if (showInstallInstructions) {
+    const isRead = sessionStorage.getItem(SESSION_KEY_AGREE)
+
+    if (showInstallInstructions && isRead !== 'true') {
       const timer = setTimeout(() => setOpenModal(true), 3000)
       return () => clearTimeout(timer)
     }
@@ -19,7 +24,14 @@ const PWAInstructionsModal: React.FC = () => {
       open={openModal}
       onCancel={() => setOpenModal(false)}
       footer={[
-        <Button key="close" onClick={() => setOpenModal(false)}>
+        <Button
+          key="close"
+          onClick={() => {
+            setOpenModal(false)
+            pwaLogger.debug('The choice is remembered:', SESSION_KEY_AGREE)
+            sessionStorage.setItem(SESSION_KEY_AGREE, 'true')
+          }}
+        >
           Понятно
         </Button>,
       ]}
