@@ -69,3 +69,5 @@ npm run dev
 ### **Testing** (vitest) скрипты → [документация](docs/testing.md)
 
 ### **Storybook** (vitest) скрипты → [документация](docs/storybook.md)
+
+### **Template** скрипты → [документация](docs/template.md)

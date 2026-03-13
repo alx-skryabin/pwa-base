@@ -22,7 +22,9 @@
     "docker-down": "docker compose down",
     "docker-clean": "docker compose down --rmi local --volumes",
     "storybook": "cross-env STORYBOOK=1 storybook dev -p 6006",
-    "storybook:build": "cross-env STORYBOOK=1 storybook build"
+    "storybook:build": "cross-env STORYBOOK=1 storybook build",
+    "template:fetch": "git fetch upstream",
+    "template:merge-master": "git merge upstream/master"
   },
   "dependencies": {
     "antd": "^6.2.2",
