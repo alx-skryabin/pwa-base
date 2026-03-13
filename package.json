@@ -1,8 +1,8 @@
 {
   "name": "pwa-base",
   "private": true,
-  "version": "1.0.1",
-  "releaseTime": "12.03.2026 18:54:23",
+  "version": "1.0.2",
+  "releaseTime": "13.03.2026 17:24:33",
   "type": "module",
   "author": "@alx-sryabin",
   "scripts": {
