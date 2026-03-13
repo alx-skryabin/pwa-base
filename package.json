@@ -1,10 +1,10 @@
 {
-  "name": "my-app",
+  "name": "pwa-base",
   "private": true,
   "version": "1.0.1",
   "releaseTime": "12.03.2026 18:54:23",
   "type": "module",
-  "author": "@alx.sryabin",
+  "author": "@alx-sryabin",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -18,7 +18,7 @@
     "test": "vitest",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "docker-compose": "docker compose up --build",
+    "docker-compose": "docker compose --env-file .env.production up --build",
     "docker-down": "docker compose down",
     "docker-clean": "docker compose down --rmi local --volumes",
     "storybook": "cross-env STORYBOOK=1 storybook dev -p 6006",

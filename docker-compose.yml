@@ -10,8 +10,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: pwa-base
-    container_name: pwa-base-app
+      args:
+        APP_NAME: ${VITE_APP_NAME}
+    image: ${VITE_APP_NAME}
+    container_name: ${VITE_APP_NAME}-app
     ports:
-      - "3000:80"
+      - "3003:80"
     restart: unless-stopped

@@ -15,6 +15,7 @@
 - **Logger** - Логирование [[**документация**](docs/logger.md)]
 - **FSD** - Архитектура [[**документация**](docs/directories.md)]
 - **Git Hooks** - Авто версионирование [[**документация**](docs/release.md)]
+- **Шаблон репозитория** - создание проектов и получение обновлений [[**документация**](docs/template.md)]
 - **ESLint / Prettier / Husky** - линтинг и форматирование [[**документация**](docs/formatter.md)]
 - **Vitest / React Testing Library** - тестирование [[**документация**](docs/testing.md)]
 - **Storybook** - коллекция [[**документация**](docs/storybook.md)]

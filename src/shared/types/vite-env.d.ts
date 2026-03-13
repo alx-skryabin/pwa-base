@@ -16,7 +16,7 @@ interface ImportMetaEnv {
   readonly VITE_LOGGER_FORCE_ERRORS?: string
 
   // Другие переменные (добавьте по необходимости)
-  readonly VITE_APP_TITLE?: string
+  readonly VITE_APP_NAME?: string
   readonly VITE_API_URL?: string
   /** URL для отправки логов ошибок (POST). Если не задан, используется VITE_API_URL + /logs/errors */
   readonly VITE_ERROR_REPORT_URL?: string
