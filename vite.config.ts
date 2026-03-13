@@ -34,6 +34,7 @@ export default defineConfig({
               'favicon.svg',
               'apple-touch-icon.png',
               'masked-icon.svg',
+              'capture-pwa-prompt.js',
               'robots.txt',
               '*.svg',
             ],

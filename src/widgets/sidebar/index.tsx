@@ -18,7 +18,7 @@ import {
   EnvironmentOutlined,
   GithubOutlined,
 } from '@ant-design/icons'
-import './sidebar.css'
+import './index.css'
 
 interface SidebarProps {
   isSidebarOpen: boolean

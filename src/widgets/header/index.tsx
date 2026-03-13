@@ -5,7 +5,7 @@ import { NavLink } from 'react-router'
 import { ROUTES } from '@app/routes/path.ts'
 import HamburgerToggle from '@features/HamburgerToggle'
 import { WifiOutlined, DisconnectOutlined } from '@ant-design/icons'
-import './header.css'
+import './index.css'
 
 interface HeaderProps {
   isSidebarOpen: boolean
