@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { useRouteError } from 'react-router'
 import { reportError } from '@shared/libs/errorReporting'
-import { ErrorLayout } from '@widgets/error-layout'
+import { ErrorLayout } from '@widgets/layouts/error'
 
 export function RouteErrorFallback() {
   const error = useRouteError()

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
 import { usePWA } from '@app/pwa/usePWA.ts'
-import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { useSession } from '@entities/session'
 import { NavLink } from 'react-router'
 import ThemeToggle from '@features/ThemeToggle'

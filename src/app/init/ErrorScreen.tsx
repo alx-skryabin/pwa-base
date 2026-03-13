@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { Button, Result } from 'antd'
 import { ReloadOutlined, ClearOutlined, StopOutlined } from '@ant-design/icons'
 import { clearCache, clearPwaCache, fullResetDB } from '@shared/libs/reset'

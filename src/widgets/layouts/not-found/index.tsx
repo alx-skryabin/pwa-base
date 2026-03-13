@@ -5,7 +5,7 @@ import { HomeOutlined } from '@ant-design/icons'
 import { ROUTES } from '@app/routes/path.ts'
 import './index.css'
 
-const NotFound: React.FC = () => {
+export const NotFound: React.FC = () => {
   const navigate = useNavigate()
 
   return (
@@ -19,5 +19,3 @@ const NotFound: React.FC = () => {
     </div>
   )
 }
-
-export default NotFound

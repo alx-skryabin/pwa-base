@@ -1,6 +1,6 @@
 import React from 'react'
 import { usePWA } from '@app/pwa/usePWA.ts'
-import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { useSession } from '@entities/session'
 import ModalPWAInstructions from '@features/ButtonPWAInstructions'
 import { clearCache, clearPwaCache, fullResetDB } from '@shared/libs/reset'

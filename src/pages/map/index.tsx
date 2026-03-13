@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { Flex, Typography } from 'antd'
 import { useContinents, useCountriesByContinent } from '@entities/guide'
-import { ContinentList } from '@widgets/continent-list'
-import { CountryList } from '@widgets/country-list'
+import { ContinentList } from '@pages/map/ui/continent-list'
+import { CountryList } from '@pages/map/ui/country-list'
 
 const { Title } = Typography
 

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Outlet } from 'react-router'
 import { Sidebar } from '@widgets/sidebar'
 import { Header } from '@widgets/header'
-import './user-layout.css'
+import './index.css'
 
 interface UserLayoutProps {
   children?: React.ReactNode

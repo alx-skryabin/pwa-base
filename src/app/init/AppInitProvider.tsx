@@ -4,7 +4,7 @@ import { setAppDbOptions } from '@shared/libs/indexedDb'
 import { SplashScreen } from './SplashScreen'
 import { logsLogger } from '@shared/libs/logger'
 import { ErrorScreen } from '@app/init/ErrorScreen.tsx'
-import { useMetaApp } from '@shared/hooks/useMetaApp.ts'
+import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { reportError } from '@shared/libs/errorReporting'
 
 interface AppInitProviderProps {

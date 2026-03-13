@@ -5,7 +5,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { renderHook } from '@testing-library/react'
-import { useMetaApp } from './useMetaApp'
+import { useMetaApp } from './useMetaApp.ts'
 
 describe('useMetaApp', () => {
   it('returns object with version, name, releaseTime, author, mode', () => {

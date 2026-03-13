@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router'
-import './auth-layout.css'
+import './index.css'
 
 export const AuthLayout: React.FC = () => {
   return (

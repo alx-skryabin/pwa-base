@@ -1,6 +1,6 @@
 import React, { type ErrorInfo, type ReactNode } from 'react'
 import { reportError } from '@shared/libs/errorReporting'
-import { ErrorLayout } from '@widgets/error-layout'
+import { ErrorLayout } from '@widgets/layouts/error'
 
 interface Props {
   children: ReactNode
