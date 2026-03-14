@@ -5,7 +5,7 @@
 import { describe, it, expect } from 'vitest'
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { ThemeContext } from './context.ts'
+import { ThemeContext } from './ThemeContext'
 
 describe('ThemeContext', () => {
   it('default value is undefined', () => {

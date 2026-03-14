@@ -1,13 +1,13 @@
 import type { Preview } from '@storybook/react-vite'
 import React from 'react'
-import { ThemeProvider } from '@app/theme'
 
 // Стили canvas (полная ширина)
 import './preview.css'
 // Глобальные стили приложения (темы и переменные)
 import 'antd/dist/reset.css'
 import '@app/styles/variables.css'
-import '@app/theme/index.css'
+import '@shared/libs/theme/style/theme.css'
+import { ThemeProvider } from '@shared/libs/theme'
 
 const LOCALSTORAGE_NAME = 'theme'
 

@@ -1,19 +1,26 @@
 import React, { PropsWithChildren } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
-import { ThemeContext } from '@app/theme/context.ts'
+import { ThemeContext } from '@/shared/libs/theme/ui/ThemeContext'
+import { ThemeMode } from '@shared/libs/theme'
 
 interface ThemeProviderMockProps extends PropsWithChildren {
   isDarkMode?: boolean
   toggleTheme?: () => void
+  mode?: ThemeMode
+  setTheme?: () => void
 }
 
 function ThemeProviderMock({
   children,
   isDarkMode = false,
   toggleTheme = () => {},
+  mode = 'dark',
+  setTheme = () => {},
 }: ThemeProviderMockProps) {
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ isDarkMode, toggleTheme, mode, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
   )
 }
 

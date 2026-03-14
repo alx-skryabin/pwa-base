@@ -3,7 +3,7 @@
  * Проверяют структуру darkTheme и lightTheme — наличие algorithm, token, components.
  */
 import { describe, it, expect } from 'vitest'
-import { darkTheme, lightTheme } from './config'
+import { darkTheme, lightTheme } from '@shared/libs/theme/config/antdTheme.ts'
 
 describe('theme config', () => {
   describe('darkTheme', () => {

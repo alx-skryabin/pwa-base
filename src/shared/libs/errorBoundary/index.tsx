@@ -11,6 +11,17 @@ interface State {
 }
 
 /**
+ * Публичное API модуля ErrorBoundary
+ *
+ * @example
+ * import { ErrorBoundary } from '@shared/lib/errorBoundary'
+ *
+ * <ErrorBoundary>
+ *   <App />
+ * </ErrorBoundary>
+ */
+
+/**
  * Error Boundary: перехватывает ошибки рендера и в lifecycle-методах дочернего дерева.
  * При перехвате вызывает reportError (лог в консоль + отправка на сервер) и показывает fallback.
  */
