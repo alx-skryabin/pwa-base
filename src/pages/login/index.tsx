@@ -9,9 +9,9 @@ import { Form, Input, Button, Card, App } from 'antd'
 import type { SessionUser } from '@entities/session'
 import type { UsersMap } from '@entities/user'
 import { DB_VERSION } from '@shared/libs/indexedDb'
-import logo from '@assets/img/logo.png'
+import logo from '@shared/assets/img/logo.png'
 
-import usersData from '@assets/data-user/users.json'
+import usersData from '@shared/assets/data-user/users.json'
 
 const users = usersData as UsersMap
 

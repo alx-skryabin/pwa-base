@@ -11,9 +11,9 @@ import type { GuideStoreName } from '@shared/libs/indexedDb'
 import type { GuideRecord } from '@entities/guide'
 import { storeLogger } from '@shared/libs/logger'
 
-import continentsData from '@assets/data-guides/continents.json'
-import countriesData from '@assets/data-guides/countries.json'
-import regionsRusData from '@assets/data-guides/regions-rus.json'
+import continentsData from '@shared/assets/data-guides/continents.json'
+import countriesData from '@shared/assets/data-guides/countries.json'
+import regionsRusData from '@shared/assets/data-guides/regions-rus.json'
 
 /** Данные для первичного заполнения store; ключи должны совпадать с GUIDE_STORE_NAMES. */
 const GUIDE_DATA: Record<GuideStoreName, GuideRecord[]> = {

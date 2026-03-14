@@ -5,7 +5,7 @@ import { SessionContext } from './context'
 import { authLogger, storeLogger } from '@shared/libs/logger'
 import { readCurrentUser, writeToStores, clearStoresList, type UserRecord } from './sessionActions'
 import { SESSION_STORE_NAMES, USER_STORE_KEY } from '@shared/libs/indexedDb'
-import visitsData from '@assets/data-user/visits.json'
+import visitsData from '@shared/assets/data-user/visits.json'
 import type { Visit } from '@entities/user'
 
 function toSessionUser(record: UserRecord): SessionUser {

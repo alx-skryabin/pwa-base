@@ -2,8 +2,8 @@
 
 При первом заходе создаётся IndexedDB с именем из `package.json` (поле `name`). В ней создаются
 объектные хранилища для справочников и для сессии; пока идёт инициализация, показывается splash,
-затем — экран авторизации или home. Справочники заполняются из JSON в `src/assets/data-guides/`.
-После успешной авторизации в store сессии записываются данные из `src/assets/data-user/` (user,
+затем — экран авторизации или home. Справочники заполняются из JSON в `@shared/assets/data-guides/`.
+После успешной авторизации в store сессии записываются данные из `@shared/assets/data-user/` (user,
 visits).
 
 ---
@@ -34,7 +34,7 @@ visits).
 
 ## Как добавить новый справочник
 
-1. **Добавить JSON-файл** в `src/assets/data-guides/`, например `cities.json`. Каждая запись должна
+1. **Добавить JSON-файл** в `@shared/assets/data-guides/`, например `cities.json`. Каждая запись должна
    содержать поле **`id`** (число) — keyPath в IndexedDB.
 
 2. **Зарегистрировать store:** в `src/shared/libs/indexedDb/storeNames.ts` добавить имя в *
@@ -42,7 +42,7 @@ visits).
 
 3. **Подключить данные в app/init** в `src/app/init/initDb.ts`:
 
-- импорт: `import citiesData from '@assets/data-guides/cities.json'`;
+- импорт: `import citiesData from '@shared/assets/data-guides/cities.json'`;
 - в объект **`GUIDE_DATA`**: `cities: citiesData as GuideRecord[]`.
 
 После этого при первом запуске (или после повышения `DB_VERSION`) будет создано хранилище и
@@ -58,7 +58,7 @@ visits).
 - **Создание:** все store из `SESSION_STORE_NAMES` создаются при общей инициализации в **`initDb`
   ** (вместе со справочниками).
 - **Заполнение:** при успешной авторизации в `user` записывается один объект (текущий пользователь),
-  в `visits` — массив из `src/assets/data-user/visits.json`.
+  в `visits` — массив из `@shared/assets/data-user/visits.json`.
 - **Очистка:** при выходе вызывается `clearStoresList(options, SESSION_STORE_NAMES)`; очищаются
   только существующие store, отсутствующие пропускаются без ошибки.
 

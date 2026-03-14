@@ -1,5 +1,5 @@
 /**
- * Типы по данным из src/assets/data-user/ (users.json, visits.json).
+ * Типы по данным из @shared/assets/data-user/ (users.json, visits.json).
  */
 
 /** Одна запись пользователя в users.json (значение по ключу-логину). */

@@ -43,9 +43,6 @@
       "@app/*": [
         "./src/app/*"
       ],
-      "@assets/*": [
-        "./src/assets/*"
-      ],
       "@pages/*": [
         "./src/pages/*"
       ],
