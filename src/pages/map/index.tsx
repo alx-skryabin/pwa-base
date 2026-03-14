@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from 'react'
 import { Flex, Typography } from 'antd'
 import { useContinents, useCountriesByContinent } from '@entities/guide'
-import { ContinentList } from '@pages/map/ui/continent-list'
-import { CountryList } from '@pages/map/ui/country-list'
+import { ContinentList } from './ui/ContinentList'
+import { CountryList } from './ui/CountryList'
 
 const { Title } = Typography
 
-const Map: React.FC = () => {
+const MapPage: React.FC = () => {
   const [selectedContinentId, setSelectedContinentId] = useState<number | null>(null)
 
   const { data: continents, isLoading: continentsLoading } = useContinents()
@@ -45,4 +45,4 @@ const Map: React.FC = () => {
   )
 }
 
-export default Map
+export default MapPage

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router'
-import { FullScreenLoader } from '@shared/ui/FullScreenLoader'
+import { FullScreenLoader } from '@shared/ui-kit/FullScreenLoader'
 import { useSession } from '@entities/session'
 import { ROUTES } from '@app/routes/path'
 

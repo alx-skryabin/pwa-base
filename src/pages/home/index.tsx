@@ -1,12 +1,12 @@
 import React, { ChangeEvent, useCallback, useMemo, useState } from 'react'
-import { useRegionRusWithMagnet } from '@entities/user'
-import { RegionsRusList } from '@pages/home/ui/regions-rus-list'
+import { RegionsRusList } from './ui/RegionsRusList'
+import { useRegionRusWithMagnet } from '@entities/visits'
 import { Checkbox, CheckboxChangeEvent, Flex, Input, Result, Skeleton, Typography } from 'antd'
-import { debounce } from '@shared/utils'
+import { debounce } from '@shared/helpers'
 
 const { Title } = Typography
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   const [isMagnetFilter, setIsMagnetFilter] = useState<boolean>(false)
   const [searchText, setSearchText] = useState<string>('')
   const { data, isLoading } = useRegionRusWithMagnet()
@@ -92,4 +92,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default HomePage

@@ -1,38 +1,45 @@
-import { deleteDb } from '@shared/libs/indexedDb'
+/**
+ * Публичное API модуля сброса данных
+ *
+ * @example
+ * // Простой сброс БД
+ * import { fullResetDB } from '@shared/lib/reset'
+ * fullResetDB('my-db')
+ *
+ * @example
+ * // Комплексный сброс с компонентом подтверждения
+ * import { resetModel, ResetConfirmDialog } from '@shared/lib/reset'
+ *
+ * const handleReset = async () => {
+ *   const result = await resetModel.reset({
+ *     dbName: 'my-db',
+ *     clearCache: true,
+ *     reload: true
+ *   })
+ * }
+ */
 
-export const fullResetDB = (dbName: string) => {
-  if (window.confirm('Все несинхронизированные данные будут уничтожены!')) {
-    deleteDb(dbName).then(() => {
-      window.location.reload()
-    })
-  }
+// Модель (основная логика)
+export { resetModel } from './model/resetModel'
+export type { ResetOptions, ResetResult, ResetType } from './model/types'
+
+// API (низкоуровневый доступ)
+export { cacheApi } from './api/cacheApi'
+export { storageApi } from './api/storageApi'
+export { swApi } from './api/swApi'
+
+// Вспомогательные функции (для обратной совместимости)
+import { resetModel } from './model/resetModel'
+import { createResetOptions } from '@shared/libs/reset/libs/helpers.ts'
+
+/**
+ * Полный сброс приложения (для обратной совместимости)
+ */
+export const fullResetApp = async (dbName: string): Promise<void> => {
+  await resetModel.reset(createResetOptions('full', dbName))
 }
 
-export const clearCache = async () => {
-  try {
-    // Очистка кэша сервис-воркера
-    if ('caches' in window) {
-      const cacheNames = await caches.keys()
-      await Promise.all(cacheNames.map(name => caches.delete(name)))
-    }
-
-    // Очистка localStorage и sessionStorage
-    localStorage.clear()
-    sessionStorage.clear()
-
-    // Перезагрузка страницы
-    window.location.reload()
-  } catch (error) {
-    console.error('Ошибка при очистке кэша:', error)
-    alert('Не удалось очистить кэш. Попробуйте сделать это вручную.')
-  }
-}
-
-export const clearPwaCache = async () => {
-  if ('serviceWorker' in navigator) {
-    const registrations = await navigator.serviceWorker.getRegistrations()
-    for (const registration of registrations) {
-      await registration.unregister()
-    }
-  }
-}
+/**
+ * Очистка кэша (для обратной совместимости)
+ */
+export const clearAllCache = resetModel.reset.bind(null, createResetOptions('all-cache'))

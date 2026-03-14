@@ -1,6 +1,23 @@
-export { GUIDE_STORE_NAMES } from '@shared/libs/indexedDb'
-export type { GuideStoreName } from '@shared/libs/indexedDb'
+/**
+ * Публичное API сущности Guide
+ *
+ * @example
+ * // Использование API
+ * import { guideApi } from '@entities/guide'
+ * const continents = await guideApi.getContinents()
+ *
+ * @example
+ * // Использование хуков
+ * import { useContinents } from '@entities/guide'
+ * const { data, isLoading } = useContinents()
+ */
+
+// Типы
 export type { GuideRecord, Continent, Country, RegionRus } from './model/types'
-export { getContinents, getCountriesByContinent } from './model/guideActions'
-export { useContinents } from './model/useContinents'
-export { useCountriesByContinent } from './model/useCountriesByContinent'
+
+// API слой
+export { guideApi } from './api/guideApi'
+
+// Хуки (из lib/)
+export { useContinents } from './libs/useContinents'
+export { useCountriesByContinent } from './libs/useCountriesByContinent'

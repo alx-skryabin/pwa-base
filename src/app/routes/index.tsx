@@ -5,10 +5,10 @@ import { RequireAuth } from '@app/routes/RequireAuth.tsx'
 import { AuthLayout } from '@widgets/layouts/auth'
 import { UserLayout } from '@widgets/layouts/user'
 import { NotFound } from '@widgets/layouts/not-found'
-import Home from '@pages/home'
-import Dev from '@pages/dev'
-import Map from '@pages/map'
-import Login from '@pages/login'
+import HomePage from '@pages/home'
+import DevPage from '@pages/dev'
+import MapPage from '@pages/map'
+import LoginPage from '@pages/login'
 import { ROUTES } from '@app/routes/path.ts'
 
 export const router = createBrowserRouter([
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <SuspenseWrapper children={<Login />} />,
+        element: <SuspenseWrapper children={<LoginPage />} />,
       },
     ],
   },
@@ -33,15 +33,15 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <SuspenseWrapper children={<Home />} />,
+            element: <SuspenseWrapper children={<HomePage />} />,
           },
           {
             path: ROUTES.MAP,
-            element: <SuspenseWrapper children={<Map />} />,
+            element: <SuspenseWrapper children={<MapPage />} />,
           },
           {
             path: ROUTES.DEV,
-            element: <SuspenseWrapper children={<Dev />} />,
+            element: <SuspenseWrapper children={<DevPage />} />,
           },
         ],
       },

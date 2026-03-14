@@ -3,11 +3,11 @@ import { usePWA } from '@app/pwa/usePWA.ts'
 import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { useSession } from '@entities/session'
 import ModalPWAInstructions from '@features/ButtonPWAInstructions'
-import { clearCache, clearPwaCache, fullResetDB } from '@shared/libs/reset'
+import { clearAllCache, fullResetApp } from '@shared/libs/reset'
 import { Button } from 'antd'
 import { ClearOutlined, DownloadOutlined, StopOutlined } from '@ant-design/icons'
 
-const Dev: React.FC = () => {
+const DevPage: React.FC = () => {
   const meta = useMetaApp()
   const { isInstallable, isInstalled, isOnline, promptInstall, showInstallInstructions } = usePWA()
   const { user } = useSession()
@@ -60,9 +60,9 @@ const Dev: React.FC = () => {
       <Button
         icon={<ClearOutlined />}
         onClick={() => {
-          clearPwaCache().then(() => {
-            clearCache()
-          })
+          if (window.confirm('Очистить кэш?')) {
+            clearAllCache()
+          }
         }}
         size="large"
         style={{ marginBottom: '0.5rem' }}
@@ -73,7 +73,11 @@ const Dev: React.FC = () => {
       <Button
         type="primary"
         icon={<StopOutlined />}
-        onClick={() => fullResetDB(meta.name)}
+        onClick={() => {
+          if (window.confirm('Все несинхронизированные данные будут уничтожены!')) {
+            fullResetApp(meta.name)
+          }
+        }}
         size="large"
         danger
       >
@@ -83,4 +87,4 @@ const Dev: React.FC = () => {
   )
 }
 
-export default Dev
+export default DevPage

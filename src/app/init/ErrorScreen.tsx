@@ -2,7 +2,7 @@ import React from 'react'
 import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { Button, Result } from 'antd'
 import { ReloadOutlined, ClearOutlined, StopOutlined } from '@ant-design/icons'
-import { clearCache, clearPwaCache, fullResetDB } from '@shared/libs/reset'
+import { clearAllCache, fullResetApp } from '@shared/libs/reset'
 
 /** Экран при ошибке инициализации приложения (например, сбой IndexedDB). */
 export const ErrorScreen: React.FC = () => {
@@ -43,9 +43,9 @@ export const ErrorScreen: React.FC = () => {
             key="cache"
             icon={<ClearOutlined />}
             onClick={() => {
-              clearPwaCache().then(() => {
-                clearCache()
-              })
+              if (window.confirm('Очистить кэш?')) {
+                clearAllCache()
+              }
             }}
             size="large"
             style={{ marginBottom: '0.5rem' }}
@@ -56,7 +56,11 @@ export const ErrorScreen: React.FC = () => {
             key="reset"
             type="primary"
             icon={<StopOutlined />}
-            onClick={() => fullResetDB(name)}
+            onClick={() => {
+              if (window.confirm('Все несинхронизированные данные будут уничтожены!')) {
+                fullResetApp(name)
+              }
+            }}
             size="large"
             danger
           >
