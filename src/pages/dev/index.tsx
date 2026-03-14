@@ -1,7 +1,7 @@
 import React from 'react'
-import { usePWA } from '@app/pwa/usePWA.ts'
 import { useMetaApp } from '@shared/hooks/useMetaApp/useMetaApp.ts'
 import { useSession } from '@entities/session'
+import { usePWA } from '@shared/libs/pwa'
 import ModalPWAInstructions from '@features/ButtonPWAInstructions'
 import { clearAllCache, fullResetApp } from '@shared/libs/reset'
 import { Button } from 'antd'

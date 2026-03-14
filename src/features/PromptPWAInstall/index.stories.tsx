@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { fn } from 'storybook/test'
-import { PWAContext } from '@app/pwa/context.ts'
-import type { PWAContextType } from '@app/pwa/context.ts'
 import PromptPWAInstall from '@features/PromptPWAInstall/index.tsx'
+import { PWAContext } from '@/shared/libs/pwa/ui/PWAContext'
+import { PWAContextValue } from '@shared/libs/pwa'
 
-const mockPWAContext: PWAContextType = {
+const mockPWAContext: PWAContextValue = {
   isOnline: true,
   isInstallable: true,
   isInstalled: false,
   showInstallInstructions: false,
+  installEvent: null,
   openModal: false,
   setOpenModal: fn(),
   promptInstall: fn(),
-  installEvent: null,
 }
 
 function withPWAProvider(Story: React.FC, _context: { globals?: Record<string, unknown> }) {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { usePWA } from '@app/pwa/usePWA'
+import { usePWA } from '@shared/libs/pwa'
+import { OPEN_PWA_PROMPT_DELAY } from '@shared/libs/pwa/config/pwa.ts'
 import { Button } from 'antd'
 import { ClockCircleOutlined, BellOutlined, DownloadOutlined } from '@ant-design/icons'
 import './index.css'
@@ -11,7 +12,7 @@ const PromptPWAInstall: React.FC = () => {
   // Показываем баннер через 3 с, если приложение можно установить
   useEffect(() => {
     if (isInstallable && !isInstalled) {
-      const timer = setTimeout(() => setIsShowBanner(true), 3000)
+      const timer = setTimeout(() => setIsShowBanner(true), OPEN_PWA_PROMPT_DELAY)
       return () => clearTimeout(timer)
     }
   }, [isInstallable, isInstalled])

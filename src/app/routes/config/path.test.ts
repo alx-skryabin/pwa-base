@@ -3,7 +3,7 @@
  * Проверяют, что ROUTES содержит все нужные ключи и валидные значения для роутера.
  */
 import { describe, it, expect } from 'vitest'
-import { ROUTES } from './path'
+import { ROUTES } from './path.ts'
 
 describe('ROUTES', () => {
   // Проверяем наличие обязательных ключей — без них роутинг сломается

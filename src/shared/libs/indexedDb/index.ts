@@ -1,4 +1,5 @@
 export { openDb } from './client/openDb.ts'
+export { initDb } from './client/initDb'
 export type { OpenDbOptions } from './client/openDb.ts'
 export { count } from './operations/count.ts'
 export { get } from './operations/get.ts'
@@ -18,3 +19,4 @@ export {
 } from './config/storeNames.ts'
 export { STORE_INDEXES } from './config/storeIndexes.ts'
 export type { GuideStoreName, SessionStoreName } from './config/storeNames.ts'
+export { guideSeeder } from './seed/guideSeeder'

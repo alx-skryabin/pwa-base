@@ -1,19 +1,18 @@
 import React, { PropsWithChildren } from 'react'
-import { usePWAInit } from '@app/pwa/usePWAInit.ts'
-import { PWAContext } from '@app/pwa/context.ts'
+import { PWAContext } from './PWAContext'
+import { usePWAInit } from '../libs/usePWAInit'
 import PromptPWAInstall from '@features/PromptPWAInstall'
-import PWAInstructionsModal from '@app/pwa/modal.tsx'
+import PWAInstructionsModal from './PWAInstructionsModal'
 
 export const PWAProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  const data = usePWAInit()
+  const value = usePWAInit()
 
   return (
-    <PWAContext.Provider value={data}>
+    <PWAContext.Provider value={value}>
       <div className="pwa-container">
         <PromptPWAInstall />
         <PWAInstructionsModal />
       </div>
-
       {children}
     </PWAContext.Provider>
   )

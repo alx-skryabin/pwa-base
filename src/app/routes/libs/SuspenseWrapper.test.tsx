@@ -5,7 +5,7 @@
 import { describe, it, expect } from 'vitest'
 import { screen } from '@testing-library/react'
 import { render } from '@testing-library/react'
-import { SuspenseWrapper } from './SuspenseWrapper'
+import { SuspenseWrapper } from './SuspenseWrapper.tsx'
 
 describe('SuspenseWrapper', () => {
   it('renders children when provided', () => {

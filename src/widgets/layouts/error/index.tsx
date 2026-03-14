@@ -1,4 +1,4 @@
-import { ROUTES } from '@app/routes/path.ts'
+import { ROUTES } from '@app/routes/config/path.ts'
 import { Button } from 'antd'
 import { HomeOutlined, ReloadOutlined } from '@ant-design/icons'
 import { isLocal } from '@shared/helpers'

@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
-import { usePWA } from '@app/pwa/usePWA.ts'
+import { usePWA } from '@shared/libs/pwa'
 import { CheckCircleOutlined } from '@ant-design/icons'
 import { Button, Modal } from 'antd'
 import { pwaLogger } from '@shared/libs/logger'
+import { OPEN_PWA_PROMPT_DELAY } from '@shared/libs/pwa/config/pwa.ts'
 
 const SESSION_KEY_AGREE = 'read_instructions'
 
@@ -14,10 +15,16 @@ const PWAInstructionsModal: React.FC = () => {
     const isRead = sessionStorage.getItem(SESSION_KEY_AGREE)
 
     if (showInstallInstructions && isRead !== 'true') {
-      const timer = setTimeout(() => setOpenModal(true), 3000)
+      const timer = setTimeout(() => setOpenModal(true), OPEN_PWA_PROMPT_DELAY)
       return () => clearTimeout(timer)
     }
   }, [setOpenModal, showInstallInstructions])
+
+  const handleClose = () => {
+    setOpenModal(false)
+    pwaLogger.debug('Choice remembered:', SESSION_KEY_AGREE)
+    sessionStorage.setItem(SESSION_KEY_AGREE, 'true')
+  }
 
   return (
     <Modal
@@ -25,16 +32,7 @@ const PWAInstructionsModal: React.FC = () => {
       open={openModal}
       onCancel={() => setOpenModal(false)}
       footer={[
-        <Button
-          size="large"
-          key="close"
-          icon={<CheckCircleOutlined />}
-          onClick={() => {
-            setOpenModal(false)
-            pwaLogger.debug('The choice is remembered:', SESSION_KEY_AGREE)
-            sessionStorage.setItem(SESSION_KEY_AGREE, 'true')
-          }}
-        >
+        <Button size="large" key="close" icon={<CheckCircleOutlined />} onClick={handleClose}>
           Понятно
         </Button>,
       ]}

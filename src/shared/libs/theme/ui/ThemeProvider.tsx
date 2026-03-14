@@ -19,7 +19,7 @@ export const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
 
   useEffect(() => {
     themeModel.persist(themeStorage, mode)
-    storeLogger.info(`Theme changed to: ${mode}`)
+    storeLogger.info(`Theme set to: ${mode}`)
   }, [mode])
 
   const toggleTheme = useCallback(() => {

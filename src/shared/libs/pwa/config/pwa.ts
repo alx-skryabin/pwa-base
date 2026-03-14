@@ -1,0 +1,1 @@
+export const OPEN_PWA_PROMPT_DELAY = 3000

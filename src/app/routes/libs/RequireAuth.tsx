@@ -2,7 +2,7 @@ import React from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router'
 import { FullScreenLoader } from '@shared/ui-kit/FullScreenLoader'
 import { useSession } from '@entities/session'
-import { ROUTES } from '@app/routes/path'
+import { ROUTES } from '@app/routes/config/path.ts'
 
 /**
  * Защищает маршруты: неавторизованных перенаправляет на /login.

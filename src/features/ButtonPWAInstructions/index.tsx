@@ -1,5 +1,5 @@
 import React from 'react'
-import { usePWA } from '@app/pwa/usePWA'
+import { usePWA } from '@shared/libs/pwa'
 import { Button } from 'antd'
 import { InfoCircleOutlined } from '@ant-design/icons'
 

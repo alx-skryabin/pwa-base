@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import { Button } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
-import { ROUTES } from '@app/routes/path.ts'
+import { ROUTES } from '@app/routes/config/path.ts'
 import './index.css'
 
 export const NotFound: React.FC = () => {
