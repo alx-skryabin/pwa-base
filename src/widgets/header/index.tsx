@@ -6,6 +6,7 @@ import { ROUTES } from '@app/routes/config/path.ts'
 import HamburgerToggle from '@features/HamburgerToggle'
 import { WifiOutlined, DisconnectOutlined } from '@ant-design/icons'
 import './index.css'
+import { Flex } from 'antd'
 
 interface HeaderProps {
   isSidebarOpen: boolean
@@ -29,12 +30,15 @@ export const Header: React.FC<HeaderProps> = ({ isSidebarOpen, toggleSidebar }) 
             <span>My App</span>
           </div>
         </NavLink>
-        <span>
-          {isOnline ? <WifiOutlined /> : <DisconnectOutlined />}{' '}
-          <small>{isOnline ? 'Online' : 'Offline'}</small>
-        </span>
 
-        <HamburgerToggle toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+        <Flex align="center">
+          <span style={{ marginRight: 20 }}>
+            {isOnline ? <WifiOutlined /> : <DisconnectOutlined />}{' '}
+            <small>{isOnline ? 'Online' : 'Offline'}</small>
+          </span>
+
+          <HamburgerToggle toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+        </Flex>
       </div>
     </header>
   )

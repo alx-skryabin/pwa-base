@@ -6,6 +6,8 @@
   --color-active: #2b5278;
   --color-text: #e6f7ff;
   --color-text-muted: #999999;
+  --color-blur-bg: rgba(0, 0, 0, 0.4);
+  --color-blur-bg-pc: rgba(27, 39, 52, 0.7);
 }
 
 .theme.theme__light {
@@ -15,6 +17,8 @@
   --color-active: #8bdaf8;
   --color-text: #333333;
   --color-text-muted: #777777;
+  --color-blur-bg: rgba(255, 255, 255, 0.4);
+  --color-blur-bg-pc: rgba(255, 255, 255, 0.5);
 }
 
 .theme {

@@ -5,7 +5,9 @@
   max-width: calc(100% - 40px);
   border: 1px solid var(--color-secondary);
   border-radius: 15px;
-  background: var(--color-primary);
+  background: var(--color-blur-bg-pc);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: var(--z-pwa);
@@ -19,4 +21,11 @@
 .prompt-pwa_actions {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .prompt-pwa {
+    width: 100%;
+    background: var(--color-blur-bg);
+  }
 }

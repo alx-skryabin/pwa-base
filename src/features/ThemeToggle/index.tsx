@@ -7,7 +7,7 @@ const ThemeToggle: React.FC = () => {
   const { isDarkMode, toggleTheme } = useTheme()
 
   return (
-    <Space>
+    <Space style={{ transform: 'scale(1.2)' }}>
       <SunOutlined />
       <Switch
         checked={isDarkMode}

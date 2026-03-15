@@ -4,7 +4,9 @@
   left: 0;
   right: 0;
   height: var(--header-height);
-  background: var(--color-primary);
+  background: var(--color-blur-bg-pc);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: var(--z-header);
 }
@@ -25,11 +27,18 @@
   font-weight: 600;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: var(--color-blur-bg);
+    opacity: 1;
   }
 }
